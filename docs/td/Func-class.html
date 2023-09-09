@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Func class from the td library, for the Dart programming language.">
+  <title>Func class - td library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">tdffi</a></li>
+    <li><a href="../td/td-library.html">td</a></li>
+    <li class="self-crumb">Func class</li>
+  </ol>
+  <div class="self-name">Func</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="td&#47;td-library-sidebar.html"
+      data-below-sidebar="td&#47;Func-class-sidebar.html">
+      <div>
+<h1><span class="kind-class">Func</span> class 
+    <a href="https://dart.dev/language/classes#abstract-classes" class="feature feature-abstract" title="This type can not be directly constructed.">abstract</a>
+ 
+</h1></div>
+
+    
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object-class.html">Object</a></li>
+        <li><a href="../td/TlObject-class.html">TlObject</a></li>
+      <li>Func</li>
+    </ul>
+  </dd>
+
+        
+        
+
+        <dt>Implementers</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../td/AcceptCall-class.html">AcceptCall</a></li>
+          <li><a href="../td/AcceptTermsOfService-class.html">AcceptTermsOfService</a></li>
+          <li><a href="../td/AddApplicationChangelog-class.html">AddApplicationChangelog</a></li>
+          <li><a href="../td/AddChatFolderByInviteLink-class.html">AddChatFolderByInviteLink</a></li>
+          <li><a href="../td/AddChatMember-class.html">AddChatMember</a></li>
+          <li><a href="../td/AddChatMembers-class.html">AddChatMembers</a></li>
+          <li><a href="../td/AddChatToList-class.html">AddChatToList</a></li>
+          <li><a href="../td/AddContact-class.html">AddContact</a></li>
+          <li><a href="../td/AddCustomServerLanguagePack-class.html">AddCustomServerLanguagePack</a></li>
+          <li><a href="../td/AddFavoriteSticker-class.html">AddFavoriteSticker</a></li>
+          <li><a href="../td/AddFileToDownloads-class.html">AddFileToDownloads</a></li>
+          <li><a href="../td/AddLocalMessage-class.html">AddLocalMessage</a></li>
+          <li><a href="../td/AddMessageReaction-class.html">AddMessageReaction</a></li>
+          <li><a href="../td/AddNetworkStatistics-class.html">AddNetworkStatistics</a></li>
+          <li><a href="../td/AddProxy-class.html">AddProxy</a></li>
+          <li><a href="../td/AddRecentlyFoundChat-class.html">AddRecentlyFoundChat</a></li>
+          <li><a href="../td/AddRecentSticker-class.html">AddRecentSticker</a></li>
+          <li><a href="../td/AddSavedAnimation-class.html">AddSavedAnimation</a></li>
+          <li><a href="../td/AddSavedNotificationSound-class.html">AddSavedNotificationSound</a></li>
+          <li><a href="../td/AddStickerToSet-class.html">AddStickerToSet</a></li>
+          <li><a href="../td/AnswerCallbackQuery-class.html">AnswerCallbackQuery</a></li>
+          <li><a href="../td/AnswerCustomQuery-class.html">AnswerCustomQuery</a></li>
+          <li><a href="../td/AnswerInlineQuery-class.html">AnswerInlineQuery</a></li>
+          <li><a href="../td/AnswerPreCheckoutQuery-class.html">AnswerPreCheckoutQuery</a></li>
+          <li><a href="../td/AnswerShippingQuery-class.html">AnswerShippingQuery</a></li>
+          <li><a href="../td/AnswerWebAppQuery-class.html">AnswerWebAppQuery</a></li>
+          <li><a href="../td/AssignAppStoreTransaction-class.html">AssignAppStoreTransaction</a></li>
+          <li><a href="../td/AssignGooglePlayTransaction-class.html">AssignGooglePlayTransaction</a></li>
+          <li><a href="../td/BanChatMember-class.html">BanChatMember</a></li>
+          <li><a href="../td/BlockMessageSenderFromReplies-class.html">BlockMessageSenderFromReplies</a></li>
+          <li><a href="../td/CancelDownloadFile-class.html">CancelDownloadFile</a></li>
+          <li><a href="../td/CancelPasswordReset-class.html">CancelPasswordReset</a></li>
+          <li><a href="../td/CancelPreliminaryUploadFile-class.html">CancelPreliminaryUploadFile</a></li>
+          <li><a href="../td/CanPurchasePremium-class.html">CanPurchasePremium</a></li>
+          <li><a href="../td/CanTransferOwnership-class.html">CanTransferOwnership</a></li>
+          <li><a href="../td/ChangeImportedContacts-class.html">ChangeImportedContacts</a></li>
+          <li><a href="../td/ChangePhoneNumber-class.html">ChangePhoneNumber</a></li>
+          <li><a href="../td/ChangeStickerSet-class.html">ChangeStickerSet</a></li>
+          <li><a href="../td/CheckAuthenticationBotToken-class.html">CheckAuthenticationBotToken</a></li>
+          <li><a href="../td/CheckAuthenticationCode-class.html">CheckAuthenticationCode</a></li>
+          <li><a href="../td/CheckAuthenticationEmailCode-class.html">CheckAuthenticationEmailCode</a></li>
+          <li><a href="../td/CheckAuthenticationPassword-class.html">CheckAuthenticationPassword</a></li>
+          <li><a href="../td/CheckAuthenticationPasswordRecoveryCode-class.html">CheckAuthenticationPasswordRecoveryCode</a></li>
+          <li><a href="../td/CheckChangePhoneNumberCode-class.html">CheckChangePhoneNumberCode</a></li>
+          <li><a href="../td/CheckChatFolderInviteLink-class.html">CheckChatFolderInviteLink</a></li>
+          <li><a href="../td/CheckChatInviteLink-class.html">CheckChatInviteLink</a></li>
+          <li><a href="../td/CheckChatUsername-class.html">CheckChatUsername</a></li>
+          <li><a href="../td/CheckCreatedPublicChatsLimit-class.html">CheckCreatedPublicChatsLimit</a></li>
+          <li><a href="../td/CheckEmailAddressVerificationCode-class.html">CheckEmailAddressVerificationCode</a></li>
+          <li><a href="../td/CheckLoginEmailAddressCode-class.html">CheckLoginEmailAddressCode</a></li>
+          <li><a href="../td/CheckPasswordRecoveryCode-class.html">CheckPasswordRecoveryCode</a></li>
+          <li><a href="../td/CheckPhoneNumberConfirmationCode-class.html">CheckPhoneNumberConfirmationCode</a></li>
+          <li><a href="../td/CheckPhoneNumberVerificationCode-class.html">CheckPhoneNumberVerificationCode</a></li>
+          <li><a href="../td/CheckRecoveryEmailAddressCode-class.html">CheckRecoveryEmailAddressCode</a></li>
+          <li><a href="../td/CheckStickerSetName-class.html">CheckStickerSetName</a></li>
+          <li><a href="../td/ClearAllDraftMessages-class.html">ClearAllDraftMessages</a></li>
+          <li><a href="../td/ClearAutosaveSettingsExceptions-class.html">ClearAutosaveSettingsExceptions</a></li>
+          <li><a href="../td/ClearImportedContacts-class.html">ClearImportedContacts</a></li>
+          <li><a href="../td/ClearRecentEmojiStatuses-class.html">ClearRecentEmojiStatuses</a></li>
+          <li><a href="../td/ClearRecentlyFoundChats-class.html">ClearRecentlyFoundChats</a></li>
+          <li><a href="../td/ClearRecentReactions-class.html">ClearRecentReactions</a></li>
+          <li><a href="../td/ClearRecentStickers-class.html">ClearRecentStickers</a></li>
+          <li><a href="../td/ClickAnimatedEmojiMessage-class.html">ClickAnimatedEmojiMessage</a></li>
+          <li><a href="../td/ClickChatSponsoredMessage-class.html">ClickChatSponsoredMessage</a></li>
+          <li><a href="../td/ClickPremiumSubscriptionButton-class.html">ClickPremiumSubscriptionButton</a></li>
+          <li><a href="../td/Close-class.html">Close</a></li>
+          <li><a href="../td/CloseChat-class.html">CloseChat</a></li>
+          <li><a href="../td/CloseSecretChat-class.html">CloseSecretChat</a></li>
+          <li><a href="../td/CloseStory-class.html">CloseStory</a></li>
+          <li><a href="../td/CloseWebApp-class.html">CloseWebApp</a></li>
+          <li><a href="../td/ConfirmQrCodeAuthentication-class.html">ConfirmQrCodeAuthentication</a></li>
+          <li><a href="../td/CreateBasicGroupChat-class.html">CreateBasicGroupChat</a></li>
+          <li><a href="../td/CreateCall-class.html">CreateCall</a></li>
+          <li><a href="../td/CreateChatFolder-class.html">CreateChatFolder</a></li>
+          <li><a href="../td/CreateChatFolderInviteLink-class.html">CreateChatFolderInviteLink</a></li>
+          <li><a href="../td/CreateChatInviteLink-class.html">CreateChatInviteLink</a></li>
+          <li><a href="../td/CreateForumTopic-class.html">CreateForumTopic</a></li>
+          <li><a href="../td/CreateInvoiceLink-class.html">CreateInvoiceLink</a></li>
+          <li><a href="../td/CreateNewBasicGroupChat-class.html">CreateNewBasicGroupChat</a></li>
+          <li><a href="../td/CreateNewSecretChat-class.html">CreateNewSecretChat</a></li>
+          <li><a href="../td/CreateNewStickerSet-class.html">CreateNewStickerSet</a></li>
+          <li><a href="../td/CreateNewSupergroupChat-class.html">CreateNewSupergroupChat</a></li>
+          <li><a href="../td/CreatePrivateChat-class.html">CreatePrivateChat</a></li>
+          <li><a href="../td/CreateSecretChat-class.html">CreateSecretChat</a></li>
+          <li><a href="../td/CreateSupergroupChat-class.html">CreateSupergroupChat</a></li>
+          <li><a href="../td/CreateTemporaryPassword-class.html">CreateTemporaryPassword</a></li>
+          <li><a href="../td/CreateVideoChat-class.html">CreateVideoChat</a></li>
+          <li><a href="../td/DeleteAccount-class.html">DeleteAccount</a></li>
+          <li><a href="../td/DeleteAllCallMessages-class.html">DeleteAllCallMessages</a></li>
+          <li><a href="../td/DeleteAllRevokedChatInviteLinks-class.html">DeleteAllRevokedChatInviteLinks</a></li>
+          <li><a href="../td/DeleteChat-class.html">DeleteChat</a></li>
+          <li><a href="../td/DeleteChatFolder-class.html">DeleteChatFolder</a></li>
+          <li><a href="../td/DeleteChatFolderInviteLink-class.html">DeleteChatFolderInviteLink</a></li>
+          <li><a href="../td/DeleteChatHistory-class.html">DeleteChatHistory</a></li>
+          <li><a href="../td/DeleteChatMessagesByDate-class.html">DeleteChatMessagesByDate</a></li>
+          <li><a href="../td/DeleteChatMessagesBySender-class.html">DeleteChatMessagesBySender</a></li>
+          <li><a href="../td/DeleteChatReplyMarkup-class.html">DeleteChatReplyMarkup</a></li>
+          <li><a href="../td/DeleteCommands-class.html">DeleteCommands</a></li>
+          <li><a href="../td/DeleteFile-class.html">DeleteFile</a></li>
+          <li><a href="../td/DeleteForumTopic-class.html">DeleteForumTopic</a></li>
+          <li><a href="../td/DeleteLanguagePack-class.html">DeleteLanguagePack</a></li>
+          <li><a href="../td/DeleteMessages-class.html">DeleteMessages</a></li>
+          <li><a href="../td/DeletePassportElement-class.html">DeletePassportElement</a></li>
+          <li><a href="../td/DeleteProfilePhoto-class.html">DeleteProfilePhoto</a></li>
+          <li><a href="../td/DeleteRevokedChatInviteLink-class.html">DeleteRevokedChatInviteLink</a></li>
+          <li><a href="../td/DeleteSavedCredentials-class.html">DeleteSavedCredentials</a></li>
+          <li><a href="../td/DeleteSavedOrderInfo-class.html">DeleteSavedOrderInfo</a></li>
+          <li><a href="../td/DeleteStickerSet-class.html">DeleteStickerSet</a></li>
+          <li><a href="../td/DeleteStory-class.html">DeleteStory</a></li>
+          <li><a href="../td/Destroy-class.html">Destroy</a></li>
+          <li><a href="../td/DisableAllSupergroupUsernames-class.html">DisableAllSupergroupUsernames</a></li>
+          <li><a href="../td/DisableProxy-class.html">DisableProxy</a></li>
+          <li><a href="../td/DiscardCall-class.html">DiscardCall</a></li>
+          <li><a href="../td/DisconnectAllWebsites-class.html">DisconnectAllWebsites</a></li>
+          <li><a href="../td/DisconnectWebsite-class.html">DisconnectWebsite</a></li>
+          <li><a href="../td/DownloadFile-class.html">DownloadFile</a></li>
+          <li><a href="../td/EditChatFolder-class.html">EditChatFolder</a></li>
+          <li><a href="../td/EditChatFolderInviteLink-class.html">EditChatFolderInviteLink</a></li>
+          <li><a href="../td/EditChatInviteLink-class.html">EditChatInviteLink</a></li>
+          <li><a href="../td/EditCustomLanguagePackInfo-class.html">EditCustomLanguagePackInfo</a></li>
+          <li><a href="../td/EditForumTopic-class.html">EditForumTopic</a></li>
+          <li><a href="../td/EditInlineMessageCaption-class.html">EditInlineMessageCaption</a></li>
+          <li><a href="../td/EditInlineMessageLiveLocation-class.html">EditInlineMessageLiveLocation</a></li>
+          <li><a href="../td/EditInlineMessageMedia-class.html">EditInlineMessageMedia</a></li>
+          <li><a href="../td/EditInlineMessageReplyMarkup-class.html">EditInlineMessageReplyMarkup</a></li>
+          <li><a href="../td/EditInlineMessageText-class.html">EditInlineMessageText</a></li>
+          <li><a href="../td/EditMessageCaption-class.html">EditMessageCaption</a></li>
+          <li><a href="../td/EditMessageLiveLocation-class.html">EditMessageLiveLocation</a></li>
+          <li><a href="../td/EditMessageMedia-class.html">EditMessageMedia</a></li>
+          <li><a href="../td/EditMessageReplyMarkup-class.html">EditMessageReplyMarkup</a></li>
+          <li><a href="../td/EditMessageSchedulingState-class.html">EditMessageSchedulingState</a></li>
+          <li><a href="../td/EditMessageText-class.html">EditMessageText</a></li>
+          <li><a href="../td/EditProxy-class.html">EditProxy</a></li>
+          <li><a href="../td/EditStory-class.html">EditStory</a></li>
+          <li><a href="../td/EnableProxy-class.html">EnableProxy</a></li>
+          <li><a href="../td/EndGroupCall-class.html">EndGroupCall</a></li>
+          <li><a href="../td/EndGroupCallRecording-class.html">EndGroupCallRecording</a></li>
+          <li><a href="../td/EndGroupCallScreenSharing-class.html">EndGroupCallScreenSharing</a></li>
+          <li><a href="../td/FinishFileGeneration-class.html">FinishFileGeneration</a></li>
+          <li><a href="../td/ForwardMessages-class.html">ForwardMessages</a></li>
+          <li><a href="../td/GetAccountTtl-class.html">GetAccountTtl</a></li>
+          <li><a href="../td/GetActiveLiveLocationMessages-class.html">GetActiveLiveLocationMessages</a></li>
+          <li><a href="../td/GetActiveSessions-class.html">GetActiveSessions</a></li>
+          <li><a href="../td/GetAllPassportElements-class.html">GetAllPassportElements</a></li>
+          <li><a href="../td/GetAnimatedEmoji-class.html">GetAnimatedEmoji</a></li>
+          <li><a href="../td/GetApplicationConfig-class.html">GetApplicationConfig</a></li>
+          <li><a href="../td/GetApplicationDownloadLink-class.html">GetApplicationDownloadLink</a></li>
+          <li><a href="../td/GetArchiveChatListSettings-class.html">GetArchiveChatListSettings</a></li>
+          <li><a href="../td/GetArchivedStickerSets-class.html">GetArchivedStickerSets</a></li>
+          <li><a href="../td/GetArchivedStories-class.html">GetArchivedStories</a></li>
+          <li><a href="../td/GetAttachedStickerSets-class.html">GetAttachedStickerSets</a></li>
+          <li><a href="../td/GetAttachmentMenuBot-class.html">GetAttachmentMenuBot</a></li>
+          <li><a href="../td/GetAuthorizationState-class.html">GetAuthorizationState</a></li>
+          <li><a href="../td/GetAutoDownloadSettingsPresets-class.html">GetAutoDownloadSettingsPresets</a></li>
+          <li><a href="../td/GetAutosaveSettings-class.html">GetAutosaveSettings</a></li>
+          <li><a href="../td/GetBackgrounds-class.html">GetBackgrounds</a></li>
+          <li><a href="../td/GetBackgroundUrl-class.html">GetBackgroundUrl</a></li>
+          <li><a href="../td/GetBankCardInfo-class.html">GetBankCardInfo</a></li>
+          <li><a href="../td/GetBasicGroup-class.html">GetBasicGroup</a></li>
+          <li><a href="../td/GetBasicGroupFullInfo-class.html">GetBasicGroupFullInfo</a></li>
+          <li><a href="../td/GetBlockedMessageSenders-class.html">GetBlockedMessageSenders</a></li>
+          <li><a href="../td/GetBotInfoDescription-class.html">GetBotInfoDescription</a></li>
+          <li><a href="../td/GetBotInfoShortDescription-class.html">GetBotInfoShortDescription</a></li>
+          <li><a href="../td/GetBotName-class.html">GetBotName</a></li>
+          <li><a href="../td/GetCallbackQueryAnswer-class.html">GetCallbackQueryAnswer</a></li>
+          <li><a href="../td/GetCallbackQueryMessage-class.html">GetCallbackQueryMessage</a></li>
+          <li><a href="../td/GetChat-class.html">GetChat</a></li>
+          <li><a href="../td/GetChatActiveStories-class.html">GetChatActiveStories</a></li>
+          <li><a href="../td/GetChatAdministrators-class.html">GetChatAdministrators</a></li>
+          <li><a href="../td/GetChatAvailableMessageSenders-class.html">GetChatAvailableMessageSenders</a></li>
+          <li><a href="../td/GetChatEventLog-class.html">GetChatEventLog</a></li>
+          <li><a href="../td/GetChatFolder-class.html">GetChatFolder</a></li>
+          <li><a href="../td/GetChatFolderChatCount-class.html">GetChatFolderChatCount</a></li>
+          <li><a href="../td/GetChatFolderChatsToLeave-class.html">GetChatFolderChatsToLeave</a></li>
+          <li><a href="../td/GetChatFolderInviteLinks-class.html">GetChatFolderInviteLinks</a></li>
+          <li><a href="../td/GetChatFolderNewChats-class.html">GetChatFolderNewChats</a></li>
+          <li><a href="../td/GetChatHistory-class.html">GetChatHistory</a></li>
+          <li><a href="../td/GetChatInviteLink-class.html">GetChatInviteLink</a></li>
+          <li><a href="../td/GetChatInviteLinkCounts-class.html">GetChatInviteLinkCounts</a></li>
+          <li><a href="../td/GetChatInviteLinkMembers-class.html">GetChatInviteLinkMembers</a></li>
+          <li><a href="../td/GetChatInviteLinks-class.html">GetChatInviteLinks</a></li>
+          <li><a href="../td/GetChatJoinRequests-class.html">GetChatJoinRequests</a></li>
+          <li><a href="../td/GetChatListsToAddChat-class.html">GetChatListsToAddChat</a></li>
+          <li><a href="../td/GetChatMember-class.html">GetChatMember</a></li>
+          <li><a href="../td/GetChatMessageByDate-class.html">GetChatMessageByDate</a></li>
+          <li><a href="../td/GetChatMessageCalendar-class.html">GetChatMessageCalendar</a></li>
+          <li><a href="../td/GetChatMessageCount-class.html">GetChatMessageCount</a></li>
+          <li><a href="../td/GetChatMessagePosition-class.html">GetChatMessagePosition</a></li>
+          <li><a href="../td/GetChatNotificationSettingsExceptions-class.html">GetChatNotificationSettingsExceptions</a></li>
+          <li><a href="../td/GetChatPinnedMessage-class.html">GetChatPinnedMessage</a></li>
+          <li><a href="../td/GetChatPinnedStories-class.html">GetChatPinnedStories</a></li>
+          <li><a href="../td/GetChats-class.html">GetChats</a></li>
+          <li><a href="../td/GetChatScheduledMessages-class.html">GetChatScheduledMessages</a></li>
+          <li><a href="../td/GetChatsForChatFolderInviteLink-class.html">GetChatsForChatFolderInviteLink</a></li>
+          <li><a href="../td/GetChatSparseMessagePositions-class.html">GetChatSparseMessagePositions</a></li>
+          <li><a href="../td/GetChatSponsoredMessages-class.html">GetChatSponsoredMessages</a></li>
+          <li><a href="../td/GetChatStatistics-class.html">GetChatStatistics</a></li>
+          <li><a href="../td/GetCloseFriends-class.html">GetCloseFriends</a></li>
+          <li><a href="../td/GetCommands-class.html">GetCommands</a></li>
+          <li><a href="../td/GetConnectedWebsites-class.html">GetConnectedWebsites</a></li>
+          <li><a href="../td/GetContacts-class.html">GetContacts</a></li>
+          <li><a href="../td/GetCountries-class.html">GetCountries</a></li>
+          <li><a href="../td/GetCountryCode-class.html">GetCountryCode</a></li>
+          <li><a href="../td/GetCreatedPublicChats-class.html">GetCreatedPublicChats</a></li>
+          <li><a href="../td/GetCurrentState-class.html">GetCurrentState</a></li>
+          <li><a href="../td/GetCustomEmojiReactionAnimations-class.html">GetCustomEmojiReactionAnimations</a></li>
+          <li><a href="../td/GetCustomEmojiStickers-class.html">GetCustomEmojiStickers</a></li>
+          <li><a href="../td/GetDatabaseStatistics-class.html">GetDatabaseStatistics</a></li>
+          <li><a href="../td/GetDeepLinkInfo-class.html">GetDeepLinkInfo</a></li>
+          <li><a href="../td/GetDefaultChatPhotoCustomEmojiStickers-class.html">GetDefaultChatPhotoCustomEmojiStickers</a></li>
+          <li><a href="../td/GetDefaultEmojiStatuses-class.html">GetDefaultEmojiStatuses</a></li>
+          <li><a href="../td/GetDefaultMessageAutoDeleteTime-class.html">GetDefaultMessageAutoDeleteTime</a></li>
+          <li><a href="../td/GetDefaultProfilePhotoCustomEmojiStickers-class.html">GetDefaultProfilePhotoCustomEmojiStickers</a></li>
+          <li><a href="../td/GetEmojiCategories-class.html">GetEmojiCategories</a></li>
+          <li><a href="../td/GetEmojiReaction-class.html">GetEmojiReaction</a></li>
+          <li><a href="../td/GetEmojiSuggestionsUrl-class.html">GetEmojiSuggestionsUrl</a></li>
+          <li><a href="../td/GetExternalLink-class.html">GetExternalLink</a></li>
+          <li><a href="../td/GetExternalLinkInfo-class.html">GetExternalLinkInfo</a></li>
+          <li><a href="../td/GetFavoriteStickers-class.html">GetFavoriteStickers</a></li>
+          <li><a href="../td/GetFile-class.html">GetFile</a></li>
+          <li><a href="../td/GetFileDownloadedPrefixSize-class.html">GetFileDownloadedPrefixSize</a></li>
+          <li><a href="../td/GetForumTopic-class.html">GetForumTopic</a></li>
+          <li><a href="../td/GetForumTopicDefaultIcons-class.html">GetForumTopicDefaultIcons</a></li>
+          <li><a href="../td/GetForumTopicLink-class.html">GetForumTopicLink</a></li>
+          <li><a href="../td/GetForumTopics-class.html">GetForumTopics</a></li>
+          <li><a href="../td/GetGameHighScores-class.html">GetGameHighScores</a></li>
+          <li><a href="../td/GetGroupCall-class.html">GetGroupCall</a></li>
+          <li><a href="../td/GetGroupCallInviteLink-class.html">GetGroupCallInviteLink</a></li>
+          <li><a href="../td/GetGroupCallStreams-class.html">GetGroupCallStreams</a></li>
+          <li><a href="../td/GetGroupCallStreamSegment-class.html">GetGroupCallStreamSegment</a></li>
+          <li><a href="../td/GetGroupsInCommon-class.html">GetGroupsInCommon</a></li>
+          <li><a href="../td/GetImportedContactCount-class.html">GetImportedContactCount</a></li>
+          <li><a href="../td/GetInactiveSupergroupChats-class.html">GetInactiveSupergroupChats</a></li>
+          <li><a href="../td/GetInlineGameHighScores-class.html">GetInlineGameHighScores</a></li>
+          <li><a href="../td/GetInlineQueryResults-class.html">GetInlineQueryResults</a></li>
+          <li><a href="../td/GetInstalledStickerSets-class.html">GetInstalledStickerSets</a></li>
+          <li><a href="../td/GetInternalLink-class.html">GetInternalLink</a></li>
+          <li><a href="../td/GetInternalLinkType-class.html">GetInternalLinkType</a></li>
+          <li><a href="../td/GetLanguagePackInfo-class.html">GetLanguagePackInfo</a></li>
+          <li><a href="../td/GetLanguagePackStrings-class.html">GetLanguagePackStrings</a></li>
+          <li><a href="../td/GetLocalizationTargetInfo-class.html">GetLocalizationTargetInfo</a></li>
+          <li><a href="../td/GetLoginUrl-class.html">GetLoginUrl</a></li>
+          <li><a href="../td/GetLoginUrlInfo-class.html">GetLoginUrlInfo</a></li>
+          <li><a href="../td/GetMapThumbnailFile-class.html">GetMapThumbnailFile</a></li>
+          <li><a href="../td/GetMe-class.html">GetMe</a></li>
+          <li><a href="../td/GetMenuButton-class.html">GetMenuButton</a></li>
+          <li><a href="../td/GetMessage-class.html">GetMessage</a></li>
+          <li><a href="../td/GetMessageAddedReactions-class.html">GetMessageAddedReactions</a></li>
+          <li><a href="../td/GetMessageAvailableReactions-class.html">GetMessageAvailableReactions</a></li>
+          <li><a href="../td/GetMessageEmbeddingCode-class.html">GetMessageEmbeddingCode</a></li>
+          <li><a href="../td/GetMessageFileType-class.html">GetMessageFileType</a></li>
+          <li><a href="../td/GetMessageImportConfirmationText-class.html">GetMessageImportConfirmationText</a></li>
+          <li><a href="../td/GetMessageLink-class.html">GetMessageLink</a></li>
+          <li><a href="../td/GetMessageLinkInfo-class.html">GetMessageLinkInfo</a></li>
+          <li><a href="../td/GetMessageLocally-class.html">GetMessageLocally</a></li>
+          <li><a href="../td/GetMessagePublicForwards-class.html">GetMessagePublicForwards</a></li>
+          <li><a href="../td/GetMessages-class.html">GetMessages</a></li>
+          <li><a href="../td/GetMessageStatistics-class.html">GetMessageStatistics</a></li>
+          <li><a href="../td/GetMessageThread-class.html">GetMessageThread</a></li>
+          <li><a href="../td/GetMessageThreadHistory-class.html">GetMessageThreadHistory</a></li>
+          <li><a href="../td/GetMessageViewers-class.html">GetMessageViewers</a></li>
+          <li><a href="../td/GetNetworkStatistics-class.html">GetNetworkStatistics</a></li>
+          <li><a href="../td/GetPassportAuthorizationForm-class.html">GetPassportAuthorizationForm</a></li>
+          <li><a href="../td/GetPassportAuthorizationFormAvailableElements-class.html">GetPassportAuthorizationFormAvailableElements</a></li>
+          <li><a href="../td/GetPassportElement-class.html">GetPassportElement</a></li>
+          <li><a href="../td/GetPasswordState-class.html">GetPasswordState</a></li>
+          <li><a href="../td/GetPaymentForm-class.html">GetPaymentForm</a></li>
+          <li><a href="../td/GetPaymentReceipt-class.html">GetPaymentReceipt</a></li>
+          <li><a href="../td/GetPhoneNumberInfo-class.html">GetPhoneNumberInfo</a></li>
+          <li><a href="../td/GetPollVoters-class.html">GetPollVoters</a></li>
+          <li><a href="../td/GetPreferredCountryLanguage-class.html">GetPreferredCountryLanguage</a></li>
+          <li><a href="../td/GetPremiumFeatures-class.html">GetPremiumFeatures</a></li>
+          <li><a href="../td/GetPremiumLimit-class.html">GetPremiumLimit</a></li>
+          <li><a href="../td/GetPremiumState-class.html">GetPremiumState</a></li>
+          <li><a href="../td/GetPremiumStickerExamples-class.html">GetPremiumStickerExamples</a></li>
+          <li><a href="../td/GetPremiumStickers-class.html">GetPremiumStickers</a></li>
+          <li><a href="../td/GetProxies-class.html">GetProxies</a></li>
+          <li><a href="../td/GetProxyLink-class.html">GetProxyLink</a></li>
+          <li><a href="../td/GetRecentEmojiStatuses-class.html">GetRecentEmojiStatuses</a></li>
+          <li><a href="../td/GetRecentInlineBots-class.html">GetRecentInlineBots</a></li>
+          <li><a href="../td/GetRecentlyOpenedChats-class.html">GetRecentlyOpenedChats</a></li>
+          <li><a href="../td/GetRecentlyVisitedTMeUrls-class.html">GetRecentlyVisitedTMeUrls</a></li>
+          <li><a href="../td/GetRecentStickers-class.html">GetRecentStickers</a></li>
+          <li><a href="../td/GetRecommendedChatFolders-class.html">GetRecommendedChatFolders</a></li>
+          <li><a href="../td/GetRecoveryEmailAddress-class.html">GetRecoveryEmailAddress</a></li>
+          <li><a href="../td/GetRemoteFile-class.html">GetRemoteFile</a></li>
+          <li><a href="../td/GetRepliedMessage-class.html">GetRepliedMessage</a></li>
+          <li><a href="../td/GetSavedAnimations-class.html">GetSavedAnimations</a></li>
+          <li><a href="../td/GetSavedNotificationSound-class.html">GetSavedNotificationSound</a></li>
+          <li><a href="../td/GetSavedNotificationSounds-class.html">GetSavedNotificationSounds</a></li>
+          <li><a href="../td/GetSavedOrderInfo-class.html">GetSavedOrderInfo</a></li>
+          <li><a href="../td/GetScopeNotificationSettings-class.html">GetScopeNotificationSettings</a></li>
+          <li><a href="../td/GetSecretChat-class.html">GetSecretChat</a></li>
+          <li><a href="../td/GetStatisticalGraph-class.html">GetStatisticalGraph</a></li>
+          <li><a href="../td/GetStickerEmojis-class.html">GetStickerEmojis</a></li>
+          <li><a href="../td/GetStickers-class.html">GetStickers</a></li>
+          <li><a href="../td/GetStickerSet-class.html">GetStickerSet</a></li>
+          <li><a href="../td/GetStorageStatistics-class.html">GetStorageStatistics</a></li>
+          <li><a href="../td/GetStorageStatisticsFast-class.html">GetStorageStatisticsFast</a></li>
+          <li><a href="../td/GetStory-class.html">GetStory</a></li>
+          <li><a href="../td/GetStoryNotificationSettingsExceptions-class.html">GetStoryNotificationSettingsExceptions</a></li>
+          <li><a href="../td/GetStoryViewers-class.html">GetStoryViewers</a></li>
+          <li><a href="../td/GetSuggestedFileName-class.html">GetSuggestedFileName</a></li>
+          <li><a href="../td/GetSuggestedStickerSetName-class.html">GetSuggestedStickerSetName</a></li>
+          <li><a href="../td/GetSuitableDiscussionChats-class.html">GetSuitableDiscussionChats</a></li>
+          <li><a href="../td/GetSupergroup-class.html">GetSupergroup</a></li>
+          <li><a href="../td/GetSupergroupFullInfo-class.html">GetSupergroupFullInfo</a></li>
+          <li><a href="../td/GetSupergroupMembers-class.html">GetSupergroupMembers</a></li>
+          <li><a href="../td/GetSupportName-class.html">GetSupportName</a></li>
+          <li><a href="../td/GetSupportUser-class.html">GetSupportUser</a></li>
+          <li><a href="../td/GetTemporaryPasswordState-class.html">GetTemporaryPasswordState</a></li>
+          <li><a href="../td/GetThemedEmojiStatuses-class.html">GetThemedEmojiStatuses</a></li>
+          <li><a href="../td/GetTopChats-class.html">GetTopChats</a></li>
+          <li><a href="../td/GetTrendingStickerSets-class.html">GetTrendingStickerSets</a></li>
+          <li><a href="../td/GetUser-class.html">GetUser</a></li>
+          <li><a href="../td/GetUserFullInfo-class.html">GetUserFullInfo</a></li>
+          <li><a href="../td/GetUserLink-class.html">GetUserLink</a></li>
+          <li><a href="../td/GetUserPrivacySettingRules-class.html">GetUserPrivacySettingRules</a></li>
+          <li><a href="../td/GetUserProfilePhotos-class.html">GetUserProfilePhotos</a></li>
+          <li><a href="../td/GetUserSupportInfo-class.html">GetUserSupportInfo</a></li>
+          <li><a href="../td/GetVideoChatAvailableParticipants-class.html">GetVideoChatAvailableParticipants</a></li>
+          <li><a href="../td/GetVideoChatRtmpUrl-class.html">GetVideoChatRtmpUrl</a></li>
+          <li><a href="../td/GetWebAppLinkUrl-class.html">GetWebAppLinkUrl</a></li>
+          <li><a href="../td/GetWebAppUrl-class.html">GetWebAppUrl</a></li>
+          <li><a href="../td/GetWebPageInstantView-class.html">GetWebPageInstantView</a></li>
+          <li><a href="../td/GetWebPagePreview-class.html">GetWebPagePreview</a></li>
+          <li><a href="../td/HideSuggestedAction-class.html">HideSuggestedAction</a></li>
+          <li><a href="../td/ImportContacts-class.html">ImportContacts</a></li>
+          <li><a href="../td/ImportMessages-class.html">ImportMessages</a></li>
+          <li><a href="../td/InviteGroupCallParticipants-class.html">InviteGroupCallParticipants</a></li>
+          <li><a href="../td/JoinChat-class.html">JoinChat</a></li>
+          <li><a href="../td/JoinChatByInviteLink-class.html">JoinChatByInviteLink</a></li>
+          <li><a href="../td/JoinGroupCall-class.html">JoinGroupCall</a></li>
+          <li><a href="../td/LeaveChat-class.html">LeaveChat</a></li>
+          <li><a href="../td/LeaveGroupCall-class.html">LeaveGroupCall</a></li>
+          <li><a href="../td/LoadActiveStories-class.html">LoadActiveStories</a></li>
+          <li><a href="../td/LoadChats-class.html">LoadChats</a></li>
+          <li><a href="../td/LoadGroupCallParticipants-class.html">LoadGroupCallParticipants</a></li>
+          <li><a href="../td/LogOut-class.html">LogOut</a></li>
+          <li><a href="../td/OpenChat-class.html">OpenChat</a></li>
+          <li><a href="../td/OpenMessageContent-class.html">OpenMessageContent</a></li>
+          <li><a href="../td/OpenStory-class.html">OpenStory</a></li>
+          <li><a href="../td/OpenWebApp-class.html">OpenWebApp</a></li>
+          <li><a href="../td/OptimizeStorage-class.html">OptimizeStorage</a></li>
+          <li><a href="../td/PinChatMessage-class.html">PinChatMessage</a></li>
+          <li><a href="../td/PingProxy-class.html">PingProxy</a></li>
+          <li><a href="../td/PreliminaryUploadFile-class.html">PreliminaryUploadFile</a></li>
+          <li><a href="../td/ProcessChatFolderNewChats-class.html">ProcessChatFolderNewChats</a></li>
+          <li><a href="../td/ProcessChatJoinRequest-class.html">ProcessChatJoinRequest</a></li>
+          <li><a href="../td/ProcessChatJoinRequests-class.html">ProcessChatJoinRequests</a></li>
+          <li><a href="../td/ProcessPushNotification-class.html">ProcessPushNotification</a></li>
+          <li><a href="../td/RateSpeechRecognition-class.html">RateSpeechRecognition</a></li>
+          <li><a href="../td/ReadAllChatMentions-class.html">ReadAllChatMentions</a></li>
+          <li><a href="../td/ReadAllChatReactions-class.html">ReadAllChatReactions</a></li>
+          <li><a href="../td/ReadAllMessageThreadMentions-class.html">ReadAllMessageThreadMentions</a></li>
+          <li><a href="../td/ReadAllMessageThreadReactions-class.html">ReadAllMessageThreadReactions</a></li>
+          <li><a href="../td/ReadChatList-class.html">ReadChatList</a></li>
+          <li><a href="../td/ReadFilePart-class.html">ReadFilePart</a></li>
+          <li><a href="../td/RecognizeSpeech-class.html">RecognizeSpeech</a></li>
+          <li><a href="../td/RecoverAuthenticationPassword-class.html">RecoverAuthenticationPassword</a></li>
+          <li><a href="../td/RecoverPassword-class.html">RecoverPassword</a></li>
+          <li><a href="../td/RegisterDevice-class.html">RegisterDevice</a></li>
+          <li><a href="../td/RegisterUser-class.html">RegisterUser</a></li>
+          <li><a href="../td/RemoveAllFilesFromDownloads-class.html">RemoveAllFilesFromDownloads</a></li>
+          <li><a href="../td/RemoveBackground-class.html">RemoveBackground</a></li>
+          <li><a href="../td/RemoveChatActionBar-class.html">RemoveChatActionBar</a></li>
+          <li><a href="../td/RemoveContacts-class.html">RemoveContacts</a></li>
+          <li><a href="../td/RemoveFavoriteSticker-class.html">RemoveFavoriteSticker</a></li>
+          <li><a href="../td/RemoveFileFromDownloads-class.html">RemoveFileFromDownloads</a></li>
+          <li><a href="../td/RemoveMessageReaction-class.html">RemoveMessageReaction</a></li>
+          <li><a href="../td/RemoveNotification-class.html">RemoveNotification</a></li>
+          <li><a href="../td/RemoveNotificationGroup-class.html">RemoveNotificationGroup</a></li>
+          <li><a href="../td/RemoveProxy-class.html">RemoveProxy</a></li>
+          <li><a href="../td/RemoveRecentHashtag-class.html">RemoveRecentHashtag</a></li>
+          <li><a href="../td/RemoveRecentlyFoundChat-class.html">RemoveRecentlyFoundChat</a></li>
+          <li><a href="../td/RemoveRecentSticker-class.html">RemoveRecentSticker</a></li>
+          <li><a href="../td/RemoveSavedAnimation-class.html">RemoveSavedAnimation</a></li>
+          <li><a href="../td/RemoveSavedNotificationSound-class.html">RemoveSavedNotificationSound</a></li>
+          <li><a href="../td/RemoveStickerFromSet-class.html">RemoveStickerFromSet</a></li>
+          <li><a href="../td/RemoveTopChat-class.html">RemoveTopChat</a></li>
+          <li><a href="../td/ReorderActiveUsernames-class.html">ReorderActiveUsernames</a></li>
+          <li><a href="../td/ReorderBotActiveUsernames-class.html">ReorderBotActiveUsernames</a></li>
+          <li><a href="../td/ReorderChatFolders-class.html">ReorderChatFolders</a></li>
+          <li><a href="../td/ReorderInstalledStickerSets-class.html">ReorderInstalledStickerSets</a></li>
+          <li><a href="../td/ReorderSupergroupActiveUsernames-class.html">ReorderSupergroupActiveUsernames</a></li>
+          <li><a href="../td/ReplacePrimaryChatInviteLink-class.html">ReplacePrimaryChatInviteLink</a></li>
+          <li><a href="../td/ReplaceVideoChatRtmpUrl-class.html">ReplaceVideoChatRtmpUrl</a></li>
+          <li><a href="../td/ReportChat-class.html">ReportChat</a></li>
+          <li><a href="../td/ReportChatPhoto-class.html">ReportChatPhoto</a></li>
+          <li><a href="../td/ReportMessageReactions-class.html">ReportMessageReactions</a></li>
+          <li><a href="../td/ReportStory-class.html">ReportStory</a></li>
+          <li><a href="../td/ReportSupergroupAntiSpamFalsePositive-class.html">ReportSupergroupAntiSpamFalsePositive</a></li>
+          <li><a href="../td/ReportSupergroupSpam-class.html">ReportSupergroupSpam</a></li>
+          <li><a href="../td/RequestAuthenticationPasswordRecovery-class.html">RequestAuthenticationPasswordRecovery</a></li>
+          <li><a href="../td/RequestPasswordRecovery-class.html">RequestPasswordRecovery</a></li>
+          <li><a href="../td/RequestQrCodeAuthentication-class.html">RequestQrCodeAuthentication</a></li>
+          <li><a href="../td/ResendAuthenticationCode-class.html">ResendAuthenticationCode</a></li>
+          <li><a href="../td/ResendChangePhoneNumberCode-class.html">ResendChangePhoneNumberCode</a></li>
+          <li><a href="../td/ResendEmailAddressVerificationCode-class.html">ResendEmailAddressVerificationCode</a></li>
+          <li><a href="../td/ResendLoginEmailAddressCode-class.html">ResendLoginEmailAddressCode</a></li>
+          <li><a href="../td/ResendMessages-class.html">ResendMessages</a></li>
+          <li><a href="../td/ResendPhoneNumberConfirmationCode-class.html">ResendPhoneNumberConfirmationCode</a></li>
+          <li><a href="../td/ResendPhoneNumberVerificationCode-class.html">ResendPhoneNumberVerificationCode</a></li>
+          <li><a href="../td/ResendRecoveryEmailAddressCode-class.html">ResendRecoveryEmailAddressCode</a></li>
+          <li><a href="../td/ResetAllNotificationSettings-class.html">ResetAllNotificationSettings</a></li>
+          <li><a href="../td/ResetAuthenticationEmailAddress-class.html">ResetAuthenticationEmailAddress</a></li>
+          <li><a href="../td/ResetBackgrounds-class.html">ResetBackgrounds</a></li>
+          <li><a href="../td/ResetNetworkStatistics-class.html">ResetNetworkStatistics</a></li>
+          <li><a href="../td/ResetPassword-class.html">ResetPassword</a></li>
+          <li><a href="../td/RevokeChatInviteLink-class.html">RevokeChatInviteLink</a></li>
+          <li><a href="../td/RevokeGroupCallInviteLink-class.html">RevokeGroupCallInviteLink</a></li>
+          <li><a href="../td/SaveApplicationLogEvent-class.html">SaveApplicationLogEvent</a></li>
+          <li><a href="../td/SearchBackground-class.html">SearchBackground</a></li>
+          <li><a href="../td/SearchCallMessages-class.html">SearchCallMessages</a></li>
+          <li><a href="../td/SearchChatMembers-class.html">SearchChatMembers</a></li>
+          <li><a href="../td/SearchChatMessages-class.html">SearchChatMessages</a></li>
+          <li><a href="../td/SearchChatRecentLocationMessages-class.html">SearchChatRecentLocationMessages</a></li>
+          <li><a href="../td/SearchChats-class.html">SearchChats</a></li>
+          <li><a href="../td/SearchChatsNearby-class.html">SearchChatsNearby</a></li>
+          <li><a href="../td/SearchChatsOnServer-class.html">SearchChatsOnServer</a></li>
+          <li><a href="../td/SearchContacts-class.html">SearchContacts</a></li>
+          <li><a href="../td/SearchEmojis-class.html">SearchEmojis</a></li>
+          <li><a href="../td/SearchFileDownloads-class.html">SearchFileDownloads</a></li>
+          <li><a href="../td/SearchHashtags-class.html">SearchHashtags</a></li>
+          <li><a href="../td/SearchInstalledStickerSets-class.html">SearchInstalledStickerSets</a></li>
+          <li><a href="../td/SearchMessages-class.html">SearchMessages</a></li>
+          <li><a href="../td/SearchOutgoingDocumentMessages-class.html">SearchOutgoingDocumentMessages</a></li>
+          <li><a href="../td/SearchPublicChat-class.html">SearchPublicChat</a></li>
+          <li><a href="../td/SearchPublicChats-class.html">SearchPublicChats</a></li>
+          <li><a href="../td/SearchRecentlyFoundChats-class.html">SearchRecentlyFoundChats</a></li>
+          <li><a href="../td/SearchSecretMessages-class.html">SearchSecretMessages</a></li>
+          <li><a href="../td/SearchStickers-class.html">SearchStickers</a></li>
+          <li><a href="../td/SearchStickerSet-class.html">SearchStickerSet</a></li>
+          <li><a href="../td/SearchStickerSets-class.html">SearchStickerSets</a></li>
+          <li><a href="../td/SearchUserByPhoneNumber-class.html">SearchUserByPhoneNumber</a></li>
+          <li><a href="../td/SearchUserByToken-class.html">SearchUserByToken</a></li>
+          <li><a href="../td/SearchWebApp-class.html">SearchWebApp</a></li>
+          <li><a href="../td/SendAuthenticationFirebaseSms-class.html">SendAuthenticationFirebaseSms</a></li>
+          <li><a href="../td/SendBotStartMessage-class.html">SendBotStartMessage</a></li>
+          <li><a href="../td/SendCallDebugInformation-class.html">SendCallDebugInformation</a></li>
+          <li><a href="../td/SendCallLog-class.html">SendCallLog</a></li>
+          <li><a href="../td/SendCallRating-class.html">SendCallRating</a></li>
+          <li><a href="../td/SendCallSignalingData-class.html">SendCallSignalingData</a></li>
+          <li><a href="../td/SendChatAction-class.html">SendChatAction</a></li>
+          <li><a href="../td/SendCustomRequest-class.html">SendCustomRequest</a></li>
+          <li><a href="../td/SendEmailAddressVerificationCode-class.html">SendEmailAddressVerificationCode</a></li>
+          <li><a href="../td/SendInlineQueryResultMessage-class.html">SendInlineQueryResultMessage</a></li>
+          <li><a href="../td/SendMessage-class.html">SendMessage</a></li>
+          <li><a href="../td/SendMessageAlbum-class.html">SendMessageAlbum</a></li>
+          <li><a href="../td/SendPassportAuthorizationForm-class.html">SendPassportAuthorizationForm</a></li>
+          <li><a href="../td/SendPaymentForm-class.html">SendPaymentForm</a></li>
+          <li><a href="../td/SendPhoneNumberConfirmationCode-class.html">SendPhoneNumberConfirmationCode</a></li>
+          <li><a href="../td/SendPhoneNumberVerificationCode-class.html">SendPhoneNumberVerificationCode</a></li>
+          <li><a href="../td/SendStory-class.html">SendStory</a></li>
+          <li><a href="../td/SendWebAppData-class.html">SendWebAppData</a></li>
+          <li><a href="../td/SetAccountTtl-class.html">SetAccountTtl</a></li>
+          <li><a href="../td/SetAlarm-class.html">SetAlarm</a></li>
+          <li><a href="../td/SetArchiveChatListSettings-class.html">SetArchiveChatListSettings</a></li>
+          <li><a href="../td/SetAuthenticationEmailAddress-class.html">SetAuthenticationEmailAddress</a></li>
+          <li><a href="../td/SetAuthenticationPhoneNumber-class.html">SetAuthenticationPhoneNumber</a></li>
+          <li><a href="../td/SetAutoDownloadSettings-class.html">SetAutoDownloadSettings</a></li>
+          <li><a href="../td/SetAutosaveSettings-class.html">SetAutosaveSettings</a></li>
+          <li><a href="../td/SetBackground-class.html">SetBackground</a></li>
+          <li><a href="../td/SetBio-class.html">SetBio</a></li>
+          <li><a href="../td/SetBotInfoDescription-class.html">SetBotInfoDescription</a></li>
+          <li><a href="../td/SetBotInfoShortDescription-class.html">SetBotInfoShortDescription</a></li>
+          <li><a href="../td/SetBotName-class.html">SetBotName</a></li>
+          <li><a href="../td/SetBotProfilePhoto-class.html">SetBotProfilePhoto</a></li>
+          <li><a href="../td/SetBotUpdatesStatus-class.html">SetBotUpdatesStatus</a></li>
+          <li><a href="../td/SetChatActiveStoriesList-class.html">SetChatActiveStoriesList</a></li>
+          <li><a href="../td/SetChatAvailableReactions-class.html">SetChatAvailableReactions</a></li>
+          <li><a href="../td/SetChatBackground-class.html">SetChatBackground</a></li>
+          <li><a href="../td/SetChatClientData-class.html">SetChatClientData</a></li>
+          <li><a href="../td/SetChatDescription-class.html">SetChatDescription</a></li>
+          <li><a href="../td/SetChatDiscussionGroup-class.html">SetChatDiscussionGroup</a></li>
+          <li><a href="../td/SetChatDraftMessage-class.html">SetChatDraftMessage</a></li>
+          <li><a href="../td/SetChatLocation-class.html">SetChatLocation</a></li>
+          <li><a href="../td/SetChatMemberStatus-class.html">SetChatMemberStatus</a></li>
+          <li><a href="../td/SetChatMessageAutoDeleteTime-class.html">SetChatMessageAutoDeleteTime</a></li>
+          <li><a href="../td/SetChatMessageSender-class.html">SetChatMessageSender</a></li>
+          <li><a href="../td/SetChatNotificationSettings-class.html">SetChatNotificationSettings</a></li>
+          <li><a href="../td/SetChatPermissions-class.html">SetChatPermissions</a></li>
+          <li><a href="../td/SetChatPhoto-class.html">SetChatPhoto</a></li>
+          <li><a href="../td/SetChatSlowModeDelay-class.html">SetChatSlowModeDelay</a></li>
+          <li><a href="../td/SetChatTheme-class.html">SetChatTheme</a></li>
+          <li><a href="../td/SetChatTitle-class.html">SetChatTitle</a></li>
+          <li><a href="../td/SetCloseFriends-class.html">SetCloseFriends</a></li>
+          <li><a href="../td/SetCommands-class.html">SetCommands</a></li>
+          <li><a href="../td/SetCustomEmojiStickerSetThumbnail-class.html">SetCustomEmojiStickerSetThumbnail</a></li>
+          <li><a href="../td/SetCustomLanguagePack-class.html">SetCustomLanguagePack</a></li>
+          <li><a href="../td/SetCustomLanguagePackString-class.html">SetCustomLanguagePackString</a></li>
+          <li><a href="../td/SetDatabaseEncryptionKey-class.html">SetDatabaseEncryptionKey</a></li>
+          <li><a href="../td/SetDefaultChannelAdministratorRights-class.html">SetDefaultChannelAdministratorRights</a></li>
+          <li><a href="../td/SetDefaultGroupAdministratorRights-class.html">SetDefaultGroupAdministratorRights</a></li>
+          <li><a href="../td/SetDefaultMessageAutoDeleteTime-class.html">SetDefaultMessageAutoDeleteTime</a></li>
+          <li><a href="../td/SetDefaultReactionType-class.html">SetDefaultReactionType</a></li>
+          <li><a href="../td/SetEmojiStatus-class.html">SetEmojiStatus</a></li>
+          <li><a href="../td/SetFileGenerationProgress-class.html">SetFileGenerationProgress</a></li>
+          <li><a href="../td/SetForumTopicNotificationSettings-class.html">SetForumTopicNotificationSettings</a></li>
+          <li><a href="../td/SetGameScore-class.html">SetGameScore</a></li>
+          <li><a href="../td/SetGroupCallParticipantIsSpeaking-class.html">SetGroupCallParticipantIsSpeaking</a></li>
+          <li><a href="../td/SetGroupCallParticipantVolumeLevel-class.html">SetGroupCallParticipantVolumeLevel</a></li>
+          <li><a href="../td/SetGroupCallTitle-class.html">SetGroupCallTitle</a></li>
+          <li><a href="../td/SetInactiveSessionTtl-class.html">SetInactiveSessionTtl</a></li>
+          <li><a href="../td/SetInlineGameScore-class.html">SetInlineGameScore</a></li>
+          <li><a href="../td/SetLocation-class.html">SetLocation</a></li>
+          <li><a href="../td/SetLoginEmailAddress-class.html">SetLoginEmailAddress</a></li>
+          <li><a href="../td/SetMenuButton-class.html">SetMenuButton</a></li>
+          <li><a href="../td/SetName-class.html">SetName</a></li>
+          <li><a href="../td/SetNetworkType-class.html">SetNetworkType</a></li>
+          <li><a href="../td/SetOption-class.html">SetOption</a></li>
+          <li><a href="../td/SetPassportElement-class.html">SetPassportElement</a></li>
+          <li><a href="../td/SetPassportElementErrors-class.html">SetPassportElementErrors</a></li>
+          <li><a href="../td/SetPassword-class.html">SetPassword</a></li>
+          <li><a href="../td/SetPinnedChats-class.html">SetPinnedChats</a></li>
+          <li><a href="../td/SetPinnedForumTopics-class.html">SetPinnedForumTopics</a></li>
+          <li><a href="../td/SetPollAnswer-class.html">SetPollAnswer</a></li>
+          <li><a href="../td/SetProfilePhoto-class.html">SetProfilePhoto</a></li>
+          <li><a href="../td/SetRecoveryEmailAddress-class.html">SetRecoveryEmailAddress</a></li>
+          <li><a href="../td/SetScopeNotificationSettings-class.html">SetScopeNotificationSettings</a></li>
+          <li><a href="../td/SetStickerEmojis-class.html">SetStickerEmojis</a></li>
+          <li><a href="../td/SetStickerKeywords-class.html">SetStickerKeywords</a></li>
+          <li><a href="../td/SetStickerMaskPosition-class.html">SetStickerMaskPosition</a></li>
+          <li><a href="../td/SetStickerPositionInSet-class.html">SetStickerPositionInSet</a></li>
+          <li><a href="../td/SetStickerSetThumbnail-class.html">SetStickerSetThumbnail</a></li>
+          <li><a href="../td/SetStickerSetTitle-class.html">SetStickerSetTitle</a></li>
+          <li><a href="../td/SetStoryPrivacySettings-class.html">SetStoryPrivacySettings</a></li>
+          <li><a href="../td/SetSupergroupStickerSet-class.html">SetSupergroupStickerSet</a></li>
+          <li><a href="../td/SetSupergroupUsername-class.html">SetSupergroupUsername</a></li>
+          <li><a href="../td/SetTdlibParameters-class.html">SetTdlibParameters</a></li>
+          <li><a href="../td/SetUsername-class.html">SetUsername</a></li>
+          <li><a href="../td/SetUserPersonalProfilePhoto-class.html">SetUserPersonalProfilePhoto</a></li>
+          <li><a href="../td/SetUserPrivacySettingRules-class.html">SetUserPrivacySettingRules</a></li>
+          <li><a href="../td/SetUserSupportInfo-class.html">SetUserSupportInfo</a></li>
+          <li><a href="../td/SetVideoChatDefaultParticipant-class.html">SetVideoChatDefaultParticipant</a></li>
+          <li><a href="../td/ShareChatWithBot-class.html">ShareChatWithBot</a></li>
+          <li><a href="../td/SharePhoneNumber-class.html">SharePhoneNumber</a></li>
+          <li><a href="../td/ShareUserWithBot-class.html">ShareUserWithBot</a></li>
+          <li><a href="../td/StartGroupCallRecording-class.html">StartGroupCallRecording</a></li>
+          <li><a href="../td/StartGroupCallScreenSharing-class.html">StartGroupCallScreenSharing</a></li>
+          <li><a href="../td/StartScheduledGroupCall-class.html">StartScheduledGroupCall</a></li>
+          <li><a href="../td/StopPoll-class.html">StopPoll</a></li>
+          <li><a href="../td/SuggestUserProfilePhoto-class.html">SuggestUserProfilePhoto</a></li>
+          <li><a href="../td/SyncFunc-class.html">SyncFunc</a></li>
+          <li><a href="../td/SynchronizeLanguagePack-class.html">SynchronizeLanguagePack</a></li>
+          <li><a href="../td/TerminateAllOtherSessions-class.html">TerminateAllOtherSessions</a></li>
+          <li><a href="../td/TerminateSession-class.html">TerminateSession</a></li>
+          <li><a href="../td/TestCallBytes-class.html">TestCallBytes</a></li>
+          <li><a href="../td/TestCallEmpty-class.html">TestCallEmpty</a></li>
+          <li><a href="../td/TestCallString-class.html">TestCallString</a></li>
+          <li><a href="../td/TestCallVectorInt-class.html">TestCallVectorInt</a></li>
+          <li><a href="../td/TestCallVectorIntObject-class.html">TestCallVectorIntObject</a></li>
+          <li><a href="../td/TestCallVectorString-class.html">TestCallVectorString</a></li>
+          <li><a href="../td/TestCallVectorStringObject-class.html">TestCallVectorStringObject</a></li>
+          <li><a href="../td/TestGetDifference-class.html">TestGetDifference</a></li>
+          <li><a href="../td/TestNetwork-class.html">TestNetwork</a></li>
+          <li><a href="../td/TestProxy-class.html">TestProxy</a></li>
+          <li><a href="../td/TestSquareInt-class.html">TestSquareInt</a></li>
+          <li><a href="../td/TestUseUpdate-class.html">TestUseUpdate</a></li>
+          <li><a href="../td/ToggleAllDownloadsArePaused-class.html">ToggleAllDownloadsArePaused</a></li>
+          <li><a href="../td/ToggleBotIsAddedToAttachmentMenu-class.html">ToggleBotIsAddedToAttachmentMenu</a></li>
+          <li><a href="../td/ToggleBotUsernameIsActive-class.html">ToggleBotUsernameIsActive</a></li>
+          <li><a href="../td/ToggleChatDefaultDisableNotification-class.html">ToggleChatDefaultDisableNotification</a></li>
+          <li><a href="../td/ToggleChatHasProtectedContent-class.html">ToggleChatHasProtectedContent</a></li>
+          <li><a href="../td/ToggleChatIsMarkedAsUnread-class.html">ToggleChatIsMarkedAsUnread</a></li>
+          <li><a href="../td/ToggleChatIsPinned-class.html">ToggleChatIsPinned</a></li>
+          <li><a href="../td/ToggleChatIsTranslatable-class.html">ToggleChatIsTranslatable</a></li>
+          <li><a href="../td/ToggleDownloadIsPaused-class.html">ToggleDownloadIsPaused</a></li>
+          <li><a href="../td/ToggleForumTopicIsClosed-class.html">ToggleForumTopicIsClosed</a></li>
+          <li><a href="../td/ToggleForumTopicIsPinned-class.html">ToggleForumTopicIsPinned</a></li>
+          <li><a href="../td/ToggleGeneralForumTopicIsHidden-class.html">ToggleGeneralForumTopicIsHidden</a></li>
+          <li><a href="../td/ToggleGroupCallEnabledStartNotification-class.html">ToggleGroupCallEnabledStartNotification</a></li>
+          <li><a href="../td/ToggleGroupCallIsMyVideoEnabled-class.html">ToggleGroupCallIsMyVideoEnabled</a></li>
+          <li><a href="../td/ToggleGroupCallIsMyVideoPaused-class.html">ToggleGroupCallIsMyVideoPaused</a></li>
+          <li><a href="../td/ToggleGroupCallMuteNewParticipants-class.html">ToggleGroupCallMuteNewParticipants</a></li>
+          <li><a href="../td/ToggleGroupCallParticipantIsHandRaised-class.html">ToggleGroupCallParticipantIsHandRaised</a></li>
+          <li><a href="../td/ToggleGroupCallParticipantIsMuted-class.html">ToggleGroupCallParticipantIsMuted</a></li>
+          <li><a href="../td/ToggleGroupCallScreenSharingIsPaused-class.html">ToggleGroupCallScreenSharingIsPaused</a></li>
+          <li><a href="../td/ToggleMessageSenderIsBlocked-class.html">ToggleMessageSenderIsBlocked</a></li>
+          <li><a href="../td/ToggleSessionCanAcceptCalls-class.html">ToggleSessionCanAcceptCalls</a></li>
+          <li><a href="../td/ToggleSessionCanAcceptSecretChats-class.html">ToggleSessionCanAcceptSecretChats</a></li>
+          <li><a href="../td/ToggleStoryIsPinned-class.html">ToggleStoryIsPinned</a></li>
+          <li><a href="../td/ToggleSupergroupHasAggressiveAntiSpamEnabled-class.html">ToggleSupergroupHasAggressiveAntiSpamEnabled</a></li>
+          <li><a href="../td/ToggleSupergroupHasHiddenMembers-class.html">ToggleSupergroupHasHiddenMembers</a></li>
+          <li><a href="../td/ToggleSupergroupIsAllHistoryAvailable-class.html">ToggleSupergroupIsAllHistoryAvailable</a></li>
+          <li><a href="../td/ToggleSupergroupIsBroadcastGroup-class.html">ToggleSupergroupIsBroadcastGroup</a></li>
+          <li><a href="../td/ToggleSupergroupIsForum-class.html">ToggleSupergroupIsForum</a></li>
+          <li><a href="../td/ToggleSupergroupJoinByRequest-class.html">ToggleSupergroupJoinByRequest</a></li>
+          <li><a href="../td/ToggleSupergroupJoinToSendMessages-class.html">ToggleSupergroupJoinToSendMessages</a></li>
+          <li><a href="../td/ToggleSupergroupSignMessages-class.html">ToggleSupergroupSignMessages</a></li>
+          <li><a href="../td/ToggleSupergroupUsernameIsActive-class.html">ToggleSupergroupUsernameIsActive</a></li>
+          <li><a href="../td/ToggleUsernameIsActive-class.html">ToggleUsernameIsActive</a></li>
+          <li><a href="../td/TransferChatOwnership-class.html">TransferChatOwnership</a></li>
+          <li><a href="../td/TranslateMessageText-class.html">TranslateMessageText</a></li>
+          <li><a href="../td/TranslateText-class.html">TranslateText</a></li>
+          <li><a href="../td/UnpinAllChatMessages-class.html">UnpinAllChatMessages</a></li>
+          <li><a href="../td/UnpinAllMessageThreadMessages-class.html">UnpinAllMessageThreadMessages</a></li>
+          <li><a href="../td/UnpinChatMessage-class.html">UnpinChatMessage</a></li>
+          <li><a href="../td/UpgradeBasicGroupChatToSupergroupChat-class.html">UpgradeBasicGroupChatToSupergroupChat</a></li>
+          <li><a href="../td/UploadStickerFile-class.html">UploadStickerFile</a></li>
+          <li><a href="../td/ValidateOrderInfo-class.html">ValidateOrderInfo</a></li>
+          <li><a href="../td/ViewMessages-class.html">ViewMessages</a></li>
+          <li><a href="../td/ViewPremiumFeature-class.html">ViewPremiumFeature</a></li>
+          <li><a href="../td/ViewTrendingStickerSets-class.html">ViewTrendingStickerSets</a></li>
+          <li><a href="../td/WriteGeneratedFilePart-class.html">WriteGeneratedFilePart</a></li>
+        </ul></dd>
+
+        <dt>Available Extensions</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../td/TlObjectExt.html">TlObjectExt</a></li>
+        </ul></dd>
+
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="Func" class="callable">
+          <span class="name"><a href="../td/Func/Func.html">Func</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="clientId" class="property inherited">
+  <span class="name"><a href="../td/TlObject/clientId.html">clientId</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd class="inherited">
+  TDLib client instance identifier, for which the response was received.
+  <div class="features"><span class="feature">read / write</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="extra" class="property inherited">
+  <span class="name"><a href="../td/TlObject/extra.html">extra</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd class="inherited">
+  <a href="../td/TlObject/extra.html">extra</a> - Request identifier. Must be non-zero.
+  <div class="features"><span class="feature">read / write</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toJson" class="callable inherited">
+  <span class="name"><a href="../td/TlObject/toJson.html">toJson</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Object to Map serializer
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">tdffi</a></li>
+    <li><a href="../td/td-library.html">td</a></li>
+    <li class="self-crumb">Func class</li>
+</ol>
+
+
+    <!--<h5>td library</h5>-->
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tdffi
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

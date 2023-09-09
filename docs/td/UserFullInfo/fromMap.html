@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the fromMap method from the UserFullInfo class, for the Dart programming language.">
+  <title>fromMap method - UserFullInfo class - td library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">tdffi</a></li>
+    <li><a href="../../td/td-library.html">td</a></li>
+    <li><a href="../../td/UserFullInfo-class.html">UserFullInfo</a></li>
+    <li class="self-crumb">fromMap static method</li>
+  </ol>
+  <div class="self-name">fromMap</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="td&#47;UserFullInfo-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">fromMap</span> static method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="../../td/UserFullInfo-class.html">UserFullInfo</a>?</span>
+<span class="name ">fromMap</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="fromMap-param-_map"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">_map</span></span></li>
+</ol>)
+
+      <div class="features"><span class="feature">override</span></div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a></p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static UserFullInfo? fromMap(Map&lt;String, dynamic&gt;? _map) {
+  if (_map == null) return null;
+  var _ = _map[&quot;@type&quot;];
+  if (_ != CONSTRUCTOR) return null;
+  var extra = _map[&#39;@extra&#39;];
+  var clientId = _map[&#39;@clientId&#39;];
+  var personal_photo = ChatPhoto.fromMap(_map[&#39;personal_photo&#39;]);
+  var photo = ChatPhoto.fromMap(_map[&#39;photo&#39;]);
+  var public_photo = ChatPhoto.fromMap(_map[&#39;public_photo&#39;]);
+  var is_blocked = _map[&#39;is_blocked&#39;]! as bool;
+  var can_be_called = _map[&#39;can_be_called&#39;]! as bool;
+  var supports_video_calls = _map[&#39;supports_video_calls&#39;]! as bool;
+  var has_private_calls = _map[&#39;has_private_calls&#39;]! as bool;
+  var has_private_forwards = _map[&#39;has_private_forwards&#39;]! as bool;
+  var has_restricted_voice_and_video_note_messages =
+      _map[&#39;has_restricted_voice_and_video_note_messages&#39;]! as bool;
+  var has_pinned_stories = _map[&#39;has_pinned_stories&#39;]! as bool;
+  var need_phone_number_privacy_exception =
+      _map[&#39;need_phone_number_privacy_exception&#39;]! as bool;
+  var bio = FormattedText.fromMap(_map[&#39;bio&#39;]);
+  var premium_gift_options = List&lt;PremiumPaymentOption&gt;.from(
+    (_map[&quot;premium_gift_options&quot;] ?? []).map(
+      (e) =&gt; PremiumPaymentOption.fromMap(e),
+    ),
+  );
+  var group_in_common_count = _map[&#39;group_in_common_count&#39;]! as int;
+  var bot_info = BotInfo.fromMap(_map[&#39;bot_info&#39;]);
+  return UserFullInfo(
+    extra: extra,
+    clientId: clientId,
+    personal_photo: personal_photo,
+    photo: photo,
+    public_photo: public_photo,
+    is_blocked: is_blocked,
+    can_be_called: can_be_called,
+    supports_video_calls: supports_video_calls,
+    has_private_calls: has_private_calls,
+    has_private_forwards: has_private_forwards,
+    has_restricted_voice_and_video_note_messages:
+        has_restricted_voice_and_video_note_messages,
+    has_pinned_stories: has_pinned_stories,
+    need_phone_number_privacy_exception: need_phone_number_privacy_exception,
+    bio: bio,
+    premium_gift_options: premium_gift_options,
+    group_in_common_count: group_in_common_count,
+    bot_info: bot_info,
+  );
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">tdffi</a></li>
+    <li><a href="../../td/td-library.html">td</a></li>
+    <li><a href="../../td/UserFullInfo-class.html">UserFullInfo</a></li>
+    <li class="self-crumb">fromMap static method</li>
+</ol>
+
+
+    <h5>UserFullInfo class</h5>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tdffi
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

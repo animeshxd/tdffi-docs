@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Update class from the td library, for the Dart programming language.">
+  <title>Update class - td library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">tdffi</a></li>
+    <li><a href="../td/td-library.html">td</a></li>
+    <li class="self-crumb">Update class</li>
+  </ol>
+  <div class="self-name">Update</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="td&#47;td-library-sidebar.html"
+      data-below-sidebar="td&#47;Update-class-sidebar.html">
+      <div>
+<h1><span class="kind-class">Update</span> class 
+    <a href="https://dart.dev/language/classes#abstract-classes" class="feature feature-abstract" title="This type can not be directly constructed.">abstract</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Contains notifications about data changes</p>
+<p>Inherited by <a href="../td/UpdateChatReadOutbox-class.html">UpdateChatReadOutbox</a>, <a href="../td/UpdateChatReadInbox-class.html">UpdateChatReadInbox</a>, <a href="../td/UpdateConnectionState-class.html">UpdateConnectionState</a>, <a href="../td/UpdateUsersNearby-class.html">UpdateUsersNearby</a>, <a href="../td/UpdateMessageInteractionInfo-class.html">UpdateMessageInteractionInfo</a>, <a href="../td/UpdateChatFolders-class.html">UpdateChatFolders</a>, <a href="../td/UpdateStoryListChatCount-class.html">UpdateStoryListChatCount</a>, <a href="../td/UpdateFileAddedToDownloads-class.html">UpdateFileAddedToDownloads</a>, <a href="../td/UpdateServiceNotification-class.html">UpdateServiceNotification</a>, <a href="../td/UpdatePoll-class.html">UpdatePoll</a>, <a href="../td/UpdateMessageSendAcknowledged-class.html">UpdateMessageSendAcknowledged</a>, <a href="../td/UpdateChatIsTranslatable-class.html">UpdateChatIsTranslatable</a>, <a href="../td/UpdateChatVideoChat-class.html">UpdateChatVideoChat</a>, <a href="../td/UpdateAttachmentMenuBots-class.html">UpdateAttachmentMenuBots</a>, <a href="../td/UpdateChatTitle-class.html">UpdateChatTitle</a>, <a href="../td/UpdateFavoriteStickers-class.html">UpdateFavoriteStickers</a>, <a href="../td/UpdateOption-class.html">UpdateOption</a>, <a href="../td/UpdateUnreadChatCount-class.html">UpdateUnreadChatCount</a>, <a href="../td/UpdateNewCallSignalingData-class.html">UpdateNewCallSignalingData</a>, <a href="../td/UpdateUserStatus-class.html">UpdateUserStatus</a>, <a href="../td/UpdateChatActionBar-class.html">UpdateChatActionBar</a>, <a href="../td/UpdateForumTopicInfo-class.html">UpdateForumTopicInfo</a>, <a href="../td/UpdateGroupCallParticipant-class.html">UpdateGroupCallParticipant</a>, <a href="../td/UpdateFileGenerationStart-class.html">UpdateFileGenerationStart</a>, <a href="../td/UpdateWebAppMessageSent-class.html">UpdateWebAppMessageSent</a>, <a href="../td/UpdateNewChat-class.html">UpdateNewChat</a>, <a href="../td/UpdateStickerSet-class.html">UpdateStickerSet</a>, <a href="../td/UpdateChatIsMarkedAsUnread-class.html">UpdateChatIsMarkedAsUnread</a>, <a href="../td/UpdateCall-class.html">UpdateCall</a>, <a href="../td/UpdateChatAction-class.html">UpdateChatAction</a>, <a href="../td/UpdateLanguagePackStrings-class.html">UpdateLanguagePackStrings</a>, <a href="../td/UpdateChatLastMessage-class.html">UpdateChatLastMessage</a>, <a href="../td/UpdateAutosaveSettings-class.html">UpdateAutosaveSettings</a>, <a href="../td/UpdateNewCustomQuery-class.html">UpdateNewCustomQuery</a>, <a href="../td/UpdateFileGenerationStop-class.html">UpdateFileGenerationStop</a>, <a href="../td/UpdateNewInlineCallbackQuery-class.html">UpdateNewInlineCallbackQuery</a>, <a href="../td/UpdateChatPermissions-class.html">UpdateChatPermissions</a>, <a href="../td/UpdateNotificationGroup-class.html">UpdateNotificationGroup</a>, <a href="../td/UpdateChatReplyMarkup-class.html">UpdateChatReplyMarkup</a>, <a href="../td/UpdateMessageLiveLocationViewed-class.html">UpdateMessageLiveLocationViewed</a>, <a href="../td/UpdateNewPreCheckoutQuery-class.html">UpdateNewPreCheckoutQuery</a>, <a href="../td/UpdateChatActiveStories-class.html">UpdateChatActiveStories</a>, <a href="../td/UpdateSavedNotificationSounds-class.html">UpdateSavedNotificationSounds</a>, <a href="../td/UpdateChatPosition-class.html">UpdateChatPosition</a>, <a href="../td/UpdateChatHasProtectedContent-class.html">UpdateChatHasProtectedContent</a>, <a href="../td/UpdateFileDownloads-class.html">UpdateFileDownloads</a>, <a href="../td/UpdateAnimationSearchParameters-class.html">UpdateAnimationSearchParameters</a>, <a href="../td/UpdateChatUnreadReactionCount-class.html">UpdateChatUnreadReactionCount</a>, <a href="../td/UpdateChatDefaultDisableNotification-class.html">UpdateChatDefaultDisableNotification</a>, <a href="../td/UpdateActiveNotifications-class.html">UpdateActiveNotifications</a>, <a href="../td/UpdateBasicGroupFullInfo-class.html">UpdateBasicGroupFullInfo</a>, <a href="../td/UpdateRecentStickers-class.html">UpdateRecentStickers</a>, <a href="../td/UpdateChatMessageSender-class.html">UpdateChatMessageSender</a>, <a href="../td/UpdateUserPrivacySettingRules-class.html">UpdateUserPrivacySettingRules</a>, <a href="../td/UpdateFileRemovedFromDownloads-class.html">UpdateFileRemovedFromDownloads</a>, <a href="../td/UpdateMessageEdited-class.html">UpdateMessageEdited</a>, <a href="../td/UpdateUnreadMessageCount-class.html">UpdateUnreadMessageCount</a>, <a href="../td/UpdateSupergroup-class.html">UpdateSupergroup</a>, <a href="../td/UpdateGroupCall-class.html">UpdateGroupCall</a>, <a href="../td/UpdateScopeNotificationSettings-class.html">UpdateScopeNotificationSettings</a>, <a href="../td/UpdateNewChatJoinRequest-class.html">UpdateNewChatJoinRequest</a>, <a href="../td/UpdateMessageSendFailed-class.html">UpdateMessageSendFailed</a>, <a href="../td/UpdateSavedAnimations-class.html">UpdateSavedAnimations</a>, <a href="../td/UpdateChatUnreadMentionCount-class.html">UpdateChatUnreadMentionCount</a>, <a href="../td/UpdateChatHasScheduledMessages-class.html">UpdateChatHasScheduledMessages</a>, <a href="../td/UpdateSupergroupFullInfo-class.html">UpdateSupergroupFullInfo</a>, <a href="../td/UpdateMessageSendSucceeded-class.html">UpdateMessageSendSucceeded</a>, <a href="../td/UpdateBasicGroup-class.html">UpdateBasicGroup</a>, <a href="../td/UpdateNewCallbackQuery-class.html">UpdateNewCallbackQuery</a>, <a href="../td/UpdateDeleteMessages-class.html">UpdateDeleteMessages</a>, <a href="../td/UpdateTermsOfService-class.html">UpdateTermsOfService</a>, <a href="../td/UpdateStory-class.html">UpdateStory</a>, <a href="../td/UpdateUserFullInfo-class.html">UpdateUserFullInfo</a>, <a href="../td/UpdateDiceEmojis-class.html">UpdateDiceEmojis</a>, <a href="../td/UpdateChatMember-class.html">UpdateChatMember</a>, <a href="../td/UpdateChatBackground-class.html">UpdateChatBackground</a>, <a href="../td/UpdatePollAnswer-class.html">UpdatePollAnswer</a>, <a href="../td/UpdateMessageMentionRead-class.html">UpdateMessageMentionRead</a>, <a href="../td/UpdateChatDraftMessage-class.html">UpdateChatDraftMessage</a>, <a href="../td/UpdateChatMessageAutoDeleteTime-class.html">UpdateChatMessageAutoDeleteTime</a>, <a href="../td/UpdateDefaultReactionType-class.html">UpdateDefaultReactionType</a>, <a href="../td/UpdateChatTheme-class.html">UpdateChatTheme</a>, <a href="../td/UpdateChatThemes-class.html">UpdateChatThemes</a>, <a href="../td/UpdateMessageContent-class.html">UpdateMessageContent</a>, <a href="../td/UpdateChatAvailableReactions-class.html">UpdateChatAvailableReactions</a>, <a href="../td/UpdateChatPendingJoinRequests-class.html">UpdateChatPendingJoinRequests</a>, <a href="../td/UpdateSecretChat-class.html">UpdateSecretChat</a>, <a href="../td/UpdateNewInlineQuery-class.html">UpdateNewInlineQuery</a>, <a href="../td/UpdateChatPhoto-class.html">UpdateChatPhoto</a>, <a href="../td/UpdateSuggestedActions-class.html">UpdateSuggestedActions</a>, <a href="../td/UpdateTrendingStickerSets-class.html">UpdateTrendingStickerSets</a>, <a href="../td/UpdateChatOnlineMemberCount-class.html">UpdateChatOnlineMemberCount</a>, <a href="../td/UpdateAuthorizationState-class.html">UpdateAuthorizationState</a>, <a href="../td/UpdateMessageUnreadReactions-class.html">UpdateMessageUnreadReactions</a>, <a href="../td/UpdateChatIsBlocked-class.html">UpdateChatIsBlocked</a>, <a href="../td/UpdateChatNotificationSettings-class.html">UpdateChatNotificationSettings</a>, <a href="../td/UpdateSelectedBackground-class.html">UpdateSelectedBackground</a>, <a href="../td/UpdateNewMessage-class.html">UpdateNewMessage</a>, <a href="../td/UpdateUser-class.html">UpdateUser</a>, <a href="../td/UpdateAddChatMembersPrivacyForbidden-class.html">UpdateAddChatMembersPrivacyForbidden</a>, <a href="../td/UpdateInstalledStickerSets-class.html">UpdateInstalledStickerSets</a>, <a href="../td/UpdateFileDownload-class.html">UpdateFileDownload</a>, <a href="../td/UpdateHavePendingNotifications-class.html">UpdateHavePendingNotifications</a>, <a href="../td/UpdateNotification-class.html">UpdateNotification</a>, <a href="../td/UpdateNewCustomEvent-class.html">UpdateNewCustomEvent</a>, <a href="../td/UpdateNewShippingQuery-class.html">UpdateNewShippingQuery</a>, <a href="../td/UpdateMessageIsPinned-class.html">UpdateMessageIsPinned</a>, <a href="../td/UpdateActiveEmojiReactions-class.html">UpdateActiveEmojiReactions</a>, <a href="../td/UpdateNewChosenInlineResult-class.html">UpdateNewChosenInlineResult</a>, <a href="../td/UpdateMessageContentOpened-class.html">UpdateMessageContentOpened</a>, <a href="../td/UpdateStoryDeleted-class.html">UpdateStoryDeleted</a>, <a href="../td/UpdateAnimatedEmojiMessageClicked-class.html">UpdateAnimatedEmojiMessageClicked</a>, <a href="../td/UpdateFile-class.html">UpdateFile</a>,</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object-class.html">Object</a></li>
+        <li><a href="../td/TlObject-class.html">TlObject</a></li>
+      <li>Update</li>
+    </ul>
+  </dd>
+
+        
+        
+
+        <dt>Implementers</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../td/UpdateActiveEmojiReactions-class.html">UpdateActiveEmojiReactions</a></li>
+          <li><a href="../td/UpdateActiveNotifications-class.html">UpdateActiveNotifications</a></li>
+          <li><a href="../td/UpdateAddChatMembersPrivacyForbidden-class.html">UpdateAddChatMembersPrivacyForbidden</a></li>
+          <li><a href="../td/UpdateAnimatedEmojiMessageClicked-class.html">UpdateAnimatedEmojiMessageClicked</a></li>
+          <li><a href="../td/UpdateAnimationSearchParameters-class.html">UpdateAnimationSearchParameters</a></li>
+          <li><a href="../td/UpdateAttachmentMenuBots-class.html">UpdateAttachmentMenuBots</a></li>
+          <li><a href="../td/UpdateAuthorizationState-class.html">UpdateAuthorizationState</a></li>
+          <li><a href="../td/UpdateAutosaveSettings-class.html">UpdateAutosaveSettings</a></li>
+          <li><a href="../td/UpdateBasicGroup-class.html">UpdateBasicGroup</a></li>
+          <li><a href="../td/UpdateBasicGroupFullInfo-class.html">UpdateBasicGroupFullInfo</a></li>
+          <li><a href="../td/UpdateCall-class.html">UpdateCall</a></li>
+          <li><a href="../td/UpdateChatAction-class.html">UpdateChatAction</a></li>
+          <li><a href="../td/UpdateChatActionBar-class.html">UpdateChatActionBar</a></li>
+          <li><a href="../td/UpdateChatActiveStories-class.html">UpdateChatActiveStories</a></li>
+          <li><a href="../td/UpdateChatAvailableReactions-class.html">UpdateChatAvailableReactions</a></li>
+          <li><a href="../td/UpdateChatBackground-class.html">UpdateChatBackground</a></li>
+          <li><a href="../td/UpdateChatDefaultDisableNotification-class.html">UpdateChatDefaultDisableNotification</a></li>
+          <li><a href="../td/UpdateChatDraftMessage-class.html">UpdateChatDraftMessage</a></li>
+          <li><a href="../td/UpdateChatFolders-class.html">UpdateChatFolders</a></li>
+          <li><a href="../td/UpdateChatHasProtectedContent-class.html">UpdateChatHasProtectedContent</a></li>
+          <li><a href="../td/UpdateChatHasScheduledMessages-class.html">UpdateChatHasScheduledMessages</a></li>
+          <li><a href="../td/UpdateChatIsBlocked-class.html">UpdateChatIsBlocked</a></li>
+          <li><a href="../td/UpdateChatIsMarkedAsUnread-class.html">UpdateChatIsMarkedAsUnread</a></li>
+          <li><a href="../td/UpdateChatIsTranslatable-class.html">UpdateChatIsTranslatable</a></li>
+          <li><a href="../td/UpdateChatLastMessage-class.html">UpdateChatLastMessage</a></li>
+          <li><a href="../td/UpdateChatMember-class.html">UpdateChatMember</a></li>
+          <li><a href="../td/UpdateChatMessageAutoDeleteTime-class.html">UpdateChatMessageAutoDeleteTime</a></li>
+          <li><a href="../td/UpdateChatMessageSender-class.html">UpdateChatMessageSender</a></li>
+          <li><a href="../td/UpdateChatNotificationSettings-class.html">UpdateChatNotificationSettings</a></li>
+          <li><a href="../td/UpdateChatOnlineMemberCount-class.html">UpdateChatOnlineMemberCount</a></li>
+          <li><a href="../td/UpdateChatPendingJoinRequests-class.html">UpdateChatPendingJoinRequests</a></li>
+          <li><a href="../td/UpdateChatPermissions-class.html">UpdateChatPermissions</a></li>
+          <li><a href="../td/UpdateChatPhoto-class.html">UpdateChatPhoto</a></li>
+          <li><a href="../td/UpdateChatPosition-class.html">UpdateChatPosition</a></li>
+          <li><a href="../td/UpdateChatReadInbox-class.html">UpdateChatReadInbox</a></li>
+          <li><a href="../td/UpdateChatReadOutbox-class.html">UpdateChatReadOutbox</a></li>
+          <li><a href="../td/UpdateChatReplyMarkup-class.html">UpdateChatReplyMarkup</a></li>
+          <li><a href="../td/UpdateChatTheme-class.html">UpdateChatTheme</a></li>
+          <li><a href="../td/UpdateChatThemes-class.html">UpdateChatThemes</a></li>
+          <li><a href="../td/UpdateChatTitle-class.html">UpdateChatTitle</a></li>
+          <li><a href="../td/UpdateChatUnreadMentionCount-class.html">UpdateChatUnreadMentionCount</a></li>
+          <li><a href="../td/UpdateChatUnreadReactionCount-class.html">UpdateChatUnreadReactionCount</a></li>
+          <li><a href="../td/UpdateChatVideoChat-class.html">UpdateChatVideoChat</a></li>
+          <li><a href="../td/UpdateConnectionState-class.html">UpdateConnectionState</a></li>
+          <li><a href="../td/UpdateDefaultReactionType-class.html">UpdateDefaultReactionType</a></li>
+          <li><a href="../td/UpdateDeleteMessages-class.html">UpdateDeleteMessages</a></li>
+          <li><a href="../td/UpdateDiceEmojis-class.html">UpdateDiceEmojis</a></li>
+          <li><a href="../td/UpdateFavoriteStickers-class.html">UpdateFavoriteStickers</a></li>
+          <li><a href="../td/UpdateFile-class.html">UpdateFile</a></li>
+          <li><a href="../td/UpdateFileAddedToDownloads-class.html">UpdateFileAddedToDownloads</a></li>
+          <li><a href="../td/UpdateFileDownload-class.html">UpdateFileDownload</a></li>
+          <li><a href="../td/UpdateFileDownloads-class.html">UpdateFileDownloads</a></li>
+          <li><a href="../td/UpdateFileGenerationStart-class.html">UpdateFileGenerationStart</a></li>
+          <li><a href="../td/UpdateFileGenerationStop-class.html">UpdateFileGenerationStop</a></li>
+          <li><a href="../td/UpdateFileRemovedFromDownloads-class.html">UpdateFileRemovedFromDownloads</a></li>
+          <li><a href="../td/UpdateForumTopicInfo-class.html">UpdateForumTopicInfo</a></li>
+          <li><a href="../td/UpdateGroupCall-class.html">UpdateGroupCall</a></li>
+          <li><a href="../td/UpdateGroupCallParticipant-class.html">UpdateGroupCallParticipant</a></li>
+          <li><a href="../td/UpdateHavePendingNotifications-class.html">UpdateHavePendingNotifications</a></li>
+          <li><a href="../td/UpdateInstalledStickerSets-class.html">UpdateInstalledStickerSets</a></li>
+          <li><a href="../td/UpdateLanguagePackStrings-class.html">UpdateLanguagePackStrings</a></li>
+          <li><a href="../td/UpdateMessageContent-class.html">UpdateMessageContent</a></li>
+          <li><a href="../td/UpdateMessageContentOpened-class.html">UpdateMessageContentOpened</a></li>
+          <li><a href="../td/UpdateMessageEdited-class.html">UpdateMessageEdited</a></li>
+          <li><a href="../td/UpdateMessageInteractionInfo-class.html">UpdateMessageInteractionInfo</a></li>
+          <li><a href="../td/UpdateMessageIsPinned-class.html">UpdateMessageIsPinned</a></li>
+          <li><a href="../td/UpdateMessageLiveLocationViewed-class.html">UpdateMessageLiveLocationViewed</a></li>
+          <li><a href="../td/UpdateMessageMentionRead-class.html">UpdateMessageMentionRead</a></li>
+          <li><a href="../td/UpdateMessageSendAcknowledged-class.html">UpdateMessageSendAcknowledged</a></li>
+          <li><a href="../td/UpdateMessageSendFailed-class.html">UpdateMessageSendFailed</a></li>
+          <li><a href="../td/UpdateMessageSendSucceeded-class.html">UpdateMessageSendSucceeded</a></li>
+          <li><a href="../td/UpdateMessageUnreadReactions-class.html">UpdateMessageUnreadReactions</a></li>
+          <li><a href="../td/UpdateNewCallbackQuery-class.html">UpdateNewCallbackQuery</a></li>
+          <li><a href="../td/UpdateNewCallSignalingData-class.html">UpdateNewCallSignalingData</a></li>
+          <li><a href="../td/UpdateNewChat-class.html">UpdateNewChat</a></li>
+          <li><a href="../td/UpdateNewChatJoinRequest-class.html">UpdateNewChatJoinRequest</a></li>
+          <li><a href="../td/UpdateNewChosenInlineResult-class.html">UpdateNewChosenInlineResult</a></li>
+          <li><a href="../td/UpdateNewCustomEvent-class.html">UpdateNewCustomEvent</a></li>
+          <li><a href="../td/UpdateNewCustomQuery-class.html">UpdateNewCustomQuery</a></li>
+          <li><a href="../td/UpdateNewInlineCallbackQuery-class.html">UpdateNewInlineCallbackQuery</a></li>
+          <li><a href="../td/UpdateNewInlineQuery-class.html">UpdateNewInlineQuery</a></li>
+          <li><a href="../td/UpdateNewMessage-class.html">UpdateNewMessage</a></li>
+          <li><a href="../td/UpdateNewPreCheckoutQuery-class.html">UpdateNewPreCheckoutQuery</a></li>
+          <li><a href="../td/UpdateNewShippingQuery-class.html">UpdateNewShippingQuery</a></li>
+          <li><a href="../td/UpdateNotification-class.html">UpdateNotification</a></li>
+          <li><a href="../td/UpdateNotificationGroup-class.html">UpdateNotificationGroup</a></li>
+          <li><a href="../td/UpdateOption-class.html">UpdateOption</a></li>
+          <li><a href="../td/UpdatePoll-class.html">UpdatePoll</a></li>
+          <li><a href="../td/UpdatePollAnswer-class.html">UpdatePollAnswer</a></li>
+          <li><a href="../td/UpdateRecentStickers-class.html">UpdateRecentStickers</a></li>
+          <li><a href="../td/UpdateSavedAnimations-class.html">UpdateSavedAnimations</a></li>
+          <li><a href="../td/UpdateSavedNotificationSounds-class.html">UpdateSavedNotificationSounds</a></li>
+          <li><a href="../td/UpdateScopeNotificationSettings-class.html">UpdateScopeNotificationSettings</a></li>
+          <li><a href="../td/UpdateSecretChat-class.html">UpdateSecretChat</a></li>
+          <li><a href="../td/UpdateSelectedBackground-class.html">UpdateSelectedBackground</a></li>
+          <li><a href="../td/UpdateServiceNotification-class.html">UpdateServiceNotification</a></li>
+          <li><a href="../td/UpdateStickerSet-class.html">UpdateStickerSet</a></li>
+          <li><a href="../td/UpdateStory-class.html">UpdateStory</a></li>
+          <li><a href="../td/UpdateStoryDeleted-class.html">UpdateStoryDeleted</a></li>
+          <li><a href="../td/UpdateStoryListChatCount-class.html">UpdateStoryListChatCount</a></li>
+          <li><a href="../td/UpdateSuggestedActions-class.html">UpdateSuggestedActions</a></li>
+          <li><a href="../td/UpdateSupergroup-class.html">UpdateSupergroup</a></li>
+          <li><a href="../td/UpdateSupergroupFullInfo-class.html">UpdateSupergroupFullInfo</a></li>
+          <li><a href="../td/UpdateTermsOfService-class.html">UpdateTermsOfService</a></li>
+          <li><a href="../td/UpdateTrendingStickerSets-class.html">UpdateTrendingStickerSets</a></li>
+          <li><a href="../td/UpdateUnreadChatCount-class.html">UpdateUnreadChatCount</a></li>
+          <li><a href="../td/UpdateUnreadMessageCount-class.html">UpdateUnreadMessageCount</a></li>
+          <li><a href="../td/UpdateUser-class.html">UpdateUser</a></li>
+          <li><a href="../td/UpdateUserFullInfo-class.html">UpdateUserFullInfo</a></li>
+          <li><a href="../td/UpdateUserPrivacySettingRules-class.html">UpdateUserPrivacySettingRules</a></li>
+          <li><a href="../td/UpdateUsersNearby-class.html">UpdateUsersNearby</a></li>
+          <li><a href="../td/UpdateUserStatus-class.html">UpdateUserStatus</a></li>
+          <li><a href="../td/UpdateWebAppMessageSent-class.html">UpdateWebAppMessageSent</a></li>
+        </ul></dd>
+
+        <dt>Available Extensions</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../td/TlObjectExt.html">TlObjectExt</a></li>
+          <li><a href="../td/UpdateExt.html">UpdateExt</a></li>
+        </ul></dd>
+
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="Update" class="callable">
+          <span class="name"><a href="../td/Update/Update.html">Update</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="clientId" class="property inherited">
+  <span class="name"><a href="../td/TlObject/clientId.html">clientId</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd class="inherited">
+  TDLib client instance identifier, for which the response was received.
+  <div class="features"><span class="feature">read / write</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="extra" class="property inherited">
+  <span class="name"><a href="../td/TlObject/extra.html">extra</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd class="inherited">
+  <a href="../td/TlObject/extra.html">extra</a> - Request identifier. Must be non-zero.
+  <div class="features"><span class="feature">read / write</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toJson" class="callable inherited">
+  <span class="name"><a href="../td/TlObject/toJson.html">toJson</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Object to Map serializer
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+  <section class="summary offset-anchor" id="static-methods">
+    <h2>Static Methods</h2>
+    <dl class="callables">
+        <dt id="fromMap" class="callable">
+  <span class="name"><a href="../td/Update/fromMap.html">fromMap</a></span><span class="signature">(<wbr><span class="parameter" id="fromMap-param-_map"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">_map</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../td/Update-class.html">Update</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+
+  <section class="summary offset-anchor" id="constants">
+    <h2>Constants</h2>
+
+    <dl class="properties">
+        <dt id="CONSTRUCTOR" class="constant">
+    <span class="name "><a href="../td/Update/CONSTRUCTOR-constant.html">CONSTRUCTOR</a></span>
+  <span class="signature">&#8594; const <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  <a href="../td/Update/CONSTRUCTOR-constant.html">CONSTRUCTOR</a> - type
+  
+
+    <div>
+      <span class="signature"><code>&quot;update&quot;</code></span>
+    </div>
+</dd>
+
+    </dl>
+  </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">tdffi</a></li>
+    <li><a href="../td/td-library.html">td</a></li>
+    <li class="self-crumb">Update class</li>
+</ol>
+
+
+    <!--<h5>td library</h5>-->
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tdffi
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

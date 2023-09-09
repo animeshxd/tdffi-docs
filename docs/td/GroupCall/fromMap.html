@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the fromMap method from the GroupCall class, for the Dart programming language.">
+  <title>fromMap method - GroupCall class - td library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">tdffi</a></li>
+    <li><a href="../../td/td-library.html">td</a></li>
+    <li><a href="../../td/GroupCall-class.html">GroupCall</a></li>
+    <li class="self-crumb">fromMap static method</li>
+  </ol>
+  <div class="self-name">fromMap</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="td&#47;GroupCall-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">fromMap</span> static method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="../../td/GroupCall-class.html">GroupCall</a>?</span>
+<span class="name ">fromMap</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="fromMap-param-_map"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">_map</span></span></li>
+</ol>)
+
+      <div class="features"><span class="feature">override</span></div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a></p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static GroupCall? fromMap(Map&lt;String, dynamic&gt;? _map) {
+  if (_map == null) return null;
+  var _ = _map[&quot;@type&quot;];
+  if (_ != CONSTRUCTOR) return null;
+  var extra = _map[&#39;@extra&#39;];
+  var clientId = _map[&#39;@clientId&#39;];
+  var id = _map[&#39;id&#39;]! as int;
+  var title = _map[&#39;title&#39;]! as String;
+  var scheduled_start_date = _map[&#39;scheduled_start_date&#39;]! as int;
+  var enabled_start_notification =
+      _map[&#39;enabled_start_notification&#39;]! as bool;
+  var is_active = _map[&#39;is_active&#39;]! as bool;
+  var is_rtmp_stream = _map[&#39;is_rtmp_stream&#39;]! as bool;
+  var is_joined = _map[&#39;is_joined&#39;]! as bool;
+  var need_rejoin = _map[&#39;need_rejoin&#39;]! as bool;
+  var can_be_managed = _map[&#39;can_be_managed&#39;]! as bool;
+  var participant_count = _map[&#39;participant_count&#39;]! as int;
+  var has_hidden_listeners = _map[&#39;has_hidden_listeners&#39;]! as bool;
+  var loaded_all_participants = _map[&#39;loaded_all_participants&#39;]! as bool;
+  var recent_speakers = List&lt;GroupCallRecentSpeaker&gt;.from(
+    (_map[&quot;recent_speakers&quot;] ?? []).map(
+      (e) =&gt; GroupCallRecentSpeaker.fromMap(e),
+    ),
+  );
+  var is_my_video_enabled = _map[&#39;is_my_video_enabled&#39;]! as bool;
+  var is_my_video_paused = _map[&#39;is_my_video_paused&#39;]! as bool;
+  var can_enable_video = _map[&#39;can_enable_video&#39;]! as bool;
+  var mute_new_participants = _map[&#39;mute_new_participants&#39;]! as bool;
+  var can_toggle_mute_new_participants =
+      _map[&#39;can_toggle_mute_new_participants&#39;]! as bool;
+  var record_duration = _map[&#39;record_duration&#39;]! as int;
+  var is_video_recorded = _map[&#39;is_video_recorded&#39;]! as bool;
+  var duration = _map[&#39;duration&#39;]! as int;
+  return GroupCall(
+    extra: extra,
+    clientId: clientId,
+    id: id,
+    title: title,
+    scheduled_start_date: scheduled_start_date,
+    enabled_start_notification: enabled_start_notification,
+    is_active: is_active,
+    is_rtmp_stream: is_rtmp_stream,
+    is_joined: is_joined,
+    need_rejoin: need_rejoin,
+    can_be_managed: can_be_managed,
+    participant_count: participant_count,
+    has_hidden_listeners: has_hidden_listeners,
+    loaded_all_participants: loaded_all_participants,
+    recent_speakers: recent_speakers,
+    is_my_video_enabled: is_my_video_enabled,
+    is_my_video_paused: is_my_video_paused,
+    can_enable_video: can_enable_video,
+    mute_new_participants: mute_new_participants,
+    can_toggle_mute_new_participants: can_toggle_mute_new_participants,
+    record_duration: record_duration,
+    is_video_recorded: is_video_recorded,
+    duration: duration,
+  );
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">tdffi</a></li>
+    <li><a href="../../td/td-library.html">td</a></li>
+    <li><a href="../../td/GroupCall-class.html">GroupCall</a></li>
+    <li class="self-crumb">fromMap static method</li>
+</ol>
+
+
+    <h5>GroupCall class</h5>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tdffi
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

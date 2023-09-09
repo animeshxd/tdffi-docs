@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the GroupCall class from the td library, for the Dart programming language.">
+  <title>GroupCall class - td library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">tdffi</a></li>
+    <li><a href="../td/td-library.html">td</a></li>
+    <li class="self-crumb">GroupCall class</li>
+  </ol>
+  <div class="self-name">GroupCall</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="td&#47;td-library-sidebar.html"
+      data-below-sidebar="td&#47;GroupCall-class-sidebar.html">
+      <div>
+<h1><span class="kind-class">GroupCall</span> class 
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>Describes a group call</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object-class.html">Object</a></li>
+        <li><a href="../td/TlObject-class.html">TlObject</a></li>
+      <li>GroupCall</li>
+    </ul>
+  </dd>
+
+        
+        
+
+
+        <dt>Available Extensions</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="../td/TlObjectExt.html">TlObjectExt</a></li>
+        </ul></dd>
+
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="GroupCall" class="callable">
+          <span class="name"><a href="../td/GroupCall/GroupCall.html">GroupCall</a></span><span class="signature">(<span class="parameter" id="-param-id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">id</span>, </span><span class="parameter" id="-param-title"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">title</span>, </span><span class="parameter" id="-param-scheduled_start_date"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">scheduled_start_date</span>, </span><span class="parameter" id="-param-enabled_start_notification"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enabled_start_notification</span>, </span><span class="parameter" id="-param-is_active"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_active</span>, </span><span class="parameter" id="-param-is_rtmp_stream"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_rtmp_stream</span>, </span><span class="parameter" id="-param-is_joined"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_joined</span>, </span><span class="parameter" id="-param-need_rejoin"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">need_rejoin</span>, </span><span class="parameter" id="-param-can_be_managed"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">can_be_managed</span>, </span><span class="parameter" id="-param-participant_count"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">participant_count</span>, </span><span class="parameter" id="-param-has_hidden_listeners"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">has_hidden_listeners</span>, </span><span class="parameter" id="-param-loaded_all_participants"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">loaded_all_participants</span>, </span><span class="parameter" id="-param-recent_speakers"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../td/GroupCallRecentSpeaker-class.html">GroupCallRecentSpeaker</a></span>&gt;</span></span> <span class="parameter-name">recent_speakers</span>, </span><span class="parameter" id="-param-is_my_video_enabled"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_my_video_enabled</span>, </span><span class="parameter" id="-param-is_my_video_paused"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_my_video_paused</span>, </span><span class="parameter" id="-param-can_enable_video"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">can_enable_video</span>, </span><span class="parameter" id="-param-mute_new_participants"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">mute_new_participants</span>, </span><span class="parameter" id="-param-can_toggle_mute_new_participants"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">can_toggle_mute_new_participants</span>, </span><span class="parameter" id="-param-record_duration"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">record_duration</span>, </span><span class="parameter" id="-param-is_video_recorded"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_video_recorded</span>, </span><span class="parameter" id="-param-duration"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">duration</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+        </dt>
+        <dd>
+          Describes a group call
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="can_be_managed" class="property">
+  <span class="name"><a href="../td/GroupCall/can_be_managed.html">can_be_managed</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/can_be_managed.html">can_be_managed</a> True, if the current user can manage the group call
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="can_enable_video" class="property">
+  <span class="name"><a href="../td/GroupCall/can_enable_video.html">can_enable_video</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/can_enable_video.html">can_enable_video</a> True, if the current user can broadcast video or share screen
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="can_toggle_mute_new_participants" class="property">
+  <span class="name"><a href="../td/GroupCall/can_toggle_mute_new_participants.html">can_toggle_mute_new_participants</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/can_toggle_mute_new_participants.html">can_toggle_mute_new_participants</a> True, if the current user can enable or disable mute_new_participants setting
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="clientId" class="property">
+  <span class="name"><a href="../td/GroupCall/clientId.html">clientId</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/clientId.html">clientId</a> - tdlib client id
+  <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="duration" class="property">
+  <span class="name"><a href="../td/GroupCall/duration.html">duration</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/duration.html">duration</a> Call duration, in seconds; for ended calls only
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="enabled_start_notification" class="property">
+  <span class="name"><a href="../td/GroupCall/enabled_start_notification.html">enabled_start_notification</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/enabled_start_notification.html">enabled_start_notification</a> True, if the group call is scheduled and the current user will receive a notification when the group call will start
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="extra" class="property">
+  <span class="name"><a href="../td/GroupCall/extra.html">extra</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/extra.html">extra</a> - Request identifier. Must be non-zero.
+  <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="has_hidden_listeners" class="property">
+  <span class="name"><a href="../td/GroupCall/has_hidden_listeners.html">has_hidden_listeners</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/has_hidden_listeners.html">has_hidden_listeners</a> True, if group call participants, which are muted, aren't returned in participant list
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="id" class="property">
+  <span class="name"><a href="../td/GroupCall/id.html">id</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/id.html">id</a> Group call identifier
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="is_active" class="property">
+  <span class="name"><a href="../td/GroupCall/is_active.html">is_active</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/is_active.html">is_active</a> True, if the call is active
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="is_joined" class="property">
+  <span class="name"><a href="../td/GroupCall/is_joined.html">is_joined</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/is_joined.html">is_joined</a> True, if the call is joined
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="is_my_video_enabled" class="property">
+  <span class="name"><a href="../td/GroupCall/is_my_video_enabled.html">is_my_video_enabled</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/is_my_video_enabled.html">is_my_video_enabled</a> True, if the current user's video is enabled
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="is_my_video_paused" class="property">
+  <span class="name"><a href="../td/GroupCall/is_my_video_paused.html">is_my_video_paused</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/is_my_video_paused.html">is_my_video_paused</a> True, if the current user's video is paused
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="is_rtmp_stream" class="property">
+  <span class="name"><a href="../td/GroupCall/is_rtmp_stream.html">is_rtmp_stream</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/is_rtmp_stream.html">is_rtmp_stream</a> True, if the chat is an RTMP stream instead of an ordinary video chat
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="is_video_recorded" class="property">
+  <span class="name"><a href="../td/GroupCall/is_video_recorded.html">is_video_recorded</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/is_video_recorded.html">is_video_recorded</a> True, if a video file is being recorded for the call
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="loaded_all_participants" class="property">
+  <span class="name"><a href="../td/GroupCall/loaded_all_participants.html">loaded_all_participants</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/loaded_all_participants.html">loaded_all_participants</a> True, if all group call participants are loaded
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="mute_new_participants" class="property">
+  <span class="name"><a href="../td/GroupCall/mute_new_participants.html">mute_new_participants</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/mute_new_participants.html">mute_new_participants</a> True, if only group call administrators can unmute new participants
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="need_rejoin" class="property">
+  <span class="name"><a href="../td/GroupCall/need_rejoin.html">need_rejoin</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/need_rejoin.html">need_rejoin</a> True, if user was kicked from the call because of network loss and the call needs to be rejoined
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="participant_count" class="property">
+  <span class="name"><a href="../td/GroupCall/participant_count.html">participant_count</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/participant_count.html">participant_count</a> Number of participants in the group call
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="recent_speakers" class="property">
+  <span class="name"><a href="../td/GroupCall/recent_speakers.html">recent_speakers</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../td/GroupCallRecentSpeaker-class.html">GroupCallRecentSpeaker</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/recent_speakers.html">recent_speakers</a> At most 3 recently speaking users in the group call
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="record_duration" class="property">
+  <span class="name"><a href="../td/GroupCall/record_duration.html">record_duration</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/record_duration.html">record_duration</a> Duration of the ongoing group call recording, in seconds; 0 if none. An updateGroupCall update is not triggered when value of this field changes, but the same recording goes on
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="scheduled_start_date" class="property">
+  <span class="name"><a href="../td/GroupCall/scheduled_start_date.html">scheduled_start_date</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/scheduled_start_date.html">scheduled_start_date</a> Point in time (Unix timestamp) when the group call is supposed to be started by an administrator; 0 if it is already active or was ended
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="title" class="property">
+  <span class="name"><a href="../td/GroupCall/title.html">title</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/title.html">title</a> Group call title
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toJson" class="callable">
+  <span class="name"><a href="../td/GroupCall/toJson.html">toJson</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Object to Map serializer
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable">
+  <span class="name"><a href="../td/GroupCall/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  A string representation of this object.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+  <section class="summary offset-anchor" id="static-methods">
+    <h2>Static Methods</h2>
+    <dl class="callables">
+        <dt id="fromMap" class="callable">
+  <span class="name"><a href="../td/GroupCall/fromMap.html">fromMap</a></span><span class="signature">(<wbr><span class="parameter" id="fromMap-param-_map"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">_map</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../td/GroupCall-class.html">GroupCall</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+
+  <section class="summary offset-anchor" id="constants">
+    <h2>Constants</h2>
+
+    <dl class="properties">
+        <dt id="CONSTRUCTOR" class="constant">
+    <span class="name "><a href="../td/GroupCall/CONSTRUCTOR-constant.html">CONSTRUCTOR</a></span>
+  <span class="signature">&#8594; const <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  <a href="../td/GroupCall/CONSTRUCTOR-constant.html">CONSTRUCTOR</a> - type
+  
+
+    <div>
+      <span class="signature"><code>&quot;groupCall&quot;</code></span>
+    </div>
+</dd>
+
+    </dl>
+  </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">tdffi</a></li>
+    <li><a href="../td/td-library.html">td</a></li>
+    <li class="self-crumb">GroupCall class</li>
+</ol>
+
+
+    <!--<h5>td library</h5>-->
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tdffi
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
