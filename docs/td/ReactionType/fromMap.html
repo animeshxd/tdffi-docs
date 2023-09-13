@@ -83,10 +83,10 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;reactionTypeEmoji&#39;:
-      return ReactionTypeEmoji.fromMap(_map);
     case &#39;reactionTypeCustomEmoji&#39;:
       return ReactionTypeCustomEmoji.fromMap(_map);
+    case &#39;reactionTypeEmoji&#39;:
+      return ReactionTypeEmoji.fromMap(_map);
     case null:
     default:
       return null;

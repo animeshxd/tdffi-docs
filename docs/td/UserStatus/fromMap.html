@@ -83,18 +83,18 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;userStatusEmpty&#39;:
-      return UserStatusEmpty.fromMap(_map);
-    case &#39;userStatusRecently&#39;:
-      return UserStatusRecently.fromMap(_map);
+    case &#39;userStatusLastMonth&#39;:
+      return UserStatusLastMonth.fromMap(_map);
     case &#39;userStatusOnline&#39;:
       return UserStatusOnline.fromMap(_map);
+    case &#39;userStatusRecently&#39;:
+      return UserStatusRecently.fromMap(_map);
     case &#39;userStatusLastWeek&#39;:
       return UserStatusLastWeek.fromMap(_map);
     case &#39;userStatusOffline&#39;:
       return UserStatusOffline.fromMap(_map);
-    case &#39;userStatusLastMonth&#39;:
-      return UserStatusLastMonth.fromMap(_map);
+    case &#39;userStatusEmpty&#39;:
+      return UserStatusEmpty.fromMap(_map);
     case null:
     default:
       return null;

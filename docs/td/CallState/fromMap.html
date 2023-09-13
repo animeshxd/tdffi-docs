@@ -83,18 +83,18 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;callStateHangingUp&#39;:
-      return CallStateHangingUp.fromMap(_map);
     case &#39;callStateExchangingKeys&#39;:
       return CallStateExchangingKeys.fromMap(_map);
-    case &#39;callStateDiscarded&#39;:
-      return CallStateDiscarded.fromMap(_map);
-    case &#39;callStateError&#39;:
-      return CallStateError.fromMap(_map);
     case &#39;callStateReady&#39;:
       return CallStateReady.fromMap(_map);
+    case &#39;callStateHangingUp&#39;:
+      return CallStateHangingUp.fromMap(_map);
+    case &#39;callStateError&#39;:
+      return CallStateError.fromMap(_map);
     case &#39;callStatePending&#39;:
       return CallStatePending.fromMap(_map);
+    case &#39;callStateDiscarded&#39;:
+      return CallStateDiscarded.fromMap(_map);
     case null:
     default:
       return null;

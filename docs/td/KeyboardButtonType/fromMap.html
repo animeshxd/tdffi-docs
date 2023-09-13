@@ -83,20 +83,20 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;keyboardButtonTypeText&#39;:
-      return KeyboardButtonTypeText.fromMap(_map);
-    case &#39;keyboardButtonTypeRequestPhoneNumber&#39;:
-      return KeyboardButtonTypeRequestPhoneNumber.fromMap(_map);
-    case &#39;keyboardButtonTypeRequestLocation&#39;:
-      return KeyboardButtonTypeRequestLocation.fromMap(_map);
     case &#39;keyboardButtonTypeRequestUser&#39;:
       return KeyboardButtonTypeRequestUser.fromMap(_map);
-    case &#39;keyboardButtonTypeRequestPoll&#39;:
-      return KeyboardButtonTypeRequestPoll.fromMap(_map);
-    case &#39;keyboardButtonTypeWebApp&#39;:
-      return KeyboardButtonTypeWebApp.fromMap(_map);
     case &#39;keyboardButtonTypeRequestChat&#39;:
       return KeyboardButtonTypeRequestChat.fromMap(_map);
+    case &#39;keyboardButtonTypeWebApp&#39;:
+      return KeyboardButtonTypeWebApp.fromMap(_map);
+    case &#39;keyboardButtonTypeText&#39;:
+      return KeyboardButtonTypeText.fromMap(_map);
+    case &#39;keyboardButtonTypeRequestLocation&#39;:
+      return KeyboardButtonTypeRequestLocation.fromMap(_map);
+    case &#39;keyboardButtonTypeRequestPhoneNumber&#39;:
+      return KeyboardButtonTypeRequestPhoneNumber.fromMap(_map);
+    case &#39;keyboardButtonTypeRequestPoll&#39;:
+      return KeyboardButtonTypeRequestPoll.fromMap(_map);
     case null:
     default:
       return null;

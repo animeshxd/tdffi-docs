@@ -85,7 +85,7 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
-  var id = _map[&#39;id&#39;]! as String;
+  var id = _map[&#39;id&#39;]! as int64;
   var question = _map[&#39;question&#39;]! as String;
   var options = List&lt;PollOption&gt;.from(
     (_map[&quot;options&quot;] ?? []).map(

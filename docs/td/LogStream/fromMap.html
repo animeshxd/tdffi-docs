@@ -83,10 +83,10 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;logStreamDefault&#39;:
-      return LogStreamDefault.fromMap(_map);
     case &#39;logStreamFile&#39;:
       return LogStreamFile.fromMap(_map);
+    case &#39;logStreamDefault&#39;:
+      return LogStreamDefault.fromMap(_map);
     case &#39;logStreamEmpty&#39;:
       return LogStreamEmpty.fromMap(_map);
     case null:

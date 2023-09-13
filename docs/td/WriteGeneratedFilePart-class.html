@@ -101,7 +101,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="WriteGeneratedFilePart" class="callable">
-          <span class="name"><a href="../td/WriteGeneratedFilePart/WriteGeneratedFilePart.html">WriteGeneratedFilePart</a></span><span class="signature">(<span class="parameter" id="-param-generation_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">generation_id</span>, </span><span class="parameter" id="-param-offset"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span>, </span><span class="parameter" id="-param-data"><span>required</span> <span class="type-annotation"><a href="../td/bytes.html">bytes</a></span> <span class="parameter-name">data</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/WriteGeneratedFilePart/WriteGeneratedFilePart.html">WriteGeneratedFilePart</a></span><span class="signature">(<span class="parameter" id="-param-generation_id">{<span>required</span> <span class="type-annotation"><a href="../td/int64.html">int64</a></span> <span class="parameter-name">generation_id</span>, </span><span class="parameter" id="-param-offset"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span>, </span><span class="parameter" id="-param-data"><span>required</span> <span class="type-annotation"><a href="../td/bytes.html">bytes</a></span> <span class="parameter-name">data</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
           Writes a part of a generated file. This method is intended to be used only if the application has no direct access to TDLib's file system, because it is usually slower than a direct write to the destination file
@@ -149,11 +149,12 @@
 
         <dt id="generation_id" class="property">
   <span class="name"><a href="../td/WriteGeneratedFilePart/generation_id.html">generation_id</a></span>
-  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
+  <span class="signature">&#8596; <a href="../td/int64.html">int64</a></span> 
 
 </dt>
 <dd>
   <a href="../td/WriteGeneratedFilePart/generation_id.html">generation_id</a> The identifier of the generation process
+; string representation of int, use <code>int.parse</code>
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;notificationTypeNewSecretChat&#39;:
-      return NotificationTypeNewSecretChat.fromMap(_map);
     case &#39;notificationTypeNewCall&#39;:
       return NotificationTypeNewCall.fromMap(_map);
     case &#39;notificationTypeNewPushMessage&#39;:
       return NotificationTypeNewPushMessage.fromMap(_map);
     case &#39;notificationTypeNewMessage&#39;:
       return NotificationTypeNewMessage.fromMap(_map);
+    case &#39;notificationTypeNewSecretChat&#39;:
+      return NotificationTypeNewSecretChat.fromMap(_map);
     case null:
     default:
       return null;

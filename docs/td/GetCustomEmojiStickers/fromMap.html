@@ -85,9 +85,9 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
-  var custom_emoji_ids = List&lt;String&gt;.from(
+  var custom_emoji_ids = List&lt;int64&gt;.from(
     (_map[&quot;custom_emoji_ids&quot;] ?? []).map(
-      (e) =&gt; e as String,
+      (e) =&gt; e as int64,
     ),
   );
   return GetCustomEmojiStickers(

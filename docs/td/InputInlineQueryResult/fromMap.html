@@ -83,30 +83,30 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;inputInlineQueryResultVenue&#39;:
-      return InputInlineQueryResultVenue.fromMap(_map);
-    case &#39;inputInlineQueryResultVoiceNote&#39;:
-      return InputInlineQueryResultVoiceNote.fromMap(_map);
-    case &#39;inputInlineQueryResultAudio&#39;:
-      return InputInlineQueryResultAudio.fromMap(_map);
     case &#39;inputInlineQueryResultGame&#39;:
       return InputInlineQueryResultGame.fromMap(_map);
+    case &#39;inputInlineQueryResultAnimation&#39;:
+      return InputInlineQueryResultAnimation.fromMap(_map);
+    case &#39;inputInlineQueryResultVoiceNote&#39;:
+      return InputInlineQueryResultVoiceNote.fromMap(_map);
     case &#39;inputInlineQueryResultPhoto&#39;:
       return InputInlineQueryResultPhoto.fromMap(_map);
-    case &#39;inputInlineQueryResultSticker&#39;:
-      return InputInlineQueryResultSticker.fromMap(_map);
+    case &#39;inputInlineQueryResultVenue&#39;:
+      return InputInlineQueryResultVenue.fromMap(_map);
     case &#39;inputInlineQueryResultContact&#39;:
       return InputInlineQueryResultContact.fromMap(_map);
     case &#39;inputInlineQueryResultDocument&#39;:
       return InputInlineQueryResultDocument.fromMap(_map);
-    case &#39;inputInlineQueryResultAnimation&#39;:
-      return InputInlineQueryResultAnimation.fromMap(_map);
-    case &#39;inputInlineQueryResultVideo&#39;:
-      return InputInlineQueryResultVideo.fromMap(_map);
-    case &#39;inputInlineQueryResultLocation&#39;:
-      return InputInlineQueryResultLocation.fromMap(_map);
     case &#39;inputInlineQueryResultArticle&#39;:
       return InputInlineQueryResultArticle.fromMap(_map);
+    case &#39;inputInlineQueryResultVideo&#39;:
+      return InputInlineQueryResultVideo.fromMap(_map);
+    case &#39;inputInlineQueryResultAudio&#39;:
+      return InputInlineQueryResultAudio.fromMap(_map);
+    case &#39;inputInlineQueryResultSticker&#39;:
+      return InputInlineQueryResultSticker.fromMap(_map);
+    case &#39;inputInlineQueryResultLocation&#39;:
+      return InputInlineQueryResultLocation.fromMap(_map);
     case null:
     default:
       return null;

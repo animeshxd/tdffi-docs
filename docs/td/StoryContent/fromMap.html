@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;storyContentUnsupported&#39;:
-      return StoryContentUnsupported.fromMap(_map);
-    case &#39;storyContentPhoto&#39;:
-      return StoryContentPhoto.fromMap(_map);
     case &#39;storyContentVideo&#39;:
       return StoryContentVideo.fromMap(_map);
+    case &#39;storyContentPhoto&#39;:
+      return StoryContentPhoto.fromMap(_map);
+    case &#39;storyContentUnsupported&#39;:
+      return StoryContentUnsupported.fromMap(_map);
     case null:
     default:
       return null;

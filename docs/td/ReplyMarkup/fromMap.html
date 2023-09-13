@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;replyMarkupRemoveKeyboard&#39;:
-      return ReplyMarkupRemoveKeyboard.fromMap(_map);
-    case &#39;replyMarkupForceReply&#39;:
-      return ReplyMarkupForceReply.fromMap(_map);
     case &#39;replyMarkupInlineKeyboard&#39;:
       return ReplyMarkupInlineKeyboard.fromMap(_map);
     case &#39;replyMarkupShowKeyboard&#39;:
       return ReplyMarkupShowKeyboard.fromMap(_map);
+    case &#39;replyMarkupForceReply&#39;:
+      return ReplyMarkupForceReply.fromMap(_map);
+    case &#39;replyMarkupRemoveKeyboard&#39;:
+      return ReplyMarkupRemoveKeyboard.fromMap(_map);
     case null:
     default:
       return null;

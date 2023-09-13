@@ -101,7 +101,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="MessageGameScore" class="callable">
-          <span class="name"><a href="../td/MessageGameScore/MessageGameScore.html">MessageGameScore</a></span><span class="signature">(<span class="parameter" id="-param-game_message_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">game_message_id</span>, </span><span class="parameter" id="-param-game_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">game_id</span>, </span><span class="parameter" id="-param-score"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">score</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/MessageGameScore/MessageGameScore.html">MessageGameScore</a></span><span class="signature">(<span class="parameter" id="-param-game_message_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">game_message_id</span>, </span><span class="parameter" id="-param-game_id"><span>required</span> <span class="type-annotation"><a href="../td/int64.html">int64</a></span> <span class="parameter-name">game_id</span>, </span><span class="parameter" id="-param-score"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">score</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
           A new high score was achieved in a game
@@ -137,11 +137,12 @@
 
         <dt id="game_id" class="property">
   <span class="name"><a href="../td/MessageGameScore/game_id.html">game_id</a></span>
-  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
+  <span class="signature">&#8596; <a href="../td/int64.html">int64</a></span> 
 
 </dt>
 <dd>
   <a href="../td/MessageGameScore/game_id.html">game_id</a> Identifier of the game; may be different from the games presented in the message with the game
+; string representation of int, use <code>int.parse</code>
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

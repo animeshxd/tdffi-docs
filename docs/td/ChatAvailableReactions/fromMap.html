@@ -83,10 +83,10 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;chatAvailableReactionsAll&#39;:
-      return ChatAvailableReactionsAll.fromMap(_map);
     case &#39;chatAvailableReactionsSome&#39;:
       return ChatAvailableReactionsSome.fromMap(_map);
+    case &#39;chatAvailableReactionsAll&#39;:
+      return ChatAvailableReactionsAll.fromMap(_map);
     case null:
     default:
       return null;

@@ -83,22 +83,22 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;authenticationCodeTypeTelegramMessage&#39;:
-      return AuthenticationCodeTypeTelegramMessage.fromMap(_map);
-    case &#39;authenticationCodeTypeFirebaseAndroid&#39;:
-      return AuthenticationCodeTypeFirebaseAndroid.fromMap(_map);
-    case &#39;authenticationCodeTypeSms&#39;:
-      return AuthenticationCodeTypeSms.fromMap(_map);
-    case &#39;authenticationCodeTypeFragment&#39;:
-      return AuthenticationCodeTypeFragment.fromMap(_map);
-    case &#39;authenticationCodeTypeMissedCall&#39;:
-      return AuthenticationCodeTypeMissedCall.fromMap(_map);
-    case &#39;authenticationCodeTypeFirebaseIos&#39;:
-      return AuthenticationCodeTypeFirebaseIos.fromMap(_map);
     case &#39;authenticationCodeTypeFlashCall&#39;:
       return AuthenticationCodeTypeFlashCall.fromMap(_map);
     case &#39;authenticationCodeTypeCall&#39;:
       return AuthenticationCodeTypeCall.fromMap(_map);
+    case &#39;authenticationCodeTypeFirebaseIos&#39;:
+      return AuthenticationCodeTypeFirebaseIos.fromMap(_map);
+    case &#39;authenticationCodeTypeFragment&#39;:
+      return AuthenticationCodeTypeFragment.fromMap(_map);
+    case &#39;authenticationCodeTypeFirebaseAndroid&#39;:
+      return AuthenticationCodeTypeFirebaseAndroid.fromMap(_map);
+    case &#39;authenticationCodeTypeTelegramMessage&#39;:
+      return AuthenticationCodeTypeTelegramMessage.fromMap(_map);
+    case &#39;authenticationCodeTypeSms&#39;:
+      return AuthenticationCodeTypeSms.fromMap(_map);
+    case &#39;authenticationCodeTypeMissedCall&#39;:
+      return AuthenticationCodeTypeMissedCall.fromMap(_map);
     case null:
     default:
       return null;

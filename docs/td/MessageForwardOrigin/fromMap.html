@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;messageForwardOriginHiddenUser&#39;:
-      return MessageForwardOriginHiddenUser.fromMap(_map);
     case &#39;messageForwardOriginMessageImport&#39;:
       return MessageForwardOriginMessageImport.fromMap(_map);
-    case &#39;messageForwardOriginChat&#39;:
-      return MessageForwardOriginChat.fromMap(_map);
+    case &#39;messageForwardOriginHiddenUser&#39;:
+      return MessageForwardOriginHiddenUser.fromMap(_map);
     case &#39;messageForwardOriginUser&#39;:
       return MessageForwardOriginUser.fromMap(_map);
+    case &#39;messageForwardOriginChat&#39;:
+      return MessageForwardOriginChat.fromMap(_map);
     case &#39;messageForwardOriginChannel&#39;:
       return MessageForwardOriginChannel.fromMap(_map);
     case null:

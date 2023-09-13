@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;messageExtendedMediaUnsupported&#39;:
-      return MessageExtendedMediaUnsupported.fromMap(_map);
     case &#39;messageExtendedMediaPhoto&#39;:
       return MessageExtendedMediaPhoto.fromMap(_map);
-    case &#39;messageExtendedMediaPreview&#39;:
-      return MessageExtendedMediaPreview.fromMap(_map);
     case &#39;messageExtendedMediaVideo&#39;:
       return MessageExtendedMediaVideo.fromMap(_map);
+    case &#39;messageExtendedMediaUnsupported&#39;:
+      return MessageExtendedMediaUnsupported.fromMap(_map);
+    case &#39;messageExtendedMediaPreview&#39;:
+      return MessageExtendedMediaPreview.fromMap(_map);
     case null:
     default:
       return null;

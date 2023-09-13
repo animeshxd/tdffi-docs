@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;networkTypeMobile&#39;:
-      return NetworkTypeMobile.fromMap(_map);
-    case &#39;networkTypeNone&#39;:
-      return NetworkTypeNone.fromMap(_map);
     case &#39;networkTypeMobileRoaming&#39;:
       return NetworkTypeMobileRoaming.fromMap(_map);
     case &#39;networkTypeWiFi&#39;:
       return NetworkTypeWiFi.fromMap(_map);
+    case &#39;networkTypeNone&#39;:
+      return NetworkTypeNone.fromMap(_map);
+    case &#39;networkTypeMobile&#39;:
+      return NetworkTypeMobile.fromMap(_map);
     case &#39;networkTypeOther&#39;:
       return NetworkTypeOther.fromMap(_map);
     case null:

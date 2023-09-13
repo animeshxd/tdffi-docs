@@ -101,7 +101,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="GetCallbackQueryMessage" class="callable">
-          <span class="name"><a href="../td/GetCallbackQueryMessage/GetCallbackQueryMessage.html">GetCallbackQueryMessage</a></span><span class="signature">(<span class="parameter" id="-param-chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">chat_id</span>, </span><span class="parameter" id="-param-message_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">message_id</span>, </span><span class="parameter" id="-param-callback_query_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">callback_query_id</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/GetCallbackQueryMessage/GetCallbackQueryMessage.html">GetCallbackQueryMessage</a></span><span class="signature">(<span class="parameter" id="-param-chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">chat_id</span>, </span><span class="parameter" id="-param-message_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">message_id</span>, </span><span class="parameter" id="-param-callback_query_id"><span>required</span> <span class="type-annotation"><a href="../td/int64.html">int64</a></span> <span class="parameter-name">callback_query_id</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
           Returns information about a message with the callback button that originated a callback query; for bots only
@@ -115,11 +115,12 @@
       <dl class="properties">
         <dt id="callback_query_id" class="property">
   <span class="name"><a href="../td/GetCallbackQueryMessage/callback_query_id.html">callback_query_id</a></span>
-  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
+  <span class="signature">&#8596; <a href="../td/int64.html">int64</a></span> 
 
 </dt>
 <dd>
   <a href="../td/GetCallbackQueryMessage/callback_query_id.html">callback_query_id</a> Identifier of the callback query
+; string representation of int, use <code>int.parse</code>
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

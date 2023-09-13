@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
+    case &#39;stickerTypeRegular&#39;:
+      return StickerTypeRegular.fromMap(_map);
     case &#39;stickerTypeMask&#39;:
       return StickerTypeMask.fromMap(_map);
     case &#39;stickerTypeCustomEmoji&#39;:
       return StickerTypeCustomEmoji.fromMap(_map);
-    case &#39;stickerTypeRegular&#39;:
-      return StickerTypeRegular.fromMap(_map);
     case null:
     default:
       return null;

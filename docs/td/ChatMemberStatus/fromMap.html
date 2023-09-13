@@ -83,18 +83,18 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;chatMemberStatusLeft&#39;:
-      return ChatMemberStatusLeft.fromMap(_map);
+    case &#39;chatMemberStatusCreator&#39;:
+      return ChatMemberStatusCreator.fromMap(_map);
     case &#39;chatMemberStatusBanned&#39;:
       return ChatMemberStatusBanned.fromMap(_map);
     case &#39;chatMemberStatusAdministrator&#39;:
       return ChatMemberStatusAdministrator.fromMap(_map);
-    case &#39;chatMemberStatusMember&#39;:
-      return ChatMemberStatusMember.fromMap(_map);
     case &#39;chatMemberStatusRestricted&#39;:
       return ChatMemberStatusRestricted.fromMap(_map);
-    case &#39;chatMemberStatusCreator&#39;:
-      return ChatMemberStatusCreator.fromMap(_map);
+    case &#39;chatMemberStatusMember&#39;:
+      return ChatMemberStatusMember.fromMap(_map);
+    case &#39;chatMemberStatusLeft&#39;:
+      return ChatMemberStatusLeft.fromMap(_map);
     case null:
     default:
       return null;

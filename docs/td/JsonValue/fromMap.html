@@ -83,18 +83,18 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;jsonValueNumber&#39;:
-      return JsonValueNumber.fromMap(_map);
     case &#39;jsonValueArray&#39;:
       return JsonValueArray.fromMap(_map);
+    case &#39;jsonValueNumber&#39;:
+      return JsonValueNumber.fromMap(_map);
     case &#39;jsonValueNull&#39;:
       return JsonValueNull.fromMap(_map);
-    case &#39;jsonValueObject&#39;:
-      return JsonValueObject.fromMap(_map);
     case &#39;jsonValueString&#39;:
       return JsonValueString.fromMap(_map);
     case &#39;jsonValueBoolean&#39;:
       return JsonValueBoolean.fromMap(_map);
+    case &#39;jsonValueObject&#39;:
+      return JsonValueObject.fromMap(_map);
     case null:
     default:
       return null;

@@ -83,24 +83,24 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;callProblemDropped&#39;:
-      return CallProblemDropped.fromMap(_map);
-    case &#39;callProblemPixelatedVideo&#39;:
-      return CallProblemPixelatedVideo.fromMap(_map);
-    case &#39;callProblemSilentLocal&#39;:
-      return CallProblemSilentLocal.fromMap(_map);
-    case &#39;callProblemDistortedSpeech&#39;:
-      return CallProblemDistortedSpeech.fromMap(_map);
-    case &#39;callProblemInterruptions&#39;:
-      return CallProblemInterruptions.fromMap(_map);
     case &#39;callProblemEcho&#39;:
       return CallProblemEcho.fromMap(_map);
-    case &#39;callProblemNoise&#39;:
-      return CallProblemNoise.fromMap(_map);
-    case &#39;callProblemDistortedVideo&#39;:
-      return CallProblemDistortedVideo.fromMap(_map);
+    case &#39;callProblemInterruptions&#39;:
+      return CallProblemInterruptions.fromMap(_map);
     case &#39;callProblemSilentRemote&#39;:
       return CallProblemSilentRemote.fromMap(_map);
+    case &#39;callProblemDropped&#39;:
+      return CallProblemDropped.fromMap(_map);
+    case &#39;callProblemDistortedSpeech&#39;:
+      return CallProblemDistortedSpeech.fromMap(_map);
+    case &#39;callProblemDistortedVideo&#39;:
+      return CallProblemDistortedVideo.fromMap(_map);
+    case &#39;callProblemSilentLocal&#39;:
+      return CallProblemSilentLocal.fromMap(_map);
+    case &#39;callProblemPixelatedVideo&#39;:
+      return CallProblemPixelatedVideo.fromMap(_map);
+    case &#39;callProblemNoise&#39;:
+      return CallProblemNoise.fromMap(_map);
     case null:
     default:
       return null;

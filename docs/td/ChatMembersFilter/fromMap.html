@@ -83,20 +83,20 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;chatMembersFilterRestricted&#39;:
-      return ChatMembersFilterRestricted.fromMap(_map);
-    case &#39;chatMembersFilterBanned&#39;:
-      return ChatMembersFilterBanned.fromMap(_map);
-    case &#39;chatMembersFilterAdministrators&#39;:
-      return ChatMembersFilterAdministrators.fromMap(_map);
-    case &#39;chatMembersFilterMembers&#39;:
-      return ChatMembersFilterMembers.fromMap(_map);
-    case &#39;chatMembersFilterContacts&#39;:
-      return ChatMembersFilterContacts.fromMap(_map);
     case &#39;chatMembersFilterMention&#39;:
       return ChatMembersFilterMention.fromMap(_map);
     case &#39;chatMembersFilterBots&#39;:
       return ChatMembersFilterBots.fromMap(_map);
+    case &#39;chatMembersFilterContacts&#39;:
+      return ChatMembersFilterContacts.fromMap(_map);
+    case &#39;chatMembersFilterBanned&#39;:
+      return ChatMembersFilterBanned.fromMap(_map);
+    case &#39;chatMembersFilterMembers&#39;:
+      return ChatMembersFilterMembers.fromMap(_map);
+    case &#39;chatMembersFilterRestricted&#39;:
+      return ChatMembersFilterRestricted.fromMap(_map);
+    case &#39;chatMembersFilterAdministrators&#39;:
+      return ChatMembersFilterAdministrators.fromMap(_map);
     case null:
     default:
       return null;

@@ -83,20 +83,20 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;botCommandScopeChat&#39;:
-      return BotCommandScopeChat.fromMap(_map);
-    case &#39;botCommandScopeChatMember&#39;:
-      return BotCommandScopeChatMember.fromMap(_map);
-    case &#39;botCommandScopeChatAdministrators&#39;:
-      return BotCommandScopeChatAdministrators.fromMap(_map);
-    case &#39;botCommandScopeAllPrivateChats&#39;:
-      return BotCommandScopeAllPrivateChats.fromMap(_map);
-    case &#39;botCommandScopeAllGroupChats&#39;:
-      return BotCommandScopeAllGroupChats.fromMap(_map);
     case &#39;botCommandScopeAllChatAdministrators&#39;:
       return BotCommandScopeAllChatAdministrators.fromMap(_map);
+    case &#39;botCommandScopeChatMember&#39;:
+      return BotCommandScopeChatMember.fromMap(_map);
     case &#39;botCommandScopeDefault&#39;:
       return BotCommandScopeDefault.fromMap(_map);
+    case &#39;botCommandScopeAllGroupChats&#39;:
+      return BotCommandScopeAllGroupChats.fromMap(_map);
+    case &#39;botCommandScopeAllPrivateChats&#39;:
+      return BotCommandScopeAllPrivateChats.fromMap(_map);
+    case &#39;botCommandScopeChat&#39;:
+      return BotCommandScopeChat.fromMap(_map);
+    case &#39;botCommandScopeChatAdministrators&#39;:
+      return BotCommandScopeChatAdministrators.fromMap(_map);
     case null:
     default:
       return null;

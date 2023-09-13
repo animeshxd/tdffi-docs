@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;notificationGroupTypeMessages&#39;:
-      return NotificationGroupTypeMessages.fromMap(_map);
-    case &#39;notificationGroupTypeMentions&#39;:
-      return NotificationGroupTypeMentions.fromMap(_map);
     case &#39;notificationGroupTypeCalls&#39;:
       return NotificationGroupTypeCalls.fromMap(_map);
     case &#39;notificationGroupTypeSecretChat&#39;:
       return NotificationGroupTypeSecretChat.fromMap(_map);
+    case &#39;notificationGroupTypeMentions&#39;:
+      return NotificationGroupTypeMentions.fromMap(_map);
+    case &#39;notificationGroupTypeMessages&#39;:
+      return NotificationGroupTypeMessages.fromMap(_map);
     case null:
     default:
       return null;

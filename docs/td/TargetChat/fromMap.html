@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;targetChatCurrent&#39;:
-      return TargetChatCurrent.fromMap(_map);
-    case &#39;targetChatChosen&#39;:
-      return TargetChatChosen.fromMap(_map);
     case &#39;targetChatInternalLink&#39;:
       return TargetChatInternalLink.fromMap(_map);
+    case &#39;targetChatChosen&#39;:
+      return TargetChatChosen.fromMap(_map);
+    case &#39;targetChatCurrent&#39;:
+      return TargetChatCurrent.fromMap(_map);
     case null:
     default:
       return null;

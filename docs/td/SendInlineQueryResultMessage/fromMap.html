@@ -89,7 +89,7 @@
   var message_thread_id = _map[&#39;message_thread_id&#39;]! as int;
   var reply_to = MessageReplyTo.fromMap(_map[&#39;reply_to&#39;]);
   var options = MessageSendOptions.fromMap(_map[&#39;options&#39;]);
-  var query_id = _map[&#39;query_id&#39;]! as String;
+  var query_id = _map[&#39;query_id&#39;]! as int64;
   var result_id = _map[&#39;result_id&#39;]! as String;
   var hide_via_bot = _map[&#39;hide_via_bot&#39;]! as bool;
   return SendInlineQueryResultMessage(

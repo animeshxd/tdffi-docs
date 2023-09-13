@@ -85,7 +85,7 @@
 
 </dt>
 <dd>
-  
+  TDLib client is in its final state. All databases are closed and all resources are released. No other updates will be received after this. All queries will be responded to
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -96,7 +96,7 @@
 
 </dt>
 <dd>
-  
+  TDLib is closing, all subsequent queries will be answered with the error 500. Note that closing TDLib can take a while. All resources will be freed only after authorizationStateClosed has been received
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -107,7 +107,7 @@
 
 </dt>
 <dd>
-  
+  The user is currently logging out
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -118,7 +118,7 @@
 
 </dt>
 <dd>
-  
+  The user has been successfully authorized. TDLib is now ready to answer general requests
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -129,7 +129,7 @@
 
 </dt>
 <dd>
-  
+  TDLib needs the user's authentication code to authorize. Call checkAuthenticationCode to check the code
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -140,7 +140,7 @@
 
 </dt>
 <dd>
-  
+  TDLib needs the user's email address to authorize. Call setAuthenticationEmailAddress to provide the email address, or directly call checkAuthenticationEmailCode with Apple ID/Google ID token if allowed
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -151,7 +151,7 @@
 
 </dt>
 <dd>
-  
+  TDLib needs the user's authentication code sent to an email address to authorize. Call checkAuthenticationEmailCode to provide the code
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -162,7 +162,7 @@
 
 </dt>
 <dd>
-  
+  The user needs to confirm authorization on another logged in device by scanning a QR code with the provided link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -173,7 +173,7 @@
 
 </dt>
 <dd>
-  
+  The user has been authorized, but needs to enter a 2-step verification password to start using the application.
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -184,7 +184,7 @@
 
 </dt>
 <dd>
-  
+  TDLib needs the user's phone number to authorize. Call setAuthenticationPhoneNumber to provide the phone number, or use requestQrCodeAuthentication or checkAuthenticationBotToken for other authentication options
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -195,7 +195,7 @@
 
 </dt>
 <dd>
-  
+  The user is unregistered and need to accept terms of service and enter their first name and last name to finish registration. Call registerUser to accept the terms of service and provide the data
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -206,7 +206,7 @@
 
 </dt>
 <dd>
-  
+  Initialization parameters are needed. Call setTdlibParameters to provide them
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>

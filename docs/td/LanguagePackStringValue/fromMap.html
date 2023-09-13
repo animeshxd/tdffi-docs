@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;languagePackStringValueDeleted&#39;:
-      return LanguagePackStringValueDeleted.fromMap(_map);
-    case &#39;languagePackStringValuePluralized&#39;:
-      return LanguagePackStringValuePluralized.fromMap(_map);
     case &#39;languagePackStringValueOrdinary&#39;:
       return LanguagePackStringValueOrdinary.fromMap(_map);
+    case &#39;languagePackStringValuePluralized&#39;:
+      return LanguagePackStringValuePluralized.fromMap(_map);
+    case &#39;languagePackStringValueDeleted&#39;:
+      return LanguagePackStringValueDeleted.fromMap(_map);
     case null:
     default:
       return null;

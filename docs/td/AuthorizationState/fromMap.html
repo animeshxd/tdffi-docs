@@ -83,30 +83,30 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;authorizationStateWaitRegistration&#39;:
-      return AuthorizationStateWaitRegistration.fromMap(_map);
-    case &#39;authorizationStateWaitPassword&#39;:
-      return AuthorizationStateWaitPassword.fromMap(_map);
     case &#39;authorizationStateClosed&#39;:
       return AuthorizationStateClosed.fromMap(_map);
+    case &#39;authorizationStateReady&#39;:
+      return AuthorizationStateReady.fromMap(_map);
+    case &#39;authorizationStateWaitPassword&#39;:
+      return AuthorizationStateWaitPassword.fromMap(_map);
+    case &#39;authorizationStateWaitEmailCode&#39;:
+      return AuthorizationStateWaitEmailCode.fromMap(_map);
+    case &#39;authorizationStateWaitCode&#39;:
+      return AuthorizationStateWaitCode.fromMap(_map);
     case &#39;authorizationStateWaitEmailAddress&#39;:
       return AuthorizationStateWaitEmailAddress.fromMap(_map);
     case &#39;authorizationStateLoggingOut&#39;:
       return AuthorizationStateLoggingOut.fromMap(_map);
+    case &#39;authorizationStateWaitOtherDeviceConfirmation&#39;:
+      return AuthorizationStateWaitOtherDeviceConfirmation.fromMap(_map);
+    case &#39;authorizationStateWaitTdlibParameters&#39;:
+      return AuthorizationStateWaitTdlibParameters.fromMap(_map);
+    case &#39;authorizationStateWaitRegistration&#39;:
+      return AuthorizationStateWaitRegistration.fromMap(_map);
     case &#39;authorizationStateClosing&#39;:
       return AuthorizationStateClosing.fromMap(_map);
     case &#39;authorizationStateWaitPhoneNumber&#39;:
       return AuthorizationStateWaitPhoneNumber.fromMap(_map);
-    case &#39;authorizationStateWaitEmailCode&#39;:
-      return AuthorizationStateWaitEmailCode.fromMap(_map);
-    case &#39;authorizationStateWaitTdlibParameters&#39;:
-      return AuthorizationStateWaitTdlibParameters.fromMap(_map);
-    case &#39;authorizationStateWaitOtherDeviceConfirmation&#39;:
-      return AuthorizationStateWaitOtherDeviceConfirmation.fromMap(_map);
-    case &#39;authorizationStateWaitCode&#39;:
-      return AuthorizationStateWaitCode.fromMap(_map);
-    case &#39;authorizationStateReady&#39;:
-      return AuthorizationStateReady.fromMap(_map);
     case null:
     default:
       return null;

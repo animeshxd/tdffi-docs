@@ -85,7 +85,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the active sessions section of the application. Use getActiveSessions to handle the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -96,7 +96,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to an attachment menu bot to be opened in the specified or a chosen chat. Process given target_chat to open the chat.
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -107,7 +107,7 @@
 
 </dt>
 <dd>
-  
+  The link contains an authentication code. Call checkAuthenticationCode with the code if the current authorization state is authorizationStateWaitCode
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -118,7 +118,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a background. Call searchBackground with the given background name to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -129,7 +129,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a Telegram bot, which is supposed to be added to a channel chat as an administrator. Call searchPublicChat with the given bot username and check that the user is a bot,
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -140,7 +140,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a chat with a Telegram bot. Call searchPublicChat with the given bot username, check that the user is a bot, show START button in the chat with the bot,
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -151,7 +151,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a Telegram bot, which is supposed to be added to a group chat. Call searchPublicChat with the given bot username, check that the user is a bot and can be added to groups,
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -162,7 +162,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the change phone number section of the app
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -173,7 +173,7 @@
 
 </dt>
 <dd>
-  
+  The link is an invite link to a chat folder. Call checkChatFolderInviteLink with the given invite link to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -184,7 +184,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the folder section of the app settings
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -195,7 +195,7 @@
 
 </dt>
 <dd>
-  
+  The link is a chat invite link. Call checkChatInviteLink with the given invite link to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -206,7 +206,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the default message auto-delete timer settings section of the app settings
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -217,7 +217,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the edit profile section of the app settings
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -228,7 +228,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a game. Call searchPublicChat with the given bot username, check that the user is a bot, ask the current user to select a chat to send the game, and then call sendMessage with inputMessageGame
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -239,7 +239,7 @@
 
 </dt>
 <dd>
-  
+  The link must be opened in an Instant View. Call getWebPageInstantView with the given URL to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -250,7 +250,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to an invoice. Call getPaymentForm with the given invoice name to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -261,7 +261,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a language pack. Call getLanguagePackInfo with the given language pack identifier to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -272,7 +272,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the language section of the app settings
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -283,7 +283,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a Telegram message or a forum topic. Call getMessageLinkInfo with the given URL to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -294,7 +294,7 @@
 
 </dt>
 <dd>
-  
+  The link contains a message draft text. A share screen needs to be shown to the user, then the chosen chat must be opened and the text is added to the input field
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -305,7 +305,7 @@
 
 </dt>
 <dd>
-  
+  The link contains a request of Telegram passport data. Call getPassportAuthorizationForm with the given parameters to process the link if the link was received from outside of the application; otherwise, ignore it
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -316,7 +316,7 @@
 
 </dt>
 <dd>
-  
+  The link can be used to confirm ownership of a phone number to prevent account deletion. Call sendPhoneNumberConfirmationCode with the given hash and phone number to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -327,7 +327,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the Premium features screen of the application from which the user can subscribe to Telegram Premium. Call getPremiumFeatures with the given referrer to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -338,7 +338,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the privacy and security section of the app settings
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -349,7 +349,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a proxy. Call addProxy with the given parameters to process the link and add the proxy
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -360,7 +360,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a chat by its username. Call searchPublicChat with the given chat username to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -371,7 +371,7 @@
 
 </dt>
 <dd>
-  
+  The link can be used to login the current user on another device, but it must be scanned from QR-code using in-app camera. An alert similar to
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -382,7 +382,7 @@
 
 </dt>
 <dd>
-  
+  The link forces restore of App Store purchases when opened. For official iOS application only
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -393,7 +393,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to application settings
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -404,7 +404,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a sticker set. Call searchStickerSet with the given sticker set name to process the link and show the sticker set
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -415,7 +415,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a story. Call searchPublicChat with the given sender username, then call getStory with the received chat identifier and the given story identifier
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -426,7 +426,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a theme. TDLib has no theme support yet
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -437,7 +437,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to the theme section of the app settings
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -448,7 +448,7 @@
 
 </dt>
 <dd>
-  
+  The link is an unknown tg: link. Call getDeepLinkInfo to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -459,7 +459,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to an unsupported proxy. An alert can be shown to the user
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -470,7 +470,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a user by its phone number. Call searchUserByPhoneNumber with the given phone number to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -481,7 +481,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a user by a temporary token. Call searchUserByToken with the given token to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -492,7 +492,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a video chat. Call searchPublicChat with the given chat username, and then joinGroupCall with the given invite hash to process the link
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -503,7 +503,7 @@
 
 </dt>
 <dd>
-  
+  The link is a link to a Web App. Call searchPublicChat with the given bot username, check that the user is a bot, then call searchWebApp with the received bot and the given web_app_short_name.
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>

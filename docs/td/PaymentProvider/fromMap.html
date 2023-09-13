@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;paymentProviderOther&#39;:
-      return PaymentProviderOther.fromMap(_map);
-    case &#39;paymentProviderSmartGlocal&#39;:
-      return PaymentProviderSmartGlocal.fromMap(_map);
     case &#39;paymentProviderStripe&#39;:
       return PaymentProviderStripe.fromMap(_map);
+    case &#39;paymentProviderSmartGlocal&#39;:
+      return PaymentProviderSmartGlocal.fromMap(_map);
+    case &#39;paymentProviderOther&#39;:
+      return PaymentProviderOther.fromMap(_map);
     case null:
     default:
       return null;

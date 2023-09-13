@@ -83,10 +83,10 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;messageSendingStateFailed&#39;:
-      return MessageSendingStateFailed.fromMap(_map);
     case &#39;messageSendingStatePending&#39;:
       return MessageSendingStatePending.fromMap(_map);
+    case &#39;messageSendingStateFailed&#39;:
+      return MessageSendingStateFailed.fromMap(_map);
     case null:
     default:
       return null;

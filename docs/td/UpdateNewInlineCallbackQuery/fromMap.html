@@ -85,10 +85,10 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
-  var id = _map[&#39;id&#39;]! as String;
+  var id = _map[&#39;id&#39;]! as int64;
   var sender_user_id = _map[&#39;sender_user_id&#39;]! as int;
   var inline_message_id = _map[&#39;inline_message_id&#39;]! as String;
-  var chat_instance = _map[&#39;chat_instance&#39;]! as String;
+  var chat_instance = _map[&#39;chat_instance&#39;]! as int64;
   var payload = CallbackQueryPayload.fromMap(_map[&#39;payload&#39;])!;
   return UpdateNewInlineCallbackQuery(
     extra: extra,

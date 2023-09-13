@@ -83,26 +83,26 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;messageSourceChatEventLog&#39;:
-      return MessageSourceChatEventLog.fromMap(_map);
-    case &#39;messageSourceOther&#39;:
-      return MessageSourceOther.fromMap(_map);
-    case &#39;messageSourceChatHistory&#39;:
-      return MessageSourceChatHistory.fromMap(_map);
-    case &#39;messageSourceSearch&#39;:
-      return MessageSourceSearch.fromMap(_map);
-    case &#39;messageSourceHistoryPreview&#39;:
-      return MessageSourceHistoryPreview.fromMap(_map);
     case &#39;messageSourceMessageThreadHistory&#39;:
       return MessageSourceMessageThreadHistory.fromMap(_map);
-    case &#39;messageSourceNotification&#39;:
-      return MessageSourceNotification.fromMap(_map);
+    case &#39;messageSourceSearch&#39;:
+      return MessageSourceSearch.fromMap(_map);
+    case &#39;messageSourceChatEventLog&#39;:
+      return MessageSourceChatEventLog.fromMap(_map);
     case &#39;messageSourceChatList&#39;:
       return MessageSourceChatList.fromMap(_map);
     case &#39;messageSourceForumTopicHistory&#39;:
       return MessageSourceForumTopicHistory.fromMap(_map);
     case &#39;messageSourceScreenshot&#39;:
       return MessageSourceScreenshot.fromMap(_map);
+    case &#39;messageSourceNotification&#39;:
+      return MessageSourceNotification.fromMap(_map);
+    case &#39;messageSourceHistoryPreview&#39;:
+      return MessageSourceHistoryPreview.fromMap(_map);
+    case &#39;messageSourceOther&#39;:
+      return MessageSourceOther.fromMap(_map);
+    case &#39;messageSourceChatHistory&#39;:
+      return MessageSourceChatHistory.fromMap(_map);
     case null:
     default:
       return null;

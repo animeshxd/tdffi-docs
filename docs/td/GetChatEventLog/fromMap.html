@@ -87,7 +87,7 @@
   var clientId = _map[&#39;@clientId&#39;];
   var chat_id = _map[&#39;chat_id&#39;]! as int;
   var query = _map[&#39;query&#39;]! as String;
-  var from_event_id = _map[&#39;from_event_id&#39;]! as String;
+  var from_event_id = _map[&#39;from_event_id&#39;]! as int64;
   var limit = _map[&#39;limit&#39;]! as int;
   var filters = ChatEventLogFilters.fromMap(_map[&#39;filters&#39;]);
   var user_ids = List&lt;int&gt;.from(

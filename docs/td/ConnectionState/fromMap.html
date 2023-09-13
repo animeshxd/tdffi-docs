@@ -83,16 +83,16 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;connectionStateReady&#39;:
-      return ConnectionStateReady.fromMap(_map);
-    case &#39;connectionStateUpdating&#39;:
-      return ConnectionStateUpdating.fromMap(_map);
     case &#39;connectionStateWaitingForNetwork&#39;:
       return ConnectionStateWaitingForNetwork.fromMap(_map);
     case &#39;connectionStateConnecting&#39;:
       return ConnectionStateConnecting.fromMap(_map);
     case &#39;connectionStateConnectingToProxy&#39;:
       return ConnectionStateConnectingToProxy.fromMap(_map);
+    case &#39;connectionStateUpdating&#39;:
+      return ConnectionStateUpdating.fromMap(_map);
+    case &#39;connectionStateReady&#39;:
+      return ConnectionStateReady.fromMap(_map);
     case null:
     default:
       return null;

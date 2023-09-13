@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;maskPointForehead&#39;:
-      return MaskPointForehead.fromMap(_map);
     case &#39;maskPointMouth&#39;:
       return MaskPointMouth.fromMap(_map);
-    case &#39;maskPointEyes&#39;:
-      return MaskPointEyes.fromMap(_map);
     case &#39;maskPointChin&#39;:
       return MaskPointChin.fromMap(_map);
+    case &#39;maskPointEyes&#39;:
+      return MaskPointEyes.fromMap(_map);
+    case &#39;maskPointForehead&#39;:
+      return MaskPointForehead.fromMap(_map);
     case null:
     default:
       return null;

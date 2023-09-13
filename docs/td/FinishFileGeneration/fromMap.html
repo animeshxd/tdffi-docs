@@ -85,7 +85,7 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
-  var generation_id = _map[&#39;generation_id&#39;]! as String;
+  var generation_id = _map[&#39;generation_id&#39;]! as int64;
   var error = Error.fromMap(_map[&#39;error&#39;]);
   return FinishFileGeneration(
     extra: extra,

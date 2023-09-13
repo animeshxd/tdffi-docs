@@ -85,8 +85,8 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
-  var old_sticker_set_id = _map[&#39;old_sticker_set_id&#39;]! as String;
-  var new_sticker_set_id = _map[&#39;new_sticker_set_id&#39;]! as String;
+  var old_sticker_set_id = _map[&#39;old_sticker_set_id&#39;]! as int64;
+  var new_sticker_set_id = _map[&#39;new_sticker_set_id&#39;]! as int64;
   return ChatEventStickerSetChanged(
     extra: extra,
     clientId: clientId,

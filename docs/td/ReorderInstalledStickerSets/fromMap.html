@@ -86,9 +86,9 @@
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
   var sticker_type = StickerType.fromMap(_map[&#39;sticker_type&#39;])!;
-  var sticker_set_ids = List&lt;String&gt;.from(
+  var sticker_set_ids = List&lt;int64&gt;.from(
     (_map[&quot;sticker_set_ids&quot;] ?? []).map(
-      (e) =&gt; e as String,
+      (e) =&gt; e as int64,
     ),
   );
   return ReorderInstalledStickerSets(
