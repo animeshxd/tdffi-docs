@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;canTransferOwnershipResultOk&#39;:
-      return CanTransferOwnershipResultOk.fromMap(_map);
     case &#39;canTransferOwnershipResultPasswordNeeded&#39;:
       return CanTransferOwnershipResultPasswordNeeded.fromMap(_map);
     case &#39;canTransferOwnershipResultPasswordTooFresh&#39;:
       return CanTransferOwnershipResultPasswordTooFresh.fromMap(_map);
+    case &#39;canTransferOwnershipResultOk&#39;:
+      return CanTransferOwnershipResultOk.fromMap(_map);
     case &#39;canTransferOwnershipResultSessionTooFresh&#39;:
       return CanTransferOwnershipResultSessionTooFresh.fromMap(_map);
     case null:

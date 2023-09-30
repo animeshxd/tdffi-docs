@@ -62,7 +62,8 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">DeleteStory</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span></li>
+      <span class="name ">DeleteStory</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-story_sender_chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_sender_chat_id</span>, </span></li>
+<li><span class="parameter" id="-param-story_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span></li>
 <li><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span></li>
 <li><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span></li>
 </ol>)
@@ -70,7 +71,7 @@
 
     
 <section class="desc markdown">
-  <p>Deletes a previously sent story</p>
+  <p>Deletes a previously sent story. Can be called only if story.can_be_deleted == true</p>
 <p>Returns <a href="../../td/Ok-class.html">Ok</a></p>
 </section>
 

@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
+    case &#39;backgroundTypeFill&#39;:
+      return BackgroundTypeFill.fromMap(_map);
     case &#39;backgroundTypeWallpaper&#39;:
       return BackgroundTypeWallpaper.fromMap(_map);
     case &#39;backgroundTypePattern&#39;:
       return BackgroundTypePattern.fromMap(_map);
-    case &#39;backgroundTypeFill&#39;:
-      return BackgroundTypeFill.fromMap(_map);
     case null:
     default:
       return null;

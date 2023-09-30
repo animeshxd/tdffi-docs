@@ -83,20 +83,20 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;userPrivacySettingRuleAllowContacts&#39;:
-      return UserPrivacySettingRuleAllowContacts.fromMap(_map);
-    case &#39;userPrivacySettingRuleAllowChatMembers&#39;:
-      return UserPrivacySettingRuleAllowChatMembers.fromMap(_map);
-    case &#39;userPrivacySettingRuleRestrictAll&#39;:
-      return UserPrivacySettingRuleRestrictAll.fromMap(_map);
     case &#39;userPrivacySettingRuleRestrictChatMembers&#39;:
       return UserPrivacySettingRuleRestrictChatMembers.fromMap(_map);
+    case &#39;userPrivacySettingRuleAllowChatMembers&#39;:
+      return UserPrivacySettingRuleAllowChatMembers.fromMap(_map);
     case &#39;userPrivacySettingRuleRestrictUsers&#39;:
       return UserPrivacySettingRuleRestrictUsers.fromMap(_map);
-    case &#39;userPrivacySettingRuleRestrictContacts&#39;:
-      return UserPrivacySettingRuleRestrictContacts.fromMap(_map);
+    case &#39;userPrivacySettingRuleRestrictAll&#39;:
+      return UserPrivacySettingRuleRestrictAll.fromMap(_map);
     case &#39;userPrivacySettingRuleAllowAll&#39;:
       return UserPrivacySettingRuleAllowAll.fromMap(_map);
+    case &#39;userPrivacySettingRuleAllowContacts&#39;:
+      return UserPrivacySettingRuleAllowContacts.fromMap(_map);
+    case &#39;userPrivacySettingRuleRestrictContacts&#39;:
+      return UserPrivacySettingRuleRestrictContacts.fromMap(_map);
     case &#39;userPrivacySettingRuleAllowUsers&#39;:
       return UserPrivacySettingRuleAllowUsers.fromMap(_map);
     case null:

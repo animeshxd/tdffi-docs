@@ -95,7 +95,8 @@
   var width = _map[&#39;width&#39;]! as int;
   var height = _map[&#39;height&#39;]! as int;
   var caption = FormattedText.fromMap(_map[&#39;caption&#39;]);
-  var self_destruct_time = _map[&#39;self_destruct_time&#39;]! as int;
+  var self_destruct_type =
+      MessageSelfDestructType.fromMap(_map[&#39;self_destruct_type&#39;]);
   var has_spoiler = _map[&#39;has_spoiler&#39;]! as bool;
   return InputMessagePhoto(
     extra: extra,
@@ -106,7 +107,7 @@
     width: width,
     height: height,
     caption: caption,
-    self_destruct_time: self_destruct_time,
+    self_destruct_type: self_destruct_type,
     has_spoiler: has_spoiler,
   );
 }</code></pre>

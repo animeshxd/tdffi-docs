@@ -96,6 +96,9 @@
   var can_manage_topics = _map[&#39;can_manage_topics&#39;]! as bool;
   var can_promote_members = _map[&#39;can_promote_members&#39;]! as bool;
   var can_manage_video_chats = _map[&#39;can_manage_video_chats&#39;]! as bool;
+  var can_post_stories = _map[&#39;can_post_stories&#39;]! as bool;
+  var can_edit_stories = _map[&#39;can_edit_stories&#39;]! as bool;
+  var can_delete_stories = _map[&#39;can_delete_stories&#39;]! as bool;
   var is_anonymous = _map[&#39;is_anonymous&#39;]! as bool;
   return ChatAdministratorRights(
     extra: extra,
@@ -111,6 +114,9 @@
     can_manage_topics: can_manage_topics,
     can_promote_members: can_promote_members,
     can_manage_video_chats: can_manage_video_chats,
+    can_post_stories: can_post_stories,
+    can_edit_stories: can_edit_stories,
+    can_delete_stories: can_delete_stories,
     is_anonymous: is_anonymous,
   );
 }</code></pre>

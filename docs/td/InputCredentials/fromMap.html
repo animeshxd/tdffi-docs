@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;inputCredentialsSaved&#39;:
-      return InputCredentialsSaved.fromMap(_map);
     case &#39;inputCredentialsGooglePay&#39;:
       return InputCredentialsGooglePay.fromMap(_map);
     case &#39;inputCredentialsApplePay&#39;:
       return InputCredentialsApplePay.fromMap(_map);
+    case &#39;inputCredentialsSaved&#39;:
+      return InputCredentialsSaved.fromMap(_map);
     case &#39;inputCredentialsNew&#39;:
       return InputCredentialsNew.fromMap(_map);
     case null:

@@ -62,8 +62,10 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">EditStory</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span></li>
+      <span class="name ">EditStory</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-story_sender_chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_sender_chat_id</span>, </span></li>
+<li><span class="parameter" id="-param-story_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span></li>
 <li><span class="parameter" id="-param-content"><span class="type-annotation"><a href="../../td/InputStoryContent-class.html">InputStoryContent</a>?</span> <span class="parameter-name">content</span>, </span></li>
+<li><span class="parameter" id="-param-areas"><span class="type-annotation"><a href="../../td/InputStoryAreas-class.html">InputStoryAreas</a>?</span> <span class="parameter-name">areas</span>, </span></li>
 <li><span class="parameter" id="-param-caption"><span class="type-annotation"><a href="../../td/FormattedText-class.html">FormattedText</a>?</span> <span class="parameter-name">caption</span>, </span></li>
 <li><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span></li>
 <li><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span></li>
@@ -72,7 +74,7 @@
 
     
 <section class="desc markdown">
-  <p>Changes content and caption of a previously sent story</p>
+  <p>Changes content and caption of a story. Can be called only if story.can_be_edited == true</p>
 <p>Returns <a href="../../td/Ok-class.html">Ok</a></p>
 </section>
 

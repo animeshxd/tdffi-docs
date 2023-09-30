@@ -62,8 +62,8 @@
 
     
 <section class="desc markdown">
-  <p>Returns viewers of a recent outgoing story. The method can be called if story.can_get_viewers == true. The views are returned in a reverse chronological order (i.e., in order of decreasing view_date)</p>
-<p>Returns <a href="../td/MessageViewers-class.html">MessageViewers</a></p>
+  <p>Returns viewers of a story. The method can be called only for stories posted on behalf of the current user</p>
+<p>Returns <a href="../td/StoryViewers-class.html">StoryViewers</a></p>
 </section>
 
 
@@ -101,10 +101,10 @@
 
     <dl class="constructor-summary-list">
         <dt id="GetStoryViewers" class="callable">
-          <span class="name"><a href="../td/GetStoryViewers/GetStoryViewers.html">GetStoryViewers</a></span><span class="signature">(<span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span><span class="parameter" id="-param-offset_viewer"><span class="type-annotation"><a href="../td/MessageViewer-class.html">MessageViewer</a>?</span> <span class="parameter-name">offset_viewer</span>, </span><span class="parameter" id="-param-limit"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">limit</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/GetStoryViewers/GetStoryViewers.html">GetStoryViewers</a></span><span class="signature">(<span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span><span class="parameter" id="-param-query"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">query</span>, </span><span class="parameter" id="-param-only_contacts"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">only_contacts</span>, </span><span class="parameter" id="-param-prefer_with_reaction"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">prefer_with_reaction</span>, </span><span class="parameter" id="-param-offset"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">offset</span>, </span><span class="parameter" id="-param-limit"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">limit</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
-          Returns viewers of a recent outgoing story. The method can be called if story.can_get_viewers == true. The views are returned in a reverse chronological order (i.e., in order of decreasing view_date)
+          Returns viewers of a story. The method can be called only for stories posted on behalf of the current user
         </dd>
     </dl>
   </section>
@@ -157,13 +157,46 @@
 
 </dd>
 
-        <dt id="offset_viewer" class="property">
-  <span class="name"><a href="../td/GetStoryViewers/offset_viewer.html">offset_viewer</a></span>
-  <span class="signature">&#8596; <a href="../td/MessageViewer-class.html">MessageViewer</a>?</span> 
+        <dt id="offset" class="property">
+  <span class="name"><a href="../td/GetStoryViewers/offset.html">offset</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
 
 </dt>
 <dd>
-  <a href="../td/GetStoryViewers/offset_viewer.html">offset_viewer</a> A viewer from which to return next viewers; pass null to get results from the beginning
+  <a href="../td/GetStoryViewers/offset.html">offset</a> Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="only_contacts" class="property">
+  <span class="name"><a href="../td/GetStoryViewers/only_contacts.html">only_contacts</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GetStoryViewers/only_contacts.html">only_contacts</a> Pass true to get only contacts; pass false to get all relevant viewers
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="prefer_with_reaction" class="property">
+  <span class="name"><a href="../td/GetStoryViewers/prefer_with_reaction.html">prefer_with_reaction</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GetStoryViewers/prefer_with_reaction.html">prefer_with_reaction</a> Pass true to get viewers with reaction first; pass false to get viewers sorted just by view_date
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="query" class="property">
+  <span class="name"><a href="../td/GetStoryViewers/query.html">query</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/GetStoryViewers/query.html">query</a> Query to search for in names and usernames of the viewers; may be empty to get all relevant viewers
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

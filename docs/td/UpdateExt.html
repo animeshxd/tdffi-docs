@@ -140,7 +140,7 @@
 
 </dt>
 <dd>
-  The list of bots added to attachment menu has changed
+  The list of bots added to attachment or side menu has changed
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -255,6 +255,17 @@
 
 </dd>
 
+            <dt id="updateChatBlockList" class="property">
+  <span class="name"><a href="../td/UpdateExt/updateChatBlockList.html">updateChatBlockList</a></span>
+  <span class="signature">&#8594; <a href="../td/UpdateChatBlockList-class.html">UpdateChatBlockList</a>?</span> 
+
+</dt>
+<dd>
+  A chat was blocked or unblocked
+  <div class="features"><span class="feature">read-only</span></div>
+
+</dd>
+
             <dt id="updateChatDefaultDisableNotification" class="property">
   <span class="name"><a href="../td/UpdateExt/updateChatDefaultDisableNotification.html">updateChatDefaultDisableNotification</a></span>
   <span class="signature">&#8594; <a href="../td/UpdateChatDefaultDisableNotification-class.html">UpdateChatDefaultDisableNotification</a>?</span> 
@@ -306,17 +317,6 @@
 </dt>
 <dd>
   A chat's has_scheduled_messages field has changed
-  <div class="features"><span class="feature">read-only</span></div>
-
-</dd>
-
-            <dt id="updateChatIsBlocked" class="property">
-  <span class="name"><a href="../td/UpdateExt/updateChatIsBlocked.html">updateChatIsBlocked</a></span>
-  <span class="signature">&#8594; <a href="../td/UpdateChatIsBlocked-class.html">UpdateChatIsBlocked</a>?</span> 
-
-</dt>
-<dd>
-  A chat was blocked or unblocked
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>
@@ -1179,6 +1179,39 @@
 
 </dd>
 
+            <dt id="updateStorySendFailed" class="property">
+  <span class="name"><a href="../td/UpdateExt/updateStorySendFailed.html">updateStorySendFailed</a></span>
+  <span class="signature">&#8594; <a href="../td/UpdateStorySendFailed-class.html">UpdateStorySendFailed</a>?</span> 
+
+</dt>
+<dd>
+  A story failed to send. If the story sending is canceled, then updateStoryDeleted will be received instead of this update
+  <div class="features"><span class="feature">read-only</span></div>
+
+</dd>
+
+            <dt id="updateStorySendSucceeded" class="property">
+  <span class="name"><a href="../td/UpdateExt/updateStorySendSucceeded.html">updateStorySendSucceeded</a></span>
+  <span class="signature">&#8594; <a href="../td/UpdateStorySendSucceeded-class.html">UpdateStorySendSucceeded</a>?</span> 
+
+</dt>
+<dd>
+  A story has been successfully sent
+  <div class="features"><span class="feature">read-only</span></div>
+
+</dd>
+
+            <dt id="updateStoryStealthMode" class="property">
+  <span class="name"><a href="../td/UpdateExt/updateStoryStealthMode.html">updateStoryStealthMode</a></span>
+  <span class="signature">&#8594; <a href="../td/UpdateStoryStealthMode-class.html">UpdateStoryStealthMode</a>?</span> 
+
+</dt>
+<dd>
+  Story stealth mode settings have changed
+  <div class="features"><span class="feature">read-only</span></div>
+
+</dd>
+
             <dt id="updateSuggestedActions" class="property">
   <span class="name"><a href="../td/UpdateExt/updateSuggestedActions.html">updateSuggestedActions</a></span>
   <span class="signature">&#8594; <a href="../td/UpdateSuggestedActions-class.html">UpdateSuggestedActions</a>?</span> 
@@ -1230,6 +1263,17 @@
 </dt>
 <dd>
   The list of trending sticker sets was updated or some of them were viewed
+  <div class="features"><span class="feature">read-only</span></div>
+
+</dd>
+
+            <dt id="updateUnconfirmedSession" class="property">
+  <span class="name"><a href="../td/UpdateExt/updateUnconfirmedSession.html">updateUnconfirmedSession</a></span>
+  <span class="signature">&#8594; <a href="../td/UpdateUnconfirmedSession-class.html">UpdateUnconfirmedSession</a>?</span> 
+
+</dt>
+<dd>
+  The first unconfirmed session has changed
   <div class="features"><span class="feature">read-only</span></div>
 
 </dd>

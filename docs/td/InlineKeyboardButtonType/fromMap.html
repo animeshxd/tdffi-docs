@@ -83,24 +83,24 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;inlineKeyboardButtonTypeLoginUrl&#39;:
-      return InlineKeyboardButtonTypeLoginUrl.fromMap(_map);
     case &#39;inlineKeyboardButtonTypeCallback&#39;:
       return InlineKeyboardButtonTypeCallback.fromMap(_map);
+    case &#39;inlineKeyboardButtonTypeUser&#39;:
+      return InlineKeyboardButtonTypeUser.fromMap(_map);
+    case &#39;inlineKeyboardButtonTypeSwitchInline&#39;:
+      return InlineKeyboardButtonTypeSwitchInline.fromMap(_map);
+    case &#39;inlineKeyboardButtonTypeLoginUrl&#39;:
+      return InlineKeyboardButtonTypeLoginUrl.fromMap(_map);
+    case &#39;inlineKeyboardButtonTypeCallbackGame&#39;:
+      return InlineKeyboardButtonTypeCallbackGame.fromMap(_map);
+    case &#39;inlineKeyboardButtonTypeBuy&#39;:
+      return InlineKeyboardButtonTypeBuy.fromMap(_map);
+    case &#39;inlineKeyboardButtonTypeCallbackWithPassword&#39;:
+      return InlineKeyboardButtonTypeCallbackWithPassword.fromMap(_map);
     case &#39;inlineKeyboardButtonTypeWebApp&#39;:
       return InlineKeyboardButtonTypeWebApp.fromMap(_map);
     case &#39;inlineKeyboardButtonTypeUrl&#39;:
       return InlineKeyboardButtonTypeUrl.fromMap(_map);
-    case &#39;inlineKeyboardButtonTypeBuy&#39;:
-      return InlineKeyboardButtonTypeBuy.fromMap(_map);
-    case &#39;inlineKeyboardButtonTypeUser&#39;:
-      return InlineKeyboardButtonTypeUser.fromMap(_map);
-    case &#39;inlineKeyboardButtonTypeCallbackGame&#39;:
-      return InlineKeyboardButtonTypeCallbackGame.fromMap(_map);
-    case &#39;inlineKeyboardButtonTypeSwitchInline&#39;:
-      return InlineKeyboardButtonTypeSwitchInline.fromMap(_map);
-    case &#39;inlineKeyboardButtonTypeCallbackWithPassword&#39;:
-      return InlineKeyboardButtonTypeCallbackWithPassword.fromMap(_map);
     case null:
     default:
       return null;

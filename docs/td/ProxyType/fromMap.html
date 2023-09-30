@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
+    case &#39;proxyTypeHttp&#39;:
+      return ProxyTypeHttp.fromMap(_map);
     case &#39;proxyTypeSocks5&#39;:
       return ProxyTypeSocks5.fromMap(_map);
     case &#39;proxyTypeMtproto&#39;:
       return ProxyTypeMtproto.fromMap(_map);
-    case &#39;proxyTypeHttp&#39;:
-      return ProxyTypeHttp.fromMap(_map);
     case null:
     default:
       return null;

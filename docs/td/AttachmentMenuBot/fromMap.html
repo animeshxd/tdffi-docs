@@ -93,13 +93,21 @@
   var supports_channel_chats = _map[&#39;supports_channel_chats&#39;]! as bool;
   var supports_settings = _map[&#39;supports_settings&#39;]! as bool;
   var request_write_access = _map[&#39;request_write_access&#39;]! as bool;
+  var is_added = _map[&#39;is_added&#39;]! as bool;
+  var show_in_attachment_menu = _map[&#39;show_in_attachment_menu&#39;]! as bool;
+  var show_in_side_menu = _map[&#39;show_in_side_menu&#39;]! as bool;
+  var show_disclaimer_in_side_menu =
+      _map[&#39;show_disclaimer_in_side_menu&#39;]! as bool;
   var name = _map[&#39;name&#39;]! as String;
   var name_color = AttachmentMenuBotColor.fromMap(_map[&#39;name_color&#39;]);
   var default_icon = File.fromMap(_map[&#39;default_icon&#39;]);
   var ios_static_icon = File.fromMap(_map[&#39;ios_static_icon&#39;]);
   var ios_animated_icon = File.fromMap(_map[&#39;ios_animated_icon&#39;]);
+  var ios_side_menu_icon = File.fromMap(_map[&#39;ios_side_menu_icon&#39;]);
   var android_icon = File.fromMap(_map[&#39;android_icon&#39;]);
+  var android_side_menu_icon = File.fromMap(_map[&#39;android_side_menu_icon&#39;]);
   var macos_icon = File.fromMap(_map[&#39;macos_icon&#39;]);
+  var macos_side_menu_icon = File.fromMap(_map[&#39;macos_side_menu_icon&#39;]);
   var icon_color = AttachmentMenuBotColor.fromMap(_map[&#39;icon_color&#39;]);
   var web_app_placeholder = File.fromMap(_map[&#39;web_app_placeholder&#39;]);
   return AttachmentMenuBot(
@@ -113,13 +121,20 @@
     supports_channel_chats: supports_channel_chats,
     supports_settings: supports_settings,
     request_write_access: request_write_access,
+    is_added: is_added,
+    show_in_attachment_menu: show_in_attachment_menu,
+    show_in_side_menu: show_in_side_menu,
+    show_disclaimer_in_side_menu: show_disclaimer_in_side_menu,
     name: name,
     name_color: name_color,
     default_icon: default_icon,
     ios_static_icon: ios_static_icon,
     ios_animated_icon: ios_animated_icon,
+    ios_side_menu_icon: ios_side_menu_icon,
     android_icon: android_icon,
+    android_side_menu_icon: android_side_menu_icon,
     macos_icon: macos_icon,
+    macos_side_menu_icon: macos_side_menu_icon,
     icon_color: icon_color,
     web_app_placeholder: web_app_placeholder,
   );

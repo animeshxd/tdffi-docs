@@ -83,10 +83,10 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;publicChatTypeHasUsername&#39;:
-      return PublicChatTypeHasUsername.fromMap(_map);
     case &#39;publicChatTypeIsLocationBased&#39;:
       return PublicChatTypeIsLocationBased.fromMap(_map);
+    case &#39;publicChatTypeHasUsername&#39;:
+      return PublicChatTypeHasUsername.fromMap(_map);
     case null:
     default:
       return null;

@@ -83,10 +83,10 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;textParseModeHTML&#39;:
-      return TextParseModeHTML.fromMap(_map);
     case &#39;textParseModeMarkdown&#39;:
       return TextParseModeMarkdown.fromMap(_map);
+    case &#39;textParseModeHTML&#39;:
+      return TextParseModeHTML.fromMap(_map);
     case null:
     default:
       return null;

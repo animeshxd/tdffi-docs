@@ -63,7 +63,10 @@
     <section class="multi-line-signature">
       
       <span class="name ">GetStoryViewers</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span></li>
-<li><span class="parameter" id="-param-offset_viewer"><span class="type-annotation"><a href="../../td/MessageViewer-class.html">MessageViewer</a>?</span> <span class="parameter-name">offset_viewer</span>, </span></li>
+<li><span class="parameter" id="-param-query"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">query</span>, </span></li>
+<li><span class="parameter" id="-param-only_contacts"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">only_contacts</span>, </span></li>
+<li><span class="parameter" id="-param-prefer_with_reaction"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">prefer_with_reaction</span>, </span></li>
+<li><span class="parameter" id="-param-offset"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">offset</span>, </span></li>
 <li><span class="parameter" id="-param-limit"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">limit</span>, </span></li>
 <li><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span></li>
 <li><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span></li>
@@ -72,8 +75,8 @@
 
     
 <section class="desc markdown">
-  <p>Returns viewers of a recent outgoing story. The method can be called if story.can_get_viewers == true. The views are returned in a reverse chronological order (i.e., in order of decreasing view_date)</p>
-<p>Returns <a href="../../td/MessageViewers-class.html">MessageViewers</a></p>
+  <p>Returns viewers of a story. The method can be called only for stories posted on behalf of the current user</p>
+<p>Returns <a href="../../td/StoryViewers-class.html">StoryViewers</a></p>
 </section>
 
 

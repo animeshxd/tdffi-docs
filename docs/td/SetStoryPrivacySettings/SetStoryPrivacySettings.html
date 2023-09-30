@@ -62,7 +62,8 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">SetStoryPrivacySettings</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span></li>
+      <span class="name ">SetStoryPrivacySettings</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="-param-story_sender_chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_sender_chat_id</span>, </span></li>
+<li><span class="parameter" id="-param-story_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span></li>
 <li><span class="parameter" id="-param-privacy_settings"><span>required</span> <span class="type-annotation"><a href="../../td/StoryPrivacySettings-class.html">StoryPrivacySettings</a></span> <span class="parameter-name">privacy_settings</span>, </span></li>
 <li><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span></li>
 <li><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span></li>
@@ -71,7 +72,7 @@
 
     
 <section class="desc markdown">
-  <p>Changes privacy settings of a previously sent story</p>
+  <p>Changes privacy settings of a story. Can be called only if story.can_be_edited == true</p>
 <p>Returns <a href="../../td/Ok-class.html">Ok</a></p>
 </section>
 

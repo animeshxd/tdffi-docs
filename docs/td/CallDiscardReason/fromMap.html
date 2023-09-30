@@ -83,16 +83,16 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;callDiscardReasonEmpty&#39;:
-      return CallDiscardReasonEmpty.fromMap(_map);
-    case &#39;callDiscardReasonMissed&#39;:
-      return CallDiscardReasonMissed.fromMap(_map);
-    case &#39;callDiscardReasonDeclined&#39;:
-      return CallDiscardReasonDeclined.fromMap(_map);
     case &#39;callDiscardReasonDisconnected&#39;:
       return CallDiscardReasonDisconnected.fromMap(_map);
+    case &#39;callDiscardReasonEmpty&#39;:
+      return CallDiscardReasonEmpty.fromMap(_map);
     case &#39;callDiscardReasonHungUp&#39;:
       return CallDiscardReasonHungUp.fromMap(_map);
+    case &#39;callDiscardReasonDeclined&#39;:
+      return CallDiscardReasonDeclined.fromMap(_map);
+    case &#39;callDiscardReasonMissed&#39;:
+      return CallDiscardReasonMissed.fromMap(_map);
     case null:
     default:
       return null;

@@ -91,6 +91,14 @@
   Contains information about the period of inactivity after which the current user's account will automatically be deleted
 </dd>
 
+        <dt id="ActivateStoryStealthMode">
+  <span class="name "><a href="../td/ActivateStoryStealthMode-class.html">ActivateStoryStealthMode</a></span> 
+
+</dt>
+<dd>
+  Activates stealth mode for stories, which hides all views of stories from the current user in the last "story_stealth_mode_past_period" seconds
+</dd>
+
         <dt id="AddApplicationChangelog">
   <span class="name "><a href="../td/AddApplicationChangelog-class.html">AddApplicationChangelog</a></span> 
 
@@ -267,6 +275,14 @@
   Adds a new sticker to a set; for bots only
 </dd>
 
+        <dt id="AllowBotToSendMessages">
+  <span class="name "><a href="../td/AllowBotToSendMessages-class.html">AllowBotToSendMessages</a></span> 
+
+</dt>
+<dd>
+  Allows the specified bot to send messages to the user
+</dd>
+
         <dt id="AnimatedChatPhoto">
   <span class="name "><a href="../td/AnimatedChatPhoto-class.html">AnimatedChatPhoto</a></span> 
 
@@ -376,7 +392,7 @@
 
 </dt>
 <dd>
-  Represents a bot, which can be added to attachment menu
+  Represents a bot, which can be added to attachment or side menu
 </dd>
 
         <dt id="AttachmentMenuBotColor">
@@ -787,12 +803,44 @@
   Contains full information about a basic group
 </dd>
 
+        <dt id="BlockList">
+  <span class="name "><a href="../td/BlockList-class.html">BlockList</a></span> 
+
+</dt>
+<dd>
+  Describes a type of a block list
+</dd>
+
+        <dt id="BlockListMain">
+  <span class="name "><a href="../td/BlockListMain-class.html">BlockListMain</a></span> 
+
+</dt>
+<dd>
+  The main block list that disallows writing messages to the current user, receiving their status and photo, viewing of stories, and some other actions
+</dd>
+
+        <dt id="BlockListStories">
+  <span class="name "><a href="../td/BlockListStories-class.html">BlockListStories</a></span> 
+
+</dt>
+<dd>
+  The block list that disallows viewing of stories of the current user
+</dd>
+
         <dt id="BlockMessageSenderFromReplies">
   <span class="name "><a href="../td/BlockMessageSenderFromReplies-class.html">BlockMessageSenderFromReplies</a></span> 
 
 </dt>
 <dd>
   Blocks an original sender of a message in the Replies chat
+</dd>
+
+        <dt id="BoostChat">
+  <span class="name "><a href="../td/BoostChat-class.html">BoostChat</a></span> 
+
+</dt>
+<dd>
+  Boosts a chat
 </dd>
 
         <dt id="BotCommand">
@@ -1171,6 +1219,78 @@
   The call is ready to use
 </dd>
 
+        <dt id="CanBoostChat">
+  <span class="name "><a href="../td/CanBoostChat-class.html">CanBoostChat</a></span> 
+
+</dt>
+<dd>
+  Checks whether the current user can boost a chat
+</dd>
+
+        <dt id="CanBoostChatResult">
+  <span class="name "><a href="../td/CanBoostChatResult-class.html">CanBoostChatResult</a></span> 
+
+</dt>
+<dd>
+  Represents result of checking whether the current user can boost the specific chat
+</dd>
+
+        <dt id="CanBoostChatResultAlreadyBoosted">
+  <span class="name "><a href="../td/CanBoostChatResultAlreadyBoosted-class.html">CanBoostChatResultAlreadyBoosted</a></span> 
+
+</dt>
+<dd>
+  The chat is already boosted by the user
+</dd>
+
+        <dt id="CanBoostChatResultInvalidChat">
+  <span class="name "><a href="../td/CanBoostChatResultInvalidChat-class.html">CanBoostChatResultInvalidChat</a></span> 
+
+</dt>
+<dd>
+  The chat can't be boosted
+</dd>
+
+        <dt id="CanBoostChatResultOk">
+  <span class="name "><a href="../td/CanBoostChatResultOk-class.html">CanBoostChatResultOk</a></span> 
+
+</dt>
+<dd>
+  The chat can be boosted
+</dd>
+
+        <dt id="CanBoostChatResultPremiumNeeded">
+  <span class="name "><a href="../td/CanBoostChatResultPremiumNeeded-class.html">CanBoostChatResultPremiumNeeded</a></span> 
+
+</dt>
+<dd>
+  The user must subscribe to Telegram Premium to be able to boost chats
+</dd>
+
+        <dt id="CanBoostChatResultPremiumSubscriptionNeeded">
+  <span class="name "><a href="../td/CanBoostChatResultPremiumSubscriptionNeeded-class.html">CanBoostChatResultPremiumSubscriptionNeeded</a></span> 
+
+</dt>
+<dd>
+  The user must have Telegram Premium subscription instead of a gifted Telegram Premium
+</dd>
+
+        <dt id="CanBoostChatResultWaitNeeded">
+  <span class="name "><a href="../td/CanBoostChatResultWaitNeeded-class.html">CanBoostChatResultWaitNeeded</a></span> 
+
+</dt>
+<dd>
+  The user must wait the specified time before the boost can be moved to another chat
+</dd>
+
+        <dt id="CanBotSendMessages">
+  <span class="name "><a href="../td/CanBotSendMessages-class.html">CanBotSendMessages</a></span> 
+
+</dt>
+<dd>
+  Checks whether the specified bot can send messages to the user. Returns a 404 error if can't and the access can be granted by call to allowBotToSendMessages
+</dd>
+
         <dt id="CancelDownloadFile">
   <span class="name "><a href="../td/CancelDownloadFile-class.html">CancelDownloadFile</a></span> 
 
@@ -1201,6 +1321,70 @@
 </dt>
 <dd>
   Checks whether Telegram Premium purchase is possible. Must be called before in-store Premium purchase
+</dd>
+
+        <dt id="CanSendStory">
+  <span class="name "><a href="../td/CanSendStory-class.html">CanSendStory</a></span> 
+
+</dt>
+<dd>
+  Checks whether the current user can send a story on behalf of a chat; requires can_post_stories rights for channel chats
+</dd>
+
+        <dt id="CanSendStoryResult">
+  <span class="name "><a href="../td/CanSendStoryResult-class.html">CanSendStoryResult</a></span> 
+
+</dt>
+<dd>
+  Represents result of checking whether the current user can send a story in the specific chat
+</dd>
+
+        <dt id="CanSendStoryResultActiveStoryLimitExceeded">
+  <span class="name "><a href="../td/CanSendStoryResultActiveStoryLimitExceeded-class.html">CanSendStoryResultActiveStoryLimitExceeded</a></span> 
+
+</dt>
+<dd>
+  The limit for the number of active stories exceeded. The user can buy Telegram Premium, delete an active story, or wait for the oldest story to expire
+</dd>
+
+        <dt id="CanSendStoryResultBoostNeeded">
+  <span class="name "><a href="../td/CanSendStoryResultBoostNeeded-class.html">CanSendStoryResultBoostNeeded</a></span> 
+
+</dt>
+<dd>
+  The channel chat must be boosted first by Telegram Premium subscribers to post more stories. Call getChatBoostStatus to get current boost status of the chat
+</dd>
+
+        <dt id="CanSendStoryResultMonthlyLimitExceeded">
+  <span class="name "><a href="../td/CanSendStoryResultMonthlyLimitExceeded-class.html">CanSendStoryResultMonthlyLimitExceeded</a></span> 
+
+</dt>
+<dd>
+  The monthly limit for the number of posted stories exceeded. The user needs to buy Telegram Premium or wait specified time
+</dd>
+
+        <dt id="CanSendStoryResultOk">
+  <span class="name "><a href="../td/CanSendStoryResultOk-class.html">CanSendStoryResultOk</a></span> 
+
+</dt>
+<dd>
+  A story can be sent
+</dd>
+
+        <dt id="CanSendStoryResultPremiumNeeded">
+  <span class="name "><a href="../td/CanSendStoryResultPremiumNeeded-class.html">CanSendStoryResultPremiumNeeded</a></span> 
+
+</dt>
+<dd>
+  The user must subscribe to Telegram Premium to be able to post stories
+</dd>
+
+        <dt id="CanSendStoryResultWeeklyLimitExceeded">
+  <span class="name "><a href="../td/CanSendStoryResultWeeklyLimitExceeded-class.html">CanSendStoryResultWeeklyLimitExceeded</a></span> 
+
+</dt>
+<dd>
+  The weekly limit for the number of posted stories exceeded. The user needs to buy Telegram Premium or wait specified time
 </dd>
 
         <dt id="CanTransferOwnership">
@@ -1328,7 +1512,7 @@
 
 </dt>
 <dd>
-  The chat is a private or secret chat, which can be reported using the method reportChat, or the other user can be blocked using the method toggleMessageSenderIsBlocked,
+  The chat is a private or secret chat, which can be reported using the method reportChat, or the other user can be blocked using the method setMessageSenderBlockList,
 </dd>
 
         <dt id="ChatActionBarReportSpam">
@@ -1537,6 +1721,38 @@
 </dt>
 <dd>
   Describes a background set for a specific chat
+</dd>
+
+        <dt id="ChatBoost">
+  <span class="name "><a href="../td/ChatBoost-class.html">ChatBoost</a></span> 
+
+</dt>
+<dd>
+  Describes a boost of a chat
+</dd>
+
+        <dt id="ChatBoostLink">
+  <span class="name "><a href="../td/ChatBoostLink-class.html">ChatBoostLink</a></span> 
+
+</dt>
+<dd>
+  Contains an HTTPS link to boost a chat
+</dd>
+
+        <dt id="ChatBoostLinkInfo">
+  <span class="name "><a href="../td/ChatBoostLinkInfo-class.html">ChatBoostLinkInfo</a></span> 
+
+</dt>
+<dd>
+  Contains information about a link to boost a a chat
+</dd>
+
+        <dt id="ChatBoostStatus">
+  <span class="name "><a href="../td/ChatBoostStatus-class.html">ChatBoostStatus</a></span> 
+
+</dt>
+<dd>
+  Describes current boost status of a chat
 </dd>
 
         <dt id="ChatEvent">
@@ -2851,6 +3067,14 @@
   Confirms QR code authentication on another device. Returns created session on success
 </dd>
 
+        <dt id="ConfirmSession">
+  <span class="name "><a href="../td/ConfirmSession-class.html">ConfirmSession</a></span> 
+
+</dt>
+<dd>
+  Confirms an unconfirmed session of the current user from another device
+</dd>
+
         <dt id="ConnectedWebsite">
   <span class="name "><a href="../td/ConnectedWebsite-class.html">ConnectedWebsite</a></span> 
 
@@ -3296,7 +3520,7 @@
 
 </dt>
 <dd>
-  Deletes a previously sent story
+  Deletes a previously sent story. Can be called only if story.can_be_deleted == true
 </dd>
 
         <dt id="Destroy">
@@ -3648,7 +3872,7 @@
 
 </dt>
 <dd>
-  Changes content and caption of a previously sent story
+  Changes content and caption of a story. Can be called only if story.can_be_edited == true
 </dd>
 
         <dt id="EmailAddressAuthentication">
@@ -4123,6 +4347,14 @@
   Forwards previously sent messages. Returns the forwarded messages in the same order as the message identifiers passed in message_ids. If a message can't be forwarded, null will be returned instead of the message
 </dd>
 
+        <dt id="FoundChatBoosts">
+  <span class="name "><a href="../td/FoundChatBoosts-class.html">FoundChatBoosts</a></span> 
+
+</dt>
+<dd>
+  Contains a list of boosts applied to a chat
+</dd>
+
         <dt id="FoundChatMessages">
   <span class="name "><a href="../td/FoundChatMessages-class.html">FoundChatMessages</a></span> 
 
@@ -4145,6 +4377,14 @@
 </dt>
 <dd>
   Contains a list of messages found by a search
+</dd>
+
+        <dt id="FoundPositions">
+  <span class="name "><a href="../td/FoundPositions-class.html">FoundPositions</a></span> 
+
+</dt>
+<dd>
+  Contains 0-based positions of matched objects
 </dd>
 
         <dt id="FoundWebApp">
@@ -4219,6 +4459,14 @@
   Returns all available Telegram Passport elements
 </dd>
 
+        <dt id="GetAllStickerEmojis">
+  <span class="name "><a href="../td/GetAllStickerEmojis-class.html">GetAllStickerEmojis</a></span> 
+
+</dt>
+<dd>
+  Returns unique emoji that correspond to stickers to be found by the getStickers(sticker_type, query, 1000000, chat_id)
+</dd>
+
         <dt id="GetAnimatedEmoji">
   <span class="name "><a href="../td/GetAnimatedEmoji-class.html">GetAnimatedEmoji</a></span> 
 
@@ -4259,14 +4507,6 @@
   Returns a list of archived sticker sets
 </dd>
 
-        <dt id="GetArchivedStories">
-  <span class="name "><a href="../td/GetArchivedStories-class.html">GetArchivedStories</a></span> 
-
-</dt>
-<dd>
-  Returns the list of all stories of the current user. The stories are returned in a reverse chronological order (i.e., in order of decreasing story_id).
-</dd>
-
         <dt id="GetAttachedStickerSets">
   <span class="name "><a href="../td/GetAttachedStickerSets-class.html">GetAttachedStickerSets</a></span> 
 
@@ -4280,7 +4520,7 @@
 
 </dt>
 <dd>
-  Returns information about a bot that can be added to attachment menu
+  Returns information about a bot that can be added to attachment or side menu
 </dd>
 
         <dt id="GetAuthorizationState">
@@ -4419,12 +4659,52 @@
   Returns a list of administrators of the chat with their custom titles
 </dd>
 
+        <dt id="GetChatArchivedStories">
+  <span class="name "><a href="../td/GetChatArchivedStories-class.html">GetChatArchivedStories</a></span> 
+
+</dt>
+<dd>
+  Returns the list of all stories posted by the given chat; requires can_edit_stories rights for channel chats.
+</dd>
+
         <dt id="GetChatAvailableMessageSenders">
   <span class="name "><a href="../td/GetChatAvailableMessageSenders-class.html">GetChatAvailableMessageSenders</a></span> 
 
 </dt>
 <dd>
   Returns list of message sender identifiers, which can be used to send messages in a chat
+</dd>
+
+        <dt id="GetChatBoostLink">
+  <span class="name "><a href="../td/GetChatBoostLink-class.html">GetChatBoostLink</a></span> 
+
+</dt>
+<dd>
+  Returns an HTTPS link to boost the specified channel chat
+</dd>
+
+        <dt id="GetChatBoostLinkInfo">
+  <span class="name "><a href="../td/GetChatBoostLinkInfo-class.html">GetChatBoostLinkInfo</a></span> 
+
+</dt>
+<dd>
+  Returns information about a link to boost a chat. Can be called for any internal link of the type internalLinkTypeChatBoost
+</dd>
+
+        <dt id="GetChatBoosts">
+  <span class="name "><a href="../td/GetChatBoosts-class.html">GetChatBoosts</a></span> 
+
+</dt>
+<dd>
+  Returns list of boosts applied to a chat. The user must be an administrator in the channel chat to get the list of boosts
+</dd>
+
+        <dt id="GetChatBoostStatus">
+  <span class="name "><a href="../td/GetChatBoostStatus-class.html">GetChatBoostStatus</a></span> 
+
+</dt>
+<dd>
+  Returns the current boost status for a channel chat
 </dd>
 
         <dt id="GetChatEventLog">
@@ -4649,6 +4929,14 @@
 </dt>
 <dd>
   Returns detailed statistics about a chat. Currently, this method can be used only for supergroups and channels. Can be used only if supergroupFullInfo.can_get_statistics == true
+</dd>
+
+        <dt id="GetChatsToSendStories">
+  <span class="name "><a href="../td/GetChatsToSendStories-class.html">GetChatsToSendStories</a></span> 
+
+</dt>
+<dd>
+  Returns channel chats in which the current user has the right to post stories. The chats must be rechecked with canSendStory before actually trying to post a story there
 </dd>
 
         <dt id="GetCloseFriends">
@@ -5296,7 +5584,7 @@
 
 </dt>
 <dd>
-  Returns an invoice payment form. This method must be called when the user presses inlineKeyboardButtonBuy
+  Returns an invoice payment form. This method must be called when the user presses inline button of the type inlineKeyboardButtonTypeBuy
 </dd>
 
         <dt id="GetPaymentReceipt">
@@ -5464,7 +5752,7 @@
 
 </dt>
 <dd>
-  Returns information about a file by its remote ID; this is an offline request. Can be used to register a URL as a file for further uploading, or sending as a message. Even the request succeeds, the file can be used only if it is still accessible to the user.
+  Returns information about a file by its remote identifier; this is an offline request. Can be used to register a URL as a file for further uploading, or sending as a message. Even the request succeeds, the file can be used only if it is still accessible to the user.
 </dd>
 
         <dt id="GetRepliedMessage">
@@ -5579,6 +5867,14 @@
   Returns a story
 </dd>
 
+        <dt id="GetStoryAvailableReactions">
+  <span class="name "><a href="../td/GetStoryAvailableReactions-class.html">GetStoryAvailableReactions</a></span> 
+
+</dt>
+<dd>
+  Returns reactions, which can be chosen for a story
+</dd>
+
         <dt id="GetStoryNotificationSettingsExceptions">
   <span class="name "><a href="../td/GetStoryNotificationSettingsExceptions-class.html">GetStoryNotificationSettingsExceptions</a></span> 
 
@@ -5592,7 +5888,7 @@
 
 </dt>
 <dd>
-  Returns viewers of a recent outgoing story. The method can be called if story.can_get_viewers == true. The views are returned in a reverse chronological order (i.e., in order of decreasing view_date)
+  Returns viewers of a story. The method can be called only for stories posted on behalf of the current user
 </dd>
 
         <dt id="GetSuggestedFileName">
@@ -5696,7 +5992,7 @@
 
 </dt>
 <dd>
-  Returns a list of frequently used chats. Supported only if the chat info database is enabled
+  Returns a list of frequently used chats
 </dd>
 
         <dt id="GetTrendingStickerSets">
@@ -5784,7 +6080,7 @@
 
 </dt>
 <dd>
-  Returns an HTTPS URL of a Web App to open after keyboardButtonTypeWebApp or inlineQueryResultsButtonTypeWebApp button is pressed
+  Returns an HTTPS URL of a Web App to open from the side menu, a keyboardButtonTypeWebApp button, an inlineQueryResultsButtonTypeWebApp button, or an internalLinkTypeSideMenuBot link
 </dd>
 
         <dt id="GetWebPageInstantView">
@@ -6320,7 +6616,7 @@
 
 </dt>
 <dd>
-  A file defined by its unique ID
+  A file defined by its unique identifier
 </dd>
 
         <dt id="InputFileLocal">
@@ -6336,7 +6632,7 @@
 
 </dt>
 <dd>
-  A file defined by its remote ID. The remote ID is guaranteed to be usable only if the corresponding file is still accessible to the user and known to TDLib.
+  A file defined by its remote identifier. The remote identifier is guaranteed to be usable only if the corresponding file is still accessible to the user and known to TDLib.
 </dd>
 
         <dt id="InputIdentityDocument">
@@ -6843,6 +7139,62 @@
   A sticker to be added to a sticker set
 </dd>
 
+        <dt id="InputStoryArea">
+  <span class="name "><a href="../td/InputStoryArea-class.html">InputStoryArea</a></span> 
+
+</dt>
+<dd>
+  Describes a clickable rectangle area on a story media to be added
+</dd>
+
+        <dt id="InputStoryAreas">
+  <span class="name "><a href="../td/InputStoryAreas-class.html">InputStoryAreas</a></span> 
+
+</dt>
+<dd>
+  Contains a list of story areas to be added
+</dd>
+
+        <dt id="InputStoryAreaType">
+  <span class="name "><a href="../td/InputStoryAreaType-class.html">InputStoryAreaType</a></span> 
+
+</dt>
+<dd>
+  Describes type of a clickable rectangle area on a story media to be added
+</dd>
+
+        <dt id="InputStoryAreaTypeFoundVenue">
+  <span class="name "><a href="../td/InputStoryAreaTypeFoundVenue-class.html">InputStoryAreaTypeFoundVenue</a></span> 
+
+</dt>
+<dd>
+  An area pointing to a venue found by the bot getOption("venue_search_bot_username")
+</dd>
+
+        <dt id="InputStoryAreaTypeLocation">
+  <span class="name "><a href="../td/InputStoryAreaTypeLocation-class.html">InputStoryAreaTypeLocation</a></span> 
+
+</dt>
+<dd>
+  An area pointing to a location
+</dd>
+
+        <dt id="InputStoryAreaTypePreviousVenue">
+  <span class="name "><a href="../td/InputStoryAreaTypePreviousVenue-class.html">InputStoryAreaTypePreviousVenue</a></span> 
+
+</dt>
+<dd>
+  An area pointing to a venue already added to the story
+</dd>
+
+        <dt id="InputStoryAreaTypeSuggestedReaction">
+  <span class="name "><a href="../td/InputStoryAreaTypeSuggestedReaction-class.html">InputStoryAreaTypeSuggestedReaction</a></span> 
+
+</dt>
+<dd>
+  An area pointing to a suggested reaction
+</dd>
+
         <dt id="InputStoryContent">
   <span class="name "><a href="../td/InputStoryContent-class.html">InputStoryContent</a></span> 
 
@@ -6945,6 +7297,14 @@
 </dt>
 <dd>
   The link is a link to the change phone number section of the app
+</dd>
+
+        <dt id="InternalLinkTypeChatBoost">
+  <span class="name "><a href="../td/InternalLinkTypeChatBoost-class.html">InternalLinkTypeChatBoost</a></span> 
+
+</dt>
+<dd>
+  The link is a link to boost a Telegram chat. Call getChatBoostLinkInfo with the given URL to process the link.
 </dd>
 
         <dt id="InternalLinkTypeChatFolderInvite">
@@ -7115,6 +7475,14 @@
   The link is a link to application settings
 </dd>
 
+        <dt id="InternalLinkTypeSideMenuBot">
+  <span class="name "><a href="../td/InternalLinkTypeSideMenuBot-class.html">InternalLinkTypeSideMenuBot</a></span> 
+
+</dt>
+<dd>
+  The link is a link to a bot, which can be installed to the side menu. Call searchPublicChat with the given bot username, check that the user is a bot and can be added to attachment menu.
+</dd>
+
         <dt id="InternalLinkTypeStickerSet">
   <span class="name "><a href="../td/InternalLinkTypeStickerSet-class.html">InternalLinkTypeStickerSet</a></span> 
 
@@ -7200,7 +7568,39 @@
 
 </dt>
 <dd>
-  Invites users to an active group call. Sends a service message of type messageInviteToGroupCall for video chats
+  Invites users to an active group call. Sends a service message of type messageInviteVideoChatParticipants for video chats
+</dd>
+
+        <dt id="InviteLinkChatType">
+  <span class="name "><a href="../td/InviteLinkChatType-class.html">InviteLinkChatType</a></span> 
+
+</dt>
+<dd>
+  Describes the type of a chat to which points an invite link
+</dd>
+
+        <dt id="InviteLinkChatTypeBasicGroup">
+  <span class="name "><a href="../td/InviteLinkChatTypeBasicGroup-class.html">InviteLinkChatTypeBasicGroup</a></span> 
+
+</dt>
+<dd>
+  The link is an invite link for a basic group
+</dd>
+
+        <dt id="InviteLinkChatTypeChannel">
+  <span class="name "><a href="../td/InviteLinkChatTypeChannel-class.html">InviteLinkChatTypeChannel</a></span> 
+
+</dt>
+<dd>
+  The link is an invite link for a channel
+</dd>
+
+        <dt id="InviteLinkChatTypeSupergroup">
+  <span class="name "><a href="../td/InviteLinkChatTypeSupergroup-class.html">InviteLinkChatTypeSupergroup</a></span> 
+
+</dt>
+<dd>
+  The link is an invite link for a supergroup
 </dd>
 
         <dt id="Invoice">
@@ -8275,6 +8675,30 @@
   A screenshot of a message in the chat has been taken
 </dd>
 
+        <dt id="MessageSelfDestructType">
+  <span class="name "><a href="../td/MessageSelfDestructType-class.html">MessageSelfDestructType</a></span> 
+
+</dt>
+<dd>
+  Describes when a message will be self-destructed
+</dd>
+
+        <dt id="MessageSelfDestructTypeImmediately">
+  <span class="name "><a href="../td/MessageSelfDestructTypeImmediately-class.html">MessageSelfDestructTypeImmediately</a></span> 
+
+</dt>
+<dd>
+  The message can be opened only once and will be self-destructed once closed
+</dd>
+
+        <dt id="MessageSelfDestructTypeTimer">
+  <span class="name "><a href="../td/MessageSelfDestructTypeTimer-class.html">MessageSelfDestructTypeTimer</a></span> 
+
+</dt>
+<dd>
+  The message will be self-destructed in the specified time after its content was opened
+</dd>
+
         <dt id="MessageSender">
   <span class="name "><a href="../td/MessageSender-class.html">MessageSender</a></span> 
 
@@ -8912,7 +9336,7 @@
 
 </dt>
 <dd>
-  Informs TDLib that a Web App is being opened from attachment menu, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an inlineKeyboardButtonTypeWebApp button.
+  Informs TDLib that a Web App is being opened from the attachment menu, a botMenuButton button, an internalLinkTypeAttachmentMenuBot link, or an inlineKeyboardButtonTypeWebApp button.
 </dd>
 
         <dt id="OptimizeStorage">
@@ -9899,6 +10323,14 @@
   Allowed to set a premium application icons
 </dd>
 
+        <dt id="PremiumFeatureChatBoost">
+  <span class="name "><a href="../td/PremiumFeatureChatBoost-class.html">PremiumFeatureChatBoost</a></span> 
+
+</dt>
+<dd>
+  The ability to boost chats
+</dd>
+
         <dt id="PremiumFeatureCustomEmoji">
   <span class="name "><a href="../td/PremiumFeatureCustomEmoji-class.html">PremiumFeatureCustomEmoji</a></span> 
 
@@ -9920,7 +10352,7 @@
 
 </dt>
 <dd>
-  A emoji status shown along with the user's name
+  An emoji status shown along with the user's name
 </dd>
 
         <dt id="PremiumFeatureForumTopicIcon">
@@ -10001,6 +10433,14 @@
 </dt>
 <dd>
   Allowed to use premium stickers with unique effects
+</dd>
+
+        <dt id="PremiumFeatureUpgradedStories">
+  <span class="name "><a href="../td/PremiumFeatureUpgradedStories-class.html">PremiumFeatureUpgradedStories</a></span> 
+
+</dt>
+<dd>
+  Allowed to use many additional features for stories
 </dd>
 
         <dt id="PremiumFeatureVoiceRecognition">
@@ -10091,6 +10531,14 @@
   The maximum number of favorite stickers
 </dd>
 
+        <dt id="PremiumLimitTypeMonthlySentStoryCount">
+  <span class="name "><a href="../td/PremiumLimitTypeMonthlySentStoryCount-class.html">PremiumLimitTypeMonthlySentStoryCount</a></span> 
+
+</dt>
+<dd>
+  The maximum number of stories sent per month
+</dd>
+
         <dt id="PremiumLimitTypePinnedArchivedChatCount">
   <span class="name "><a href="../td/PremiumLimitTypePinnedArchivedChatCount-class.html">PremiumLimitTypePinnedArchivedChatCount</a></span> 
 
@@ -10123,12 +10571,36 @@
   The maximum number of added shareable chat folders
 </dd>
 
+        <dt id="PremiumLimitTypeStoryCaptionLength">
+  <span class="name "><a href="../td/PremiumLimitTypeStoryCaptionLength-class.html">PremiumLimitTypeStoryCaptionLength</a></span> 
+
+</dt>
+<dd>
+  The maximum length of captions of sent stories
+</dd>
+
+        <dt id="PremiumLimitTypeStorySuggestedReactionAreaCount">
+  <span class="name "><a href="../td/PremiumLimitTypeStorySuggestedReactionAreaCount-class.html">PremiumLimitTypeStorySuggestedReactionAreaCount</a></span> 
+
+</dt>
+<dd>
+  The maximum number of suggested reaction areas on a story
+</dd>
+
         <dt id="PremiumLimitTypeSupergroupCount">
   <span class="name "><a href="../td/PremiumLimitTypeSupergroupCount-class.html">PremiumLimitTypeSupergroupCount</a></span> 
 
 </dt>
 <dd>
   The maximum number of joined supergroups and channels
+</dd>
+
+        <dt id="PremiumLimitTypeWeeklySentStoryCount">
+  <span class="name "><a href="../td/PremiumLimitTypeWeeklySentStoryCount-class.html">PremiumLimitTypeWeeklySentStoryCount</a></span> 
+
+</dt>
+<dd>
+  The maximum number of stories sent per week
 </dd>
 
         <dt id="PremiumPaymentOption">
@@ -10179,6 +10651,14 @@
   A user opened the Premium features screen from settings
 </dd>
 
+        <dt id="PremiumSourceStoryFeature">
+  <span class="name "><a href="../td/PremiumSourceStoryFeature-class.html">PremiumSourceStoryFeature</a></span> 
+
+</dt>
+<dd>
+  A user tried to use a Premium story feature
+</dd>
+
         <dt id="PremiumState">
   <span class="name "><a href="../td/PremiumState-class.html">PremiumState</a></span> 
 
@@ -10193,6 +10673,62 @@
 </dt>
 <dd>
   Describes an option for buying or upgrading Telegram Premium for self
+</dd>
+
+        <dt id="PremiumStoryFeature">
+  <span class="name "><a href="../td/PremiumStoryFeature-class.html">PremiumStoryFeature</a></span> 
+
+</dt>
+<dd>
+  Describes a story feature available to Premium users
+</dd>
+
+        <dt id="PremiumStoryFeatureCustomExpirationDuration">
+  <span class="name "><a href="../td/PremiumStoryFeatureCustomExpirationDuration-class.html">PremiumStoryFeatureCustomExpirationDuration</a></span> 
+
+</dt>
+<dd>
+  The ability to set custom expiration duration for stories
+</dd>
+
+        <dt id="PremiumStoryFeatureLinksAndFormatting">
+  <span class="name "><a href="../td/PremiumStoryFeatureLinksAndFormatting-class.html">PremiumStoryFeatureLinksAndFormatting</a></span> 
+
+</dt>
+<dd>
+  The ability to use links and formatting in story caption
+</dd>
+
+        <dt id="PremiumStoryFeaturePermanentViewsHistory">
+  <span class="name "><a href="../td/PremiumStoryFeaturePermanentViewsHistory-class.html">PremiumStoryFeaturePermanentViewsHistory</a></span> 
+
+</dt>
+<dd>
+  The ability to check who opened the current user's stories after they expire
+</dd>
+
+        <dt id="PremiumStoryFeaturePriorityOrder">
+  <span class="name "><a href="../td/PremiumStoryFeaturePriorityOrder-class.html">PremiumStoryFeaturePriorityOrder</a></span> 
+
+</dt>
+<dd>
+  User stories are displayed before stories of non-premium contacts and channels
+</dd>
+
+        <dt id="PremiumStoryFeatureSaveStories">
+  <span class="name "><a href="../td/PremiumStoryFeatureSaveStories-class.html">PremiumStoryFeatureSaveStories</a></span> 
+
+</dt>
+<dd>
+  The ability to save other's unprotected stories
+</dd>
+
+        <dt id="PremiumStoryFeatureStealthMode">
+  <span class="name "><a href="../td/PremiumStoryFeatureStealthMode-class.html">PremiumStoryFeatureStealthMode</a></span> 
+
+</dt>
+<dd>
+  The ability to hide the fact that the user viewed other's stories
 </dd>
 
         <dt id="ProcessChatFolderNewChats">
@@ -11779,6 +12315,14 @@
   Searches for ordinary sticker sets by looking for specified query in their title and name. Excludes installed sticker sets from the results
 </dd>
 
+        <dt id="SearchStringsByPrefix">
+  <span class="name "><a href="../td/SearchStringsByPrefix-class.html">SearchStringsByPrefix</a></span> 
+
+</dt>
+<dd>
+  Searches specified query by word prefixes in the provided strings. Returns 0-based positions of strings that matched. Can be called synchronously
+</dd>
+
         <dt id="SearchUserByPhoneNumber">
   <span class="name "><a href="../td/SearchUserByPhoneNumber-class.html">SearchUserByPhoneNumber</a></span> 
 
@@ -11984,7 +12528,15 @@
 
 </dt>
 <dd>
-  Sends a new story. Returns a temporary story with identifier 0
+  Sends a new story to a chat; requires can_post_stories rights for channel chats. Returns a temporary story
+</dd>
+
+        <dt id="SendWebAppCustomRequest">
+  <span class="name "><a href="../td/SendWebAppCustomRequest-class.html">SendWebAppCustomRequest</a></span> 
+
+</dt>
+<dd>
+  Sends a custom request from a Web App
 </dd>
 
         <dt id="SendWebAppData">
@@ -12611,6 +13163,14 @@
   Sets menu button for the given user or for all users; for bots only
 </dd>
 
+        <dt id="SetMessageSenderBlockList">
+  <span class="name "><a href="../td/SetMessageSenderBlockList-class.html">SetMessageSenderBlockList</a></span> 
+
+</dt>
+<dd>
+  Changes the block list of a message sender. Currently, only users and supergroup chats can be blocked
+</dd>
+
         <dt id="SetName">
   <span class="name "><a href="../td/SetName-class.html">SetName</a></span> 
 
@@ -12760,7 +13320,15 @@
 
 </dt>
 <dd>
-  Changes privacy settings of a previously sent story
+  Changes privacy settings of a story. Can be called only if story.can_be_edited == true
+</dd>
+
+        <dt id="SetStoryReaction">
+  <span class="name "><a href="../td/SetStoryReaction-class.html">SetStoryReaction</a></span> 
+
+</dt>
+<dd>
+  Changes chosen reaction on a story
 </dd>
 
         <dt id="SetSupergroupStickerSet">
@@ -13112,7 +13680,7 @@
 
 </dt>
 <dd>
-  Stops a poll. A poll in a message can be stopped when the message has can_be_edited flag set
+  Stops a poll. A poll in a message can be stopped when the message has can_be_edited flag is set
 </dd>
 
         <dt id="StorageStatistics">
@@ -13185,6 +13753,54 @@
 </dt>
 <dd>
   Represents a story
+</dd>
+
+        <dt id="StoryArea">
+  <span class="name "><a href="../td/StoryArea-class.html">StoryArea</a></span> 
+
+</dt>
+<dd>
+  Describes a clickable rectangle area on a story media
+</dd>
+
+        <dt id="StoryAreaPosition">
+  <span class="name "><a href="../td/StoryAreaPosition-class.html">StoryAreaPosition</a></span> 
+
+</dt>
+<dd>
+  Describes position of a clickable rectangle area on a story media
+</dd>
+
+        <dt id="StoryAreaType">
+  <span class="name "><a href="../td/StoryAreaType-class.html">StoryAreaType</a></span> 
+
+</dt>
+<dd>
+  Describes type of a clickable rectangle area on a story media
+</dd>
+
+        <dt id="StoryAreaTypeLocation">
+  <span class="name "><a href="../td/StoryAreaTypeLocation-class.html">StoryAreaTypeLocation</a></span> 
+
+</dt>
+<dd>
+  An area pointing to a location
+</dd>
+
+        <dt id="StoryAreaTypeSuggestedReaction">
+  <span class="name "><a href="../td/StoryAreaTypeSuggestedReaction-class.html">StoryAreaTypeSuggestedReaction</a></span> 
+
+</dt>
+<dd>
+  An area pointing to a suggested reaction. App needs to show a clickable reaction on the area and call setStoryReaction when the are is clicked
+</dd>
+
+        <dt id="StoryAreaTypeVenue">
+  <span class="name "><a href="../td/StoryAreaTypeVenue-class.html">StoryAreaTypeVenue</a></span> 
+
+</dt>
+<dd>
+  An area pointing to a venue
 </dd>
 
         <dt id="StoryContent">
@@ -13291,8 +13907,8 @@
   The story can be viewed by everyone
 </dd>
 
-        <dt id="StoryPrivacySettingsSelectedContacts">
-  <span class="name "><a href="../td/StoryPrivacySettingsSelectedContacts-class.html">StoryPrivacySettingsSelectedContacts</a></span> 
+        <dt id="StoryPrivacySettingsSelectedUsers">
+  <span class="name "><a href="../td/StoryPrivacySettingsSelectedUsers-class.html">StoryPrivacySettingsSelectedUsers</a></span> 
 
 </dt>
 <dd>
@@ -13305,6 +13921,22 @@
 </dt>
 <dd>
   Describes a video file sent in a story
+</dd>
+
+        <dt id="StoryViewer">
+  <span class="name "><a href="../td/StoryViewer-class.html">StoryViewer</a></span> 
+
+</dt>
+<dd>
+  Represents a viewer of a story
+</dd>
+
+        <dt id="StoryViewers">
+  <span class="name "><a href="../td/StoryViewers-class.html">StoryViewers</a></span> 
+
+</dt>
+<dd>
+  Represents a list of story viewers
 </dd>
 
         <dt id="SuggestedAction">
@@ -13984,7 +14616,7 @@
 
 </dt>
 <dd>
-  The thumbnail is in static GIF format. It will be used only for some bot inline results
+  The thumbnail is in static GIF format. It will be used only for some bot inline query results
 </dd>
 
         <dt id="ThumbnailFormatJpeg">
@@ -14112,7 +14744,7 @@
 
 </dt>
 <dd>
-  Adds or removes a bot to attachment menu. Bot can be added to attachment menu, only if userTypeBot.can_be_added_to_attachment_menu == true
+  Adds or removes a bot to attachment and side menu. Bot can be added to the menu, only if userTypeBot.can_be_added_to_attachment_menu == true
 </dd>
 
         <dt id="ToggleBotUsernameIsActive">
@@ -14251,14 +14883,6 @@
   Pauses or unpauses screen sharing in a joined group call
 </dd>
 
-        <dt id="ToggleMessageSenderIsBlocked">
-  <span class="name "><a href="../td/ToggleMessageSenderIsBlocked-class.html">ToggleMessageSenderIsBlocked</a></span> 
-
-</dt>
-<dd>
-  Changes the block state of a message sender. Currently, only users and supergroup chats can be blocked
-</dd>
-
         <dt id="ToggleSessionCanAcceptCalls">
   <span class="name "><a href="../td/ToggleSessionCanAcceptCalls-class.html">ToggleSessionCanAcceptCalls</a></span> 
 
@@ -14280,7 +14904,7 @@
 
 </dt>
 <dd>
-  Toggles whether a story is accessible after expiration
+  Toggles whether a story is accessible after expiration. Can be called only if story.can_toggle_is_pinned == true
 </dd>
 
         <dt id="ToggleSupergroupHasAggressiveAntiSpamEnabled">
@@ -14459,6 +15083,14 @@
   Represents a list of trending sticker sets
 </dd>
 
+        <dt id="UnconfirmedSession">
+  <span class="name "><a href="../td/UnconfirmedSession-class.html">UnconfirmedSession</a></span> 
+
+</dt>
+<dd>
+  Contains information about an unconfirmed session
+</dd>
+
         <dt id="UnpinAllChatMessages">
   <span class="name "><a href="../td/UnpinAllChatMessages-class.html">UnpinAllChatMessages</a></span> 
 
@@ -14544,7 +15176,7 @@
 
 </dt>
 <dd>
-  The list of bots added to attachment menu has changed
+  The list of bots added to attachment or side menu has changed
 </dd>
 
         <dt id="UpdateAuthorizationState">
@@ -14627,6 +15259,14 @@
   The chat background was changed
 </dd>
 
+        <dt id="UpdateChatBlockList">
+  <span class="name "><a href="../td/UpdateChatBlockList-class.html">UpdateChatBlockList</a></span> 
+
+</dt>
+<dd>
+  A chat was blocked or unblocked
+</dd>
+
         <dt id="UpdateChatDefaultDisableNotification">
   <span class="name "><a href="../td/UpdateChatDefaultDisableNotification-class.html">UpdateChatDefaultDisableNotification</a></span> 
 
@@ -14665,14 +15305,6 @@
 </dt>
 <dd>
   A chat's has_scheduled_messages field has changed
-</dd>
-
-        <dt id="UpdateChatIsBlocked">
-  <span class="name "><a href="../td/UpdateChatIsBlocked-class.html">UpdateChatIsBlocked</a></span> 
-
-</dt>
-<dd>
-  A chat was blocked or unblocked
 </dd>
 
         <dt id="UpdateChatIsMarkedAsUnread">
@@ -15307,6 +15939,30 @@
   Number of chats in a story list has changed
 </dd>
 
+        <dt id="UpdateStorySendFailed">
+  <span class="name "><a href="../td/UpdateStorySendFailed-class.html">UpdateStorySendFailed</a></span> 
+
+</dt>
+<dd>
+  A story failed to send. If the story sending is canceled, then updateStoryDeleted will be received instead of this update
+</dd>
+
+        <dt id="UpdateStorySendSucceeded">
+  <span class="name "><a href="../td/UpdateStorySendSucceeded-class.html">UpdateStorySendSucceeded</a></span> 
+
+</dt>
+<dd>
+  A story has been successfully sent
+</dd>
+
+        <dt id="UpdateStoryStealthMode">
+  <span class="name "><a href="../td/UpdateStoryStealthMode-class.html">UpdateStoryStealthMode</a></span> 
+
+</dt>
+<dd>
+  Story stealth mode settings have changed
+</dd>
+
         <dt id="UpdateSuggestedActions">
   <span class="name "><a href="../td/UpdateSuggestedActions-class.html">UpdateSuggestedActions</a></span> 
 
@@ -15345,6 +16001,14 @@
 </dt>
 <dd>
   The list of trending sticker sets was updated or some of them were viewed
+</dd>
+
+        <dt id="UpdateUnconfirmedSession">
+  <span class="name "><a href="../td/UpdateUnconfirmedSession-class.html">UpdateUnconfirmedSession</a></span> 
+
+</dt>
+<dd>
+  The first unconfirmed session has changed
 </dd>
 
         <dt id="UpdateUnreadChatCount">
@@ -15936,6 +16600,15 @@
 </dd>
 
 
+        <dt id="BlockListExt">
+    <span class="name "><a href="../td/BlockListExt.html">BlockListExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
         <dt id="BotCommandScopeExt">
     <span class="name "><a href="../td/BotCommandScopeExt.html">BotCommandScopeExt</a></span> 
 
@@ -15983,6 +16656,24 @@
 
         <dt id="CallStateExt">
     <span class="name "><a href="../td/CallStateExt.html">CallStateExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
+        <dt id="CanBoostChatResultExt">
+    <span class="name "><a href="../td/CanBoostChatResultExt.html">CanBoostChatResultExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
+        <dt id="CanSendStoryResultExt">
+    <span class="name "><a href="../td/CanSendStoryResultExt.html">CanSendStoryResultExt</a></span> 
 
 </dt>
 <dd>
@@ -16305,6 +16996,15 @@
 </dd>
 
 
+        <dt id="InputStoryAreaTypeExt">
+    <span class="name "><a href="../td/InputStoryAreaTypeExt.html">InputStoryAreaTypeExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
         <dt id="InputStoryContentExt">
     <span class="name "><a href="../td/InputStoryContentExt.html">InputStoryContentExt</a></span> 
 
@@ -16316,6 +17016,15 @@
 
         <dt id="InternalLinkTypeExt">
     <span class="name "><a href="../td/InternalLinkTypeExt.html">InternalLinkTypeExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
+        <dt id="InviteLinkChatTypeExt">
+    <span class="name "><a href="../td/InviteLinkChatTypeExt.html">InviteLinkChatTypeExt</a></span> 
 
 </dt>
 <dd>
@@ -16424,6 +17133,15 @@
 
         <dt id="MessageSchedulingStateExt">
     <span class="name "><a href="../td/MessageSchedulingStateExt.html">MessageSchedulingStateExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
+        <dt id="MessageSelfDestructTypeExt">
+    <span class="name "><a href="../td/MessageSelfDestructTypeExt.html">MessageSelfDestructTypeExt</a></span> 
 
 </dt>
 <dd>
@@ -16620,6 +17338,15 @@
 </dd>
 
 
+        <dt id="PremiumStoryFeatureExt">
+    <span class="name "><a href="../td/PremiumStoryFeatureExt.html">PremiumStoryFeatureExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
         <dt id="ProxyTypeExt">
     <span class="name "><a href="../td/ProxyTypeExt.html">ProxyTypeExt</a></span> 
 
@@ -16766,6 +17493,15 @@
 
         <dt id="StorePaymentPurposeExt">
     <span class="name "><a href="../td/StorePaymentPurposeExt.html">StorePaymentPurposeExt</a></span> 
+
+</dt>
+<dd>
+    
+</dd>
+
+
+        <dt id="StoryAreaTypeExt">
+    <span class="name "><a href="../td/StoryAreaTypeExt.html">StoryAreaTypeExt</a></span> 
 
 </dt>
 <dd>

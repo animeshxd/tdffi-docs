@@ -86,13 +86,19 @@
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
   var story_id = _map[&#39;story_id&#39;]! as int;
-  var offset_viewer = MessageViewer.fromMap(_map[&#39;offset_viewer&#39;]);
+  var query = _map[&#39;query&#39;]! as String;
+  var only_contacts = _map[&#39;only_contacts&#39;]! as bool;
+  var prefer_with_reaction = _map[&#39;prefer_with_reaction&#39;]! as bool;
+  var offset = _map[&#39;offset&#39;]! as String;
   var limit = _map[&#39;limit&#39;]! as int;
   return GetStoryViewers(
     extra: extra,
     clientId: clientId,
     story_id: story_id,
-    offset_viewer: offset_viewer,
+    query: query,
+    only_contacts: only_contacts,
+    prefer_with_reaction: prefer_with_reaction,
+    offset: offset,
     limit: limit,
   );
 }</code></pre>

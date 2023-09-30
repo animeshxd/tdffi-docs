@@ -85,10 +85,15 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
-
+  var except_user_ids = List&lt;int&gt;.from(
+    (_map[&quot;except_user_ids&quot;] ?? []).map(
+      (e) =&gt; e as int,
+    ),
+  );
   return StoryPrivacySettingsEveryone(
     extra: extra,
     clientId: clientId,
+    except_user_ids: except_user_ids,
   );
 }</code></pre>
 </section>

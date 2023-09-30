@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;notificationSettingsScopeGroupChats&#39;:
-      return NotificationSettingsScopeGroupChats.fromMap(_map);
     case &#39;notificationSettingsScopeChannelChats&#39;:
       return NotificationSettingsScopeChannelChats.fromMap(_map);
     case &#39;notificationSettingsScopePrivateChats&#39;:
       return NotificationSettingsScopePrivateChats.fromMap(_map);
+    case &#39;notificationSettingsScopeGroupChats&#39;:
+      return NotificationSettingsScopeGroupChats.fromMap(_map);
     case null:
     default:
       return null;

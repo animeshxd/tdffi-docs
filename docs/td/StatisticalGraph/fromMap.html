@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;statisticalGraphError&#39;:
-      return StatisticalGraphError.fromMap(_map);
     case &#39;statisticalGraphData&#39;:
       return StatisticalGraphData.fromMap(_map);
     case &#39;statisticalGraphAsync&#39;:
       return StatisticalGraphAsync.fromMap(_map);
+    case &#39;statisticalGraphError&#39;:
+      return StatisticalGraphError.fromMap(_map);
     case null:
     default:
       return null;

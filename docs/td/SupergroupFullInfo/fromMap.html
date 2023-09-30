@@ -106,6 +106,7 @@
   var is_all_history_available = _map[&#39;is_all_history_available&#39;]! as bool;
   var has_aggressive_anti_spam_enabled =
       _map[&#39;has_aggressive_anti_spam_enabled&#39;]! as bool;
+  var has_pinned_stories = _map[&#39;has_pinned_stories&#39;]! as bool;
   var sticker_set_id = _map[&#39;sticker_set_id&#39;]! as int64;
   var location = ChatLocation.fromMap(_map[&#39;location&#39;]);
   var invite_link = ChatInviteLink.fromMap(_map[&#39;invite_link&#39;]);
@@ -139,6 +140,7 @@
     can_toggle_aggressive_anti_spam: can_toggle_aggressive_anti_spam,
     is_all_history_available: is_all_history_available,
     has_aggressive_anti_spam_enabled: has_aggressive_anti_spam_enabled,
+    has_pinned_stories: has_pinned_stories,
     sticker_set_id: sticker_set_id,
     location: location,
     invite_link: invite_link,

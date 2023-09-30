@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;userTypeBot&#39;:
-      return UserTypeBot.fromMap(_map);
-    case &#39;userTypeDeleted&#39;:
-      return UserTypeDeleted.fromMap(_map);
     case &#39;userTypeRegular&#39;:
       return UserTypeRegular.fromMap(_map);
+    case &#39;userTypeBot&#39;:
+      return UserTypeBot.fromMap(_map);
     case &#39;userTypeUnknown&#39;:
       return UserTypeUnknown.fromMap(_map);
+    case &#39;userTypeDeleted&#39;:
+      return UserTypeDeleted.fromMap(_map);
     case null:
     default:
       return null;

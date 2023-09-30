@@ -97,10 +97,10 @@
     ),
   );
   var message_sender_id = MessageSender.fromMap(_map[&#39;message_sender_id&#39;]);
+  var block_list = BlockList.fromMap(_map[&#39;block_list&#39;]);
   var has_protected_content = _map[&#39;has_protected_content&#39;]! as bool;
   var is_translatable = _map[&#39;is_translatable&#39;]! as bool;
   var is_marked_as_unread = _map[&#39;is_marked_as_unread&#39;]! as bool;
-  var is_blocked = _map[&#39;is_blocked&#39;]! as bool;
   var has_scheduled_messages = _map[&#39;has_scheduled_messages&#39;]! as bool;
   var can_be_deleted_only_for_self =
       _map[&#39;can_be_deleted_only_for_self&#39;]! as bool;
@@ -140,10 +140,10 @@
     last_message: last_message,
     positions: positions,
     message_sender_id: message_sender_id,
+    block_list: block_list,
     has_protected_content: has_protected_content,
     is_translatable: is_translatable,
     is_marked_as_unread: is_marked_as_unread,
-    is_blocked: is_blocked,
     has_scheduled_messages: has_scheduled_messages,
     can_be_deleted_only_for_self: can_be_deleted_only_for_self,
     can_be_deleted_for_all_users: can_be_deleted_for_all_users,

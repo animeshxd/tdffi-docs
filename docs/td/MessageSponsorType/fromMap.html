@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;messageSponsorTypeBot&#39;:
-      return MessageSponsorTypeBot.fromMap(_map);
-    case &#39;messageSponsorTypePrivateChannel&#39;:
-      return MessageSponsorTypePrivateChannel.fromMap(_map);
     case &#39;messageSponsorTypeWebsite&#39;:
       return MessageSponsorTypeWebsite.fromMap(_map);
     case &#39;messageSponsorTypePublicChannel&#39;:
       return MessageSponsorTypePublicChannel.fromMap(_map);
+    case &#39;messageSponsorTypePrivateChannel&#39;:
+      return MessageSponsorTypePrivateChannel.fromMap(_map);
+    case &#39;messageSponsorTypeBot&#39;:
+      return MessageSponsorTypeBot.fromMap(_map);
     case null:
     default:
       return null;

@@ -62,7 +62,7 @@
 
     
 <section class="desc markdown">
-  <p>Sends a new story. Returns a temporary story with identifier 0</p>
+  <p>Sends a new story to a chat; requires can_post_stories rights for channel chats. Returns a temporary story</p>
 <p>Returns <a href="../td/Story-class.html">Story</a></p>
 </section>
 
@@ -101,10 +101,10 @@
 
     <dl class="constructor-summary-list">
         <dt id="SendStory" class="callable">
-          <span class="name"><a href="../td/SendStory/SendStory.html">SendStory</a></span><span class="signature">(<span class="parameter" id="-param-content">{<span>required</span> <span class="type-annotation"><a href="../td/InputStoryContent-class.html">InputStoryContent</a></span> <span class="parameter-name">content</span>, </span><span class="parameter" id="-param-caption"><span class="type-annotation"><a href="../td/FormattedText-class.html">FormattedText</a>?</span> <span class="parameter-name">caption</span>, </span><span class="parameter" id="-param-privacy_settings"><span>required</span> <span class="type-annotation"><a href="../td/StoryPrivacySettings-class.html">StoryPrivacySettings</a></span> <span class="parameter-name">privacy_settings</span>, </span><span class="parameter" id="-param-active_period"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">active_period</span>, </span><span class="parameter" id="-param-is_pinned"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_pinned</span>, </span><span class="parameter" id="-param-protect_content"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">protect_content</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/SendStory/SendStory.html">SendStory</a></span><span class="signature">(<span class="parameter" id="-param-chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">chat_id</span>, </span><span class="parameter" id="-param-content"><span>required</span> <span class="type-annotation"><a href="../td/InputStoryContent-class.html">InputStoryContent</a></span> <span class="parameter-name">content</span>, </span><span class="parameter" id="-param-areas"><span class="type-annotation"><a href="../td/InputStoryAreas-class.html">InputStoryAreas</a>?</span> <span class="parameter-name">areas</span>, </span><span class="parameter" id="-param-caption"><span class="type-annotation"><a href="../td/FormattedText-class.html">FormattedText</a>?</span> <span class="parameter-name">caption</span>, </span><span class="parameter" id="-param-privacy_settings"><span>required</span> <span class="type-annotation"><a href="../td/StoryPrivacySettings-class.html">StoryPrivacySettings</a></span> <span class="parameter-name">privacy_settings</span>, </span><span class="parameter" id="-param-active_period"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">active_period</span>, </span><span class="parameter" id="-param-is_pinned"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_pinned</span>, </span><span class="parameter" id="-param-protect_content"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">protect_content</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
-          Sends a new story. Returns a temporary story with identifier 0
+          Sends a new story to a chat; requires can_post_stories rights for channel chats. Returns a temporary story
         </dd>
     </dl>
   </section>
@@ -119,7 +119,18 @@
 
 </dt>
 <dd>
-  <a href="../td/SendStory/active_period.html">active_period</a> Period after which the story is moved to archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, 2 * 86400, 3 * 86400, or 7 * 86400 for Telegram Premium users, and 86400 otherwise
+  <a href="../td/SendStory/active_period.html">active_period</a> Period after which the story is moved to archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400 for Telegram Premium users, and 86400 otherwise
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="areas" class="property">
+  <span class="name"><a href="../td/SendStory/areas.html">areas</a></span>
+  <span class="signature">&#8596; <a href="../td/InputStoryAreas-class.html">InputStoryAreas</a>?</span> 
+
+</dt>
+<dd>
+  <a href="../td/SendStory/areas.html">areas</a> Clickable rectangle areas to be shown on the story media; pass null if none
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -131,6 +142,17 @@
 </dt>
 <dd>
   <a href="../td/SendStory/caption.html">caption</a> Story caption; pass null to use an empty caption; 0-getOption("story_caption_length_max") characters
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="chat_id" class="property">
+  <span class="name"><a href="../td/SendStory/chat_id.html">chat_id</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/SendStory/chat_id.html">chat_id</a> Identifier of the chat that will post the story
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

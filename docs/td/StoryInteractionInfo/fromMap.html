@@ -86,6 +86,8 @@
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
   var view_count = _map[&#39;view_count&#39;]! as int;
+  var forward_count = _map[&#39;forward_count&#39;]! as int;
+  var reaction_count = _map[&#39;reaction_count&#39;]! as int;
   var recent_viewer_user_ids = List&lt;int&gt;.from(
     (_map[&quot;recent_viewer_user_ids&quot;] ?? []).map(
       (e) =&gt; e as int,
@@ -95,6 +97,8 @@
     extra: extra,
     clientId: clientId,
     view_count: view_count,
+    forward_count: forward_count,
+    reaction_count: reaction_count,
     recent_viewer_user_ids: recent_viewer_user_ids,
   );
 }</code></pre>

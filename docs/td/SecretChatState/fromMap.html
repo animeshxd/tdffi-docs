@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;secretChatStateClosed&#39;:
-      return SecretChatStateClosed.fromMap(_map);
     case &#39;secretChatStatePending&#39;:
       return SecretChatStatePending.fromMap(_map);
     case &#39;secretChatStateReady&#39;:
       return SecretChatStateReady.fromMap(_map);
+    case &#39;secretChatStateClosed&#39;:
+      return SecretChatStateClosed.fromMap(_map);
     case null:
     default:
       return null;

@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;storyPrivacySettingsSelectedContacts&#39;:
-      return StoryPrivacySettingsSelectedContacts.fromMap(_map);
-    case &#39;storyPrivacySettingsContacts&#39;:
-      return StoryPrivacySettingsContacts.fromMap(_map);
-    case &#39;storyPrivacySettingsCloseFriends&#39;:
-      return StoryPrivacySettingsCloseFriends.fromMap(_map);
     case &#39;storyPrivacySettingsEveryone&#39;:
       return StoryPrivacySettingsEveryone.fromMap(_map);
+    case &#39;storyPrivacySettingsCloseFriends&#39;:
+      return StoryPrivacySettingsCloseFriends.fromMap(_map);
+    case &#39;storyPrivacySettingsContacts&#39;:
+      return StoryPrivacySettingsContacts.fromMap(_map);
+    case &#39;storyPrivacySettingsSelectedUsers&#39;:
+      return StoryPrivacySettingsSelectedUsers.fromMap(_map);
     case null:
     default:
       return null;

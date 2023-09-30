@@ -83,22 +83,22 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;supergroupMembersFilterContacts&#39;:
-      return SupergroupMembersFilterContacts.fromMap(_map);
+    case &#39;supergroupMembersFilterSearch&#39;:
+      return SupergroupMembersFilterSearch.fromMap(_map);
     case &#39;supergroupMembersFilterMention&#39;:
       return SupergroupMembersFilterMention.fromMap(_map);
     case &#39;supergroupMembersFilterRestricted&#39;:
       return SupergroupMembersFilterRestricted.fromMap(_map);
-    case &#39;supergroupMembersFilterSearch&#39;:
-      return SupergroupMembersFilterSearch.fromMap(_map);
-    case &#39;supergroupMembersFilterRecent&#39;:
-      return SupergroupMembersFilterRecent.fromMap(_map);
-    case &#39;supergroupMembersFilterBanned&#39;:
-      return SupergroupMembersFilterBanned.fromMap(_map);
     case &#39;supergroupMembersFilterBots&#39;:
       return SupergroupMembersFilterBots.fromMap(_map);
+    case &#39;supergroupMembersFilterBanned&#39;:
+      return SupergroupMembersFilterBanned.fromMap(_map);
+    case &#39;supergroupMembersFilterContacts&#39;:
+      return SupergroupMembersFilterContacts.fromMap(_map);
     case &#39;supergroupMembersFilterAdministrators&#39;:
       return SupergroupMembersFilterAdministrators.fromMap(_map);
+    case &#39;supergroupMembersFilterRecent&#39;:
+      return SupergroupMembersFilterRecent.fromMap(_map);
     case null:
     default:
       return null;

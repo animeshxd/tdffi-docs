@@ -86,10 +86,12 @@
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
   var web_app = WebApp.fromMap(_map[&#39;web_app&#39;]);
+  var by_request = _map[&#39;by_request&#39;]! as bool;
   return MessageBotWriteAccessAllowed(
     extra: extra,
     clientId: clientId,
     web_app: web_app,
+    by_request: by_request,
   );
 }</code></pre>
 </section>

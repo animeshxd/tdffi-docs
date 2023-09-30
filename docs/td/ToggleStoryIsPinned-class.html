@@ -62,7 +62,7 @@
 
     
 <section class="desc markdown">
-  <p>Toggles whether a story is accessible after expiration</p>
+  <p>Toggles whether a story is accessible after expiration. Can be called only if story.can_toggle_is_pinned == true</p>
 <p>Returns <a href="../td/Ok-class.html">Ok</a></p>
 </section>
 
@@ -101,10 +101,10 @@
 
     <dl class="constructor-summary-list">
         <dt id="ToggleStoryIsPinned" class="callable">
-          <span class="name"><a href="../td/ToggleStoryIsPinned/ToggleStoryIsPinned.html">ToggleStoryIsPinned</a></span><span class="signature">(<span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span><span class="parameter" id="-param-is_pinned"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_pinned</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/ToggleStoryIsPinned/ToggleStoryIsPinned.html">ToggleStoryIsPinned</a></span><span class="signature">(<span class="parameter" id="-param-story_sender_chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_sender_chat_id</span>, </span><span class="parameter" id="-param-story_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span><span class="parameter" id="-param-is_pinned"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">is_pinned</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
-          Toggles whether a story is accessible after expiration
+          Toggles whether a story is accessible after expiration. Can be called only if story.can_toggle_is_pinned == true
         </dd>
     </dl>
   </section>
@@ -175,6 +175,17 @@
 </dt>
 <dd>
   <a href="../td/ToggleStoryIsPinned/story_id.html">story_id</a> Identifier of the story
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="story_sender_chat_id" class="property">
+  <span class="name"><a href="../td/ToggleStoryIsPinned/story_sender_chat_id.html">story_sender_chat_id</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/ToggleStoryIsPinned/story_sender_chat_id.html">story_sender_chat_id</a> Identifier of the chat that posted the story
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;resetPasswordResultDeclined&#39;:
-      return ResetPasswordResultDeclined.fromMap(_map);
     case &#39;resetPasswordResultOk&#39;:
       return ResetPasswordResultOk.fromMap(_map);
     case &#39;resetPasswordResultPending&#39;:
       return ResetPasswordResultPending.fromMap(_map);
+    case &#39;resetPasswordResultDeclined&#39;:
+      return ResetPasswordResultDeclined.fromMap(_map);
     case null:
     default:
       return null;

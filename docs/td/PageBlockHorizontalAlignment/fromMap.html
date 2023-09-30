@@ -83,12 +83,12 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
+    case &#39;pageBlockHorizontalAlignmentLeft&#39;:
+      return PageBlockHorizontalAlignmentLeft.fromMap(_map);
     case &#39;pageBlockHorizontalAlignmentRight&#39;:
       return PageBlockHorizontalAlignmentRight.fromMap(_map);
     case &#39;pageBlockHorizontalAlignmentCenter&#39;:
       return PageBlockHorizontalAlignmentCenter.fromMap(_map);
-    case &#39;pageBlockHorizontalAlignmentLeft&#39;:
-      return PageBlockHorizontalAlignmentLeft.fromMap(_map);
     case null:
     default:
       return null;

@@ -101,7 +101,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="UpdateMessageSendFailed" class="callable">
-          <span class="name"><a href="../td/UpdateMessageSendFailed/UpdateMessageSendFailed.html">UpdateMessageSendFailed</a></span><span class="signature">(<span class="parameter" id="-param-message">{<span>required</span> <span class="type-annotation"><a href="../td/Message-class.html">Message</a></span> <span class="parameter-name">message</span>, </span><span class="parameter" id="-param-old_message_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">old_message_id</span>, </span><span class="parameter" id="-param-error_code"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">error_code</span>, </span><span class="parameter" id="-param-error_message"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">error_message</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/UpdateMessageSendFailed/UpdateMessageSendFailed.html">UpdateMessageSendFailed</a></span><span class="signature">(<span class="parameter" id="-param-message">{<span>required</span> <span class="type-annotation"><a href="../td/Message-class.html">Message</a></span> <span class="parameter-name">message</span>, </span><span class="parameter" id="-param-old_message_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">old_message_id</span>, </span><span class="parameter" id="-param-error"><span>required</span> <span class="type-annotation"><a href="../td/Error-class.html">Error</a></span> <span class="parameter-name">error</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
           A message failed to send. Be aware that some messages being sent can be irrecoverably deleted, in which case updateDeleteMessages will be received instead of this update
@@ -124,24 +124,13 @@
 
 </dd>
 
-        <dt id="error_code" class="property">
-  <span class="name"><a href="../td/UpdateMessageSendFailed/error_code.html">error_code</a></span>
-  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+        <dt id="error" class="property">
+  <span class="name"><a href="../td/UpdateMessageSendFailed/error.html">error</a></span>
+  <span class="signature">&#8596; <a href="../td/Error-class.html">Error</a></span> 
 
 </dt>
 <dd>
-  <a href="../td/UpdateMessageSendFailed/error_code.html">error_code</a> An error code
-  <div class="features"><span class="feature">read / write</span></div>
-
-</dd>
-
-        <dt id="error_message" class="property">
-  <span class="name"><a href="../td/UpdateMessageSendFailed/error_message.html">error_message</a></span>
-  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
-
-</dt>
-<dd>
-  <a href="../td/UpdateMessageSendFailed/error_message.html">error_message</a> Error message
+  <a href="../td/UpdateMessageSendFailed/error.html">error</a> The cause of the message sending failure
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

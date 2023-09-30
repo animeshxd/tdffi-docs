@@ -87,7 +87,7 @@
   var clientId = _map[&#39;@clientId&#39;];
   var chat_id = _map[&#39;chat_id&#39;]! as int;
   var accessible_for = _map[&#39;accessible_for&#39;]! as int;
-  var type = ChatType.fromMap(_map[&#39;type&#39;])!;
+  var type = InviteLinkChatType.fromMap(_map[&#39;type&#39;])!;
   var title = _map[&#39;title&#39;]! as String;
   var photo = ChatPhotoInfo.fromMap(_map[&#39;photo&#39;]);
   var description = _map[&#39;description&#39;]! as String;
@@ -99,6 +99,9 @@
   );
   var creates_join_request = _map[&#39;creates_join_request&#39;]! as bool;
   var is_public = _map[&#39;is_public&#39;]! as bool;
+  var is_verified = _map[&#39;is_verified&#39;]! as bool;
+  var is_scam = _map[&#39;is_scam&#39;]! as bool;
+  var is_fake = _map[&#39;is_fake&#39;]! as bool;
   return ChatInviteLinkInfo(
     extra: extra,
     clientId: clientId,
@@ -112,6 +115,9 @@
     member_user_ids: member_user_ids,
     creates_join_request: creates_join_request,
     is_public: is_public,
+    is_verified: is_verified,
+    is_scam: is_scam,
+    is_fake: is_fake,
   );
 }</code></pre>
 </section>

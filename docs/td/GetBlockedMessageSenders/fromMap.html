@@ -85,11 +85,13 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
+  var block_list = BlockList.fromMap(_map[&#39;block_list&#39;])!;
   var offset = _map[&#39;offset&#39;]! as int;
   var limit = _map[&#39;limit&#39;]! as int;
   return GetBlockedMessageSenders(
     extra: extra,
     clientId: clientId,
+    block_list: block_list,
     offset: offset,
     limit: limit,
   );

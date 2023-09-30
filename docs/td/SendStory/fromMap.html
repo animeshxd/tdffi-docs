@@ -85,7 +85,9 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
+  var chat_id = _map[&#39;chat_id&#39;]! as int;
   var content = InputStoryContent.fromMap(_map[&#39;content&#39;])!;
+  var areas = InputStoryAreas.fromMap(_map[&#39;areas&#39;]);
   var caption = FormattedText.fromMap(_map[&#39;caption&#39;]);
   var privacy_settings =
       StoryPrivacySettings.fromMap(_map[&#39;privacy_settings&#39;])!;
@@ -95,7 +97,9 @@
   return SendStory(
     extra: extra,
     clientId: clientId,
+    chat_id: chat_id,
     content: content,
+    areas: areas,
     caption: caption,
     privacy_settings: privacy_settings,
     active_period: active_period,

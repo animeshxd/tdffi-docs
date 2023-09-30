@@ -99,7 +99,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="FoundWebApp" class="callable">
-          <span class="name"><a href="../td/FoundWebApp/FoundWebApp.html">FoundWebApp</a></span><span class="signature">(<span class="parameter" id="-param-web_app">{<span>required</span> <span class="type-annotation"><a href="../td/WebApp-class.html">WebApp</a></span> <span class="parameter-name">web_app</span>, </span><span class="parameter" id="-param-request_write_access"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">request_write_access</span>, </span><span class="parameter" id="-param-skip_confirmation"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">skip_confirmation</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/FoundWebApp/FoundWebApp.html">FoundWebApp</a></span><span class="signature">(<span class="parameter" id="-param-web_app">{<span>required</span> <span class="type-annotation"><a href="../td/WebApp-class.html">WebApp</a></span> <span class="parameter-name">web_app</span>, </span><span class="parameter" id="-param-supports_settings"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">supports_settings</span>, </span><span class="parameter" id="-param-request_write_access"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">request_write_access</span>, </span><span class="parameter" id="-param-skip_confirmation"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">skip_confirmation</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
           Contains information about a Web App found by its short name
@@ -173,6 +173,17 @@
 </dt>
 <dd>
   <a href="../td/FoundWebApp/skip_confirmation.html">skip_confirmation</a> True, if there is no need to show an ordinary open URL confirmation before opening the Web App. The field must be ignored and confirmation must be shown anyway if the Web App link was hidden
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="supports_settings" class="property">
+  <span class="name"><a href="../td/FoundWebApp/supports_settings.html">supports_settings</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/FoundWebApp/supports_settings.html">supports_settings</a> True, if the app supports "settings_button_pressed" event
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

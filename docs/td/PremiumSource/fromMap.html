@@ -83,14 +83,16 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
+    case &#39;premiumSourceStoryFeature&#39;:
+      return PremiumSourceStoryFeature.fromMap(_map);
     case &#39;premiumSourceLimitExceeded&#39;:
       return PremiumSourceLimitExceeded.fromMap(_map);
+    case &#39;premiumSourceFeature&#39;:
+      return PremiumSourceFeature.fromMap(_map);
     case &#39;premiumSourceLink&#39;:
       return PremiumSourceLink.fromMap(_map);
     case &#39;premiumSourceSettings&#39;:
       return PremiumSourceSettings.fromMap(_map);
-    case &#39;premiumSourceFeature&#39;:
-      return PremiumSourceFeature.fromMap(_map);
     case null:
     default:
       return null;

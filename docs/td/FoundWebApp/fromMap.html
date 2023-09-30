@@ -86,12 +86,14 @@
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
   var web_app = WebApp.fromMap(_map[&#39;web_app&#39;])!;
+  var supports_settings = _map[&#39;supports_settings&#39;]! as bool;
   var request_write_access = _map[&#39;request_write_access&#39;]! as bool;
   var skip_confirmation = _map[&#39;skip_confirmation&#39;]! as bool;
   return FoundWebApp(
     extra: extra,
     clientId: clientId,
     web_app: web_app,
+    supports_settings: supports_settings,
     request_write_access: request_write_access,
     skip_confirmation: skip_confirmation,
   );

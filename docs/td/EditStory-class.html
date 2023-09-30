@@ -62,7 +62,7 @@
 
     
 <section class="desc markdown">
-  <p>Changes content and caption of a previously sent story</p>
+  <p>Changes content and caption of a story. Can be called only if story.can_be_edited == true</p>
 <p>Returns <a href="../td/Ok-class.html">Ok</a></p>
 </section>
 
@@ -101,10 +101,10 @@
 
     <dl class="constructor-summary-list">
         <dt id="EditStory" class="callable">
-          <span class="name"><a href="../td/EditStory/EditStory.html">EditStory</a></span><span class="signature">(<span class="parameter" id="-param-story_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span><span class="parameter" id="-param-content"><span class="type-annotation"><a href="../td/InputStoryContent-class.html">InputStoryContent</a>?</span> <span class="parameter-name">content</span>, </span><span class="parameter" id="-param-caption"><span class="type-annotation"><a href="../td/FormattedText-class.html">FormattedText</a>?</span> <span class="parameter-name">caption</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/EditStory/EditStory.html">EditStory</a></span><span class="signature">(<span class="parameter" id="-param-story_sender_chat_id">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_sender_chat_id</span>, </span><span class="parameter" id="-param-story_id"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">story_id</span>, </span><span class="parameter" id="-param-content"><span class="type-annotation"><a href="../td/InputStoryContent-class.html">InputStoryContent</a>?</span> <span class="parameter-name">content</span>, </span><span class="parameter" id="-param-areas"><span class="type-annotation"><a href="../td/InputStoryAreas-class.html">InputStoryAreas</a>?</span> <span class="parameter-name">areas</span>, </span><span class="parameter" id="-param-caption"><span class="type-annotation"><a href="../td/FormattedText-class.html">FormattedText</a>?</span> <span class="parameter-name">caption</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
-          Changes content and caption of a previously sent story
+          Changes content and caption of a story. Can be called only if story.can_be_edited == true
         </dd>
     </dl>
   </section>
@@ -113,6 +113,17 @@
       <h2>Properties</h2>
 
       <dl class="properties">
+        <dt id="areas" class="property">
+  <span class="name"><a href="../td/EditStory/areas.html">areas</a></span>
+  <span class="signature">&#8596; <a href="../td/InputStoryAreas-class.html">InputStoryAreas</a>?</span> 
+
+</dt>
+<dd>
+  <a href="../td/EditStory/areas.html">areas</a> New clickable rectangle areas to be shown on the story media; pass null to keep the current areas. Areas can't be edited if story content isn't changed
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
         <dt id="caption" class="property">
   <span class="name"><a href="../td/EditStory/caption.html">caption</a></span>
   <span class="signature">&#8596; <a href="../td/FormattedText-class.html">FormattedText</a>?</span> 
@@ -186,6 +197,17 @@
 </dt>
 <dd>
   <a href="../td/EditStory/story_id.html">story_id</a> Identifier of the story to edit
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="story_sender_chat_id" class="property">
+  <span class="name"><a href="../td/EditStory/story_sender_chat_id.html">story_sender_chat_id</a></span>
+  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  <a href="../td/EditStory/story_sender_chat_id.html">story_sender_chat_id</a> Identifier of the chat that posted the story
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
+    case &#39;inputChatPhotoSticker&#39;:
+      return InputChatPhotoSticker.fromMap(_map);
     case &#39;inputChatPhotoStatic&#39;:
       return InputChatPhotoStatic.fromMap(_map);
     case &#39;inputChatPhotoPrevious&#39;:
       return InputChatPhotoPrevious.fromMap(_map);
     case &#39;inputChatPhotoAnimation&#39;:
       return InputChatPhotoAnimation.fromMap(_map);
-    case &#39;inputChatPhotoSticker&#39;:
-      return InputChatPhotoSticker.fromMap(_map);
     case null:
     default:
       return null;

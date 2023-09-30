@@ -83,36 +83,36 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
+    case &#39;chatActionRecordingVideo&#39;:
+      return ChatActionRecordingVideo.fromMap(_map);
     case &#39;chatActionUploadingDocument&#39;:
       return ChatActionUploadingDocument.fromMap(_map);
-    case &#39;chatActionUploadingVideo&#39;:
-      return ChatActionUploadingVideo.fromMap(_map);
+    case &#39;chatActionStartPlayingGame&#39;:
+      return ChatActionStartPlayingGame.fromMap(_map);
+    case &#39;chatActionChoosingContact&#39;:
+      return ChatActionChoosingContact.fromMap(_map);
+    case &#39;chatActionRecordingVideoNote&#39;:
+      return ChatActionRecordingVideoNote.fromMap(_map);
     case &#39;chatActionWatchingAnimations&#39;:
       return ChatActionWatchingAnimations.fromMap(_map);
     case &#39;chatActionChoosingSticker&#39;:
       return ChatActionChoosingSticker.fromMap(_map);
+    case &#39;chatActionUploadingVideo&#39;:
+      return ChatActionUploadingVideo.fromMap(_map);
     case &#39;chatActionChoosingLocation&#39;:
       return ChatActionChoosingLocation.fromMap(_map);
-    case &#39;chatActionRecordingVideo&#39;:
-      return ChatActionRecordingVideo.fromMap(_map);
-    case &#39;chatActionTyping&#39;:
-      return ChatActionTyping.fromMap(_map);
-    case &#39;chatActionChoosingContact&#39;:
-      return ChatActionChoosingContact.fromMap(_map);
-    case &#39;chatActionStartPlayingGame&#39;:
-      return ChatActionStartPlayingGame.fromMap(_map);
-    case &#39;chatActionUploadingPhoto&#39;:
-      return ChatActionUploadingPhoto.fromMap(_map);
-    case &#39;chatActionUploadingVideoNote&#39;:
-      return ChatActionUploadingVideoNote.fromMap(_map);
-    case &#39;chatActionRecordingVideoNote&#39;:
-      return ChatActionRecordingVideoNote.fromMap(_map);
-    case &#39;chatActionUploadingVoiceNote&#39;:
-      return ChatActionUploadingVoiceNote.fromMap(_map);
-    case &#39;chatActionRecordingVoiceNote&#39;:
-      return ChatActionRecordingVoiceNote.fromMap(_map);
     case &#39;chatActionCancel&#39;:
       return ChatActionCancel.fromMap(_map);
+    case &#39;chatActionTyping&#39;:
+      return ChatActionTyping.fromMap(_map);
+    case &#39;chatActionUploadingPhoto&#39;:
+      return ChatActionUploadingPhoto.fromMap(_map);
+    case &#39;chatActionUploadingVoiceNote&#39;:
+      return ChatActionUploadingVoiceNote.fromMap(_map);
+    case &#39;chatActionUploadingVideoNote&#39;:
+      return ChatActionUploadingVideoNote.fromMap(_map);
+    case &#39;chatActionRecordingVoiceNote&#39;:
+      return ChatActionRecordingVoiceNote.fromMap(_map);
     case null:
     default:
       return null;

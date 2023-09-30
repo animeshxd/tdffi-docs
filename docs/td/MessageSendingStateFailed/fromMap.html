@@ -85,16 +85,14 @@
   if (_ != CONSTRUCTOR) return null;
   var extra = _map[&#39;@extra&#39;];
   var clientId = _map[&#39;@clientId&#39;];
-  var error_code = _map[&#39;error_code&#39;]! as int;
-  var error_message = _map[&#39;error_message&#39;]! as String;
+  var error = Error.fromMap(_map[&#39;error&#39;])!;
   var can_retry = _map[&#39;can_retry&#39;]! as bool;
   var need_another_sender = _map[&#39;need_another_sender&#39;]! as bool;
   var retry_after = _map[&#39;retry_after&#39;]! as double;
   return MessageSendingStateFailed(
     extra: extra,
     clientId: clientId,
-    error_code: error_code,
-    error_message: error_message,
+    error: error,
     can_retry: can_retry,
     need_another_sender: need_another_sender,
     retry_after: retry_after,

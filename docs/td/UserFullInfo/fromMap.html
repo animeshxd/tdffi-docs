@@ -88,7 +88,7 @@
   var personal_photo = ChatPhoto.fromMap(_map[&#39;personal_photo&#39;]);
   var photo = ChatPhoto.fromMap(_map[&#39;photo&#39;]);
   var public_photo = ChatPhoto.fromMap(_map[&#39;public_photo&#39;]);
-  var is_blocked = _map[&#39;is_blocked&#39;]! as bool;
+  var block_list = BlockList.fromMap(_map[&#39;block_list&#39;]);
   var can_be_called = _map[&#39;can_be_called&#39;]! as bool;
   var supports_video_calls = _map[&#39;supports_video_calls&#39;]! as bool;
   var has_private_calls = _map[&#39;has_private_calls&#39;]! as bool;
@@ -112,7 +112,7 @@
     personal_photo: personal_photo,
     photo: photo,
     public_photo: public_photo,
-    is_blocked: is_blocked,
+    block_list: block_list,
     can_be_called: can_be_called,
     supports_video_calls: supports_video_calls,
     has_private_calls: has_private_calls,

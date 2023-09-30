@@ -101,7 +101,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="MessageSendingStateFailed" class="callable">
-          <span class="name"><a href="../td/MessageSendingStateFailed/MessageSendingStateFailed.html">MessageSendingStateFailed</a></span><span class="signature">(<span class="parameter" id="-param-error_code">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> <span class="parameter-name">error_code</span>, </span><span class="parameter" id="-param-error_message"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> <span class="parameter-name">error_message</span>, </span><span class="parameter" id="-param-can_retry"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">can_retry</span>, </span><span class="parameter" id="-param-need_another_sender"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">need_another_sender</span>, </span><span class="parameter" id="-param-retry_after"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/double-class.html">double</a></span> <span class="parameter-name">retry_after</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
+          <span class="name"><a href="../td/MessageSendingStateFailed/MessageSendingStateFailed.html">MessageSendingStateFailed</a></span><span class="signature">(<span class="parameter" id="-param-error">{<span>required</span> <span class="type-annotation"><a href="../td/Error-class.html">Error</a></span> <span class="parameter-name">error</span>, </span><span class="parameter" id="-param-can_retry"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">can_retry</span>, </span><span class="parameter" id="-param-need_another_sender"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">need_another_sender</span>, </span><span class="parameter" id="-param-retry_after"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/double-class.html">double</a></span> <span class="parameter-name">retry_after</span>, </span><span class="parameter" id="-param-extra"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">extra</span>, </span><span class="parameter" id="-param-clientId"><span class="type-annotation"><a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">clientId</span>}</span>)</span>
         </dt>
         <dd>
           The message failed to be sent
@@ -135,24 +135,13 @@
 
 </dd>
 
-        <dt id="error_code" class="property">
-  <span class="name"><a href="../td/MessageSendingStateFailed/error_code.html">error_code</a></span>
-  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/int-class.html">int</a></span> 
+        <dt id="error" class="property">
+  <span class="name"><a href="../td/MessageSendingStateFailed/error.html">error</a></span>
+  <span class="signature">&#8596; <a href="../td/Error-class.html">Error</a></span> 
 
 </dt>
 <dd>
-  <a href="../td/MessageSendingStateFailed/error_code.html">error_code</a> An error code; 0 if unknown
-  <div class="features"><span class="feature">read / write</span></div>
-
-</dd>
-
-        <dt id="error_message" class="property">
-  <span class="name"><a href="../td/MessageSendingStateFailed/error_message.html">error_message</a></span>
-  <span class="signature">&#8596; <a href="https://api.dart.dev/stable/3.1.0/dart-core/String-class.html">String</a></span> 
-
-</dt>
-<dd>
-  <a href="../td/MessageSendingStateFailed/error_message.html">error_message</a> Error message
+  <a href="../td/MessageSendingStateFailed/error.html">error</a> The cause of the message sending failure
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>

@@ -88,6 +88,7 @@
   var id = _map[&#39;id&#39;]! as int64;
   var is_current = _map[&#39;is_current&#39;]! as bool;
   var is_password_pending = _map[&#39;is_password_pending&#39;]! as bool;
+  var is_unconfirmed = _map[&#39;is_unconfirmed&#39;]! as bool;
   var can_accept_secret_chats = _map[&#39;can_accept_secret_chats&#39;]! as bool;
   var can_accept_calls = _map[&#39;can_accept_calls&#39;]! as bool;
   var type = SessionType.fromMap(_map[&#39;type&#39;])!;
@@ -100,15 +101,15 @@
   var system_version = _map[&#39;system_version&#39;]! as String;
   var log_in_date = _map[&#39;log_in_date&#39;]! as int;
   var last_active_date = _map[&#39;last_active_date&#39;]! as int;
-  var ip = _map[&#39;ip&#39;]! as String;
-  var country = _map[&#39;country&#39;]! as String;
-  var region = _map[&#39;region&#39;]! as String;
+  var ip_address = _map[&#39;ip_address&#39;]! as String;
+  var location = _map[&#39;location&#39;]! as String;
   return Session(
     extra: extra,
     clientId: clientId,
     id: id,
     is_current: is_current,
     is_password_pending: is_password_pending,
+    is_unconfirmed: is_unconfirmed,
     can_accept_secret_chats: can_accept_secret_chats,
     can_accept_calls: can_accept_calls,
     type: type,
@@ -121,9 +122,8 @@
     system_version: system_version,
     log_in_date: log_in_date,
     last_active_date: last_active_date,
-    ip: ip,
-    country: country,
-    region: region,
+    ip_address: ip_address,
+    location: location,
   );
 }</code></pre>
 </section>

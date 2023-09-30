@@ -83,10 +83,10 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;firebaseAuthenticationSettingsAndroid&#39;:
-      return FirebaseAuthenticationSettingsAndroid.fromMap(_map);
     case &#39;firebaseAuthenticationSettingsIos&#39;:
       return FirebaseAuthenticationSettingsIos.fromMap(_map);
+    case &#39;firebaseAuthenticationSettingsAndroid&#39;:
+      return FirebaseAuthenticationSettingsAndroid.fromMap(_map);
     case null:
     default:
       return null;

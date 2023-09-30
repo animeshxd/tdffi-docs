@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;chatTypeSecret&#39;:
-      return ChatTypeSecret.fromMap(_map);
     case &#39;chatTypeSupergroup&#39;:
       return ChatTypeSupergroup.fromMap(_map);
-    case &#39;chatTypePrivate&#39;:
-      return ChatTypePrivate.fromMap(_map);
     case &#39;chatTypeBasicGroup&#39;:
       return ChatTypeBasicGroup.fromMap(_map);
+    case &#39;chatTypeSecret&#39;:
+      return ChatTypeSecret.fromMap(_map);
+    case &#39;chatTypePrivate&#39;:
+      return ChatTypePrivate.fromMap(_map);
     case null:
     default:
       return null;

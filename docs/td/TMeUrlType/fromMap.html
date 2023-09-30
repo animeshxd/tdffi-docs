@@ -83,14 +83,14 @@
   if (_map == null) return null;
   var _ = _map[&quot;@type&quot;];
   switch (_) {
-    case &#39;tMeUrlTypeSupergroup&#39;:
-      return TMeUrlTypeSupergroup.fromMap(_map);
     case &#39;tMeUrlTypeStickerSet&#39;:
       return TMeUrlTypeStickerSet.fromMap(_map);
     case &#39;tMeUrlTypeChatInvite&#39;:
       return TMeUrlTypeChatInvite.fromMap(_map);
     case &#39;tMeUrlTypeUser&#39;:
       return TMeUrlTypeUser.fromMap(_map);
+    case &#39;tMeUrlTypeSupergroup&#39;:
+      return TMeUrlTypeSupergroup.fromMap(_map);
     case null:
     default:
       return null;

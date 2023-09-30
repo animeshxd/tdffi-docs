@@ -103,6 +103,8 @@
   var restriction_reason = _map[&#39;restriction_reason&#39;]! as String;
   var is_scam = _map[&#39;is_scam&#39;]! as bool;
   var is_fake = _map[&#39;is_fake&#39;]! as bool;
+  var has_active_stories = _map[&#39;has_active_stories&#39;]! as bool;
+  var has_unread_active_stories = _map[&#39;has_unread_active_stories&#39;]! as bool;
   return Supergroup(
     extra: extra,
     clientId: clientId,
@@ -124,6 +126,8 @@
     restriction_reason: restriction_reason,
     is_scam: is_scam,
     is_fake: is_fake,
+    has_active_stories: has_active_stories,
+    has_unread_active_stories: has_unread_active_stories,
   );
 }</code></pre>
 </section>
