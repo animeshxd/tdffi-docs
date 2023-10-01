@@ -62,7 +62,7 @@
 
     
 <section class="desc markdown">
-  <p>Contains full information about a user</p>
+  <p>Contains full information about a user.</p>
 </section>
 
 
@@ -117,7 +117,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/bio.html">bio</a> A short user bio; may be null for bots
+  A short user bio; may be null for bots.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -128,7 +128,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/block_list.html">block_list</a> Block list to which the user is added; may be null if none
+  Block list to which the user is added; may be null if none.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -139,7 +139,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/bot_info.html">bot_info</a> For bots, information about the bot; may be null if the user isn't a bot
+  For bots, information about the bot; may be null if the user isn't a bot.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -150,7 +150,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/can_be_called.html">can_be_called</a> True, if the user can be called
+  True, if the user can be called.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -161,7 +161,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/clientId.html">clientId</a> - tdlib client id
+  TDLib client instance identifier, for which the response was received.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -172,7 +172,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/extra.html">extra</a> - Request identifier. Must be non-zero.
+  Request identifier. Must be non-zero.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -183,7 +183,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/group_in_common_count.html">group_in_common_count</a> Number of group chats where both the other user and the current user are a member; 0 for the current user
+  Number of group chats where both the other user and the current user are a member; 0 for the current user.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -194,7 +194,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/has_pinned_stories.html">has_pinned_stories</a> True, if the user has pinned stories
+  True, if the user has pinned stories.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -205,7 +205,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/has_private_calls.html">has_private_calls</a> True, if the user can't be called due to their privacy settings
+  True, if the user can't be called due to their privacy settings.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -216,7 +216,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/has_private_forwards.html">has_private_forwards</a> True, if the user can't be linked in forwarded messages due to their privacy settings
+  True, if the user can't be linked in forwarded messages due to their privacy settings.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -227,7 +227,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/has_restricted_voice_and_video_note_messages.html">has_restricted_voice_and_video_note_messages</a> True, if voice and video notes can't be sent or forwarded to the user
+  True, if voice and video notes can't be sent or forwarded to the user.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -249,7 +249,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/need_phone_number_privacy_exception.html">need_phone_number_privacy_exception</a> True, if the current user needs to explicitly allow to share their phone number with the user when the method addContact is used
+  True, if the current user needs to explicitly allow to share their phone number with the user when the method addContact is used.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -260,7 +260,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/personal_photo.html">personal_photo</a> User profile photo set by the current user for the contact; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+  User profile photo set by the current user for the contact; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -271,7 +271,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/photo.html">photo</a> User profile photo; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+  User profile photo; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -282,7 +282,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/premium_gift_options.html">premium_gift_options</a> The list of available options for gifting Telegram Premium to the user
+  The list of available options for gifting Telegram Premium to the user.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -293,7 +293,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/public_photo.html">public_photo</a> User profile photo visible if the main photo is hidden by privacy settings; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.
+  User profile photo visible if the main photo is hidden by privacy settings; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown..
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -315,7 +315,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/supports_video_calls.html">supports_video_calls</a> True, if a video call can be created with the user
+  True, if a video call can be created with the user.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -404,7 +404,7 @@
 
 </dt>
 <dd>
-  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>
+  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>.
   <div class="features"><span class="feature">override</span></div>
 
 </dd>
@@ -424,7 +424,7 @@
 
 </dt>
 <dd>
-  <a href="../td/UserFullInfo/CONSTRUCTOR-constant.html">CONSTRUCTOR</a> - type
+  @type
   
 
     <div>
@@ -464,7 +464,7 @@
 <footer>
   <span class="no-break">
     tdffi
-      1.0.0
+      1.8.19
   </span>
 
   

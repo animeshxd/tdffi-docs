@@ -62,7 +62,7 @@
 
     
 <section class="desc markdown">
-  <p>Represents a sticker set</p>
+  <p>Represents a sticker set.</p>
 </section>
 
 
@@ -117,7 +117,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/clientId.html">clientId</a> - tdlib client id
+  TDLib client instance identifier, for which the response was received.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -128,7 +128,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/emojis.html">emojis</a> A list of emoji corresponding to the stickers in the same order. The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object
+  A list of emoji corresponding to the stickers in the same order. The list is only for informational purposes, because a sticker is always sent with a fixed emoji from the corresponding Sticker object.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -139,7 +139,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/extra.html">extra</a> - Request identifier. Must be non-zero.
+  Request identifier. Must be non-zero.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -161,7 +161,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/id.html">id</a> Identifier of the sticker set
+  Identifier of the sticker set.
 ; string representation of int, use <code>int.parse</code>
   <div class="features"><span class="feature">read / write</span></div>
 
@@ -173,7 +173,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/is_archived.html">is_archived</a> True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously
+  True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -184,7 +184,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/is_installed.html">is_installed</a> True, if the sticker set has been installed by the current user
+  True, if the sticker set has been installed by the current user.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -195,7 +195,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/is_official.html">is_official</a> True, if the sticker set is official
+  True, if the sticker set is official.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -206,7 +206,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/is_viewed.html">is_viewed</a> True for already viewed trending sticker sets
+  True for already viewed trending sticker sets.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -217,7 +217,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/name.html">name</a> Name of the sticker set
+  Name of the sticker set.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -239,7 +239,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/sticker_format.html">sticker_format</a> Format of the stickers in the set
+  Format of the stickers in the set.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -250,7 +250,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/sticker_type.html">sticker_type</a> Type of the stickers in the set
+  Type of the stickers in the set.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -261,7 +261,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/stickers.html">stickers</a> List of stickers in this set
+  List of stickers in this set.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -272,7 +272,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/thumbnail.html">thumbnail</a> Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed
+  Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null. The file can be downloaded only before the thumbnail is changed.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -283,7 +283,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/thumbnail_outline.html">thumbnail_outline</a> Sticker set thumbnail's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner
+  Sticker set thumbnail's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -294,7 +294,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/title.html">title</a> Title of the sticker set
+  Title of the sticker set.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -383,7 +383,7 @@
 
 </dt>
 <dd>
-  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>
+  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>.
   <div class="features"><span class="feature">override</span></div>
 
 </dd>
@@ -403,7 +403,7 @@
 
 </dt>
 <dd>
-  <a href="../td/StickerSet/CONSTRUCTOR-constant.html">CONSTRUCTOR</a> - type
+  @type
   
 
     <div>
@@ -443,7 +443,7 @@
 <footer>
   <span class="no-break">
     tdffi
-      1.0.0
+      1.8.19
   </span>
 
   

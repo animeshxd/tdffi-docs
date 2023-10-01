@@ -62,8 +62,8 @@
 
     
 <section class="desc markdown">
-  <p>Searches for messages with given words in the chat. Returns the results in reverse chronological order, i.e. in order of decreasing message_id. Cannot be used in secret chats with a non-empty query</p>
-<p>Returns <a href="../td/FoundChatMessages-class.html">FoundChatMessages</a></p>
+  <p>Searches for messages with given words in the chat. Returns the results in reverse chronological order, i.e. in order of decreasing message_id. Cannot be used in secret chats with a non-empty query.</p>
+<p>Returns <a href="../td/FoundChatMessages-class.html">FoundChatMessages</a>.</p>
 </section>
 
 
@@ -119,7 +119,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/chat_id.html">chat_id</a> Identifier of the chat in which to search messages
+  Identifier of the chat in which to search messages.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -130,7 +130,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/clientId.html">clientId</a> - tdlib client id
+  TDLib client instance identifier, for which the response was received.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -141,7 +141,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/extra.html">extra</a> - Request identifier. Must be non-zero.
+  Request identifier. Must be non-zero.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -152,7 +152,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/filter.html">filter</a> Additional filter for messages to search; pass null to search for all messages
+  Additional filter for messages to search; pass null to search for all messages.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -163,7 +163,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/from_message_id.html">from_message_id</a> Identifier of the message starting from which history must be fetched; use 0 to get results from the last message
+  Identifier of the message starting from which history must be fetched; use 0 to get results from the last message.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -185,7 +185,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/limit.html">limit</a> The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than -offset.
+  The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than -offset..
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -196,7 +196,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/message_thread_id.html">message_thread_id</a> If not 0, only messages in the specified thread will be returned; supergroups only
+  If not 0, only messages in the specified thread will be returned; supergroups only.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -207,7 +207,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/offset.html">offset</a> Specify 0 to get results from exactly the from_message_id or a negative offset to get the specified message and some newer messages
+  Specify 0 to get results from exactly the from_message_id or a negative offset to get the specified message and some newer messages.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -218,7 +218,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/query.html">query</a> Query to search for
+  Query to search for.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -240,7 +240,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/sender_id.html">sender_id</a> Identifier of the sender of messages to search for; pass null to search for messages from any sender. Not supported in secret chats
+  Identifier of the sender of messages to search for; pass null to search for messages from any sender. Not supported in secret chats.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -329,7 +329,7 @@
 
 </dt>
 <dd>
-  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>
+  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>.
   <div class="features"><span class="feature">override</span></div>
 
 </dd>
@@ -349,7 +349,7 @@
 
 </dt>
 <dd>
-  <a href="../td/SearchChatMessages/CONSTRUCTOR-constant.html">CONSTRUCTOR</a> - type
+  @type
   
 
     <div>
@@ -389,7 +389,7 @@
 <footer>
   <span class="no-break">
     tdffi
-      1.0.0
+      1.8.19
   </span>
 
   

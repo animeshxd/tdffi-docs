@@ -62,8 +62,8 @@
 
     
 <section class="desc markdown">
-  <p>Bans a member in a chat. Members can't be banned in private or secret chats. In supergroups and channels, the user will not be able to return to the group on their own using invite links, etc., unless unbanned first</p>
-<p>Returns <a href="../td/Ok-class.html">Ok</a></p>
+  <p>Bans a member in a chat. Members can't be banned in private or secret chats. In supergroups and channels, the user will not be able to return to the group on their own using invite links, etc., unless unbanned first.</p>
+<p>Returns <a href="../td/Ok-class.html">Ok</a>.</p>
 </section>
 
 
@@ -119,7 +119,7 @@
 
 </dt>
 <dd>
-  <a href="../td/BanChatMember/banned_until_date.html">banned_until_date</a> Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Ignored in basic groups and if a chat is banned
+  Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Ignored in basic groups and if a chat is banned.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -130,7 +130,7 @@
 
 </dt>
 <dd>
-  <a href="../td/BanChatMember/chat_id.html">chat_id</a> Chat identifier
+  Chat identifier.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -141,7 +141,7 @@
 
 </dt>
 <dd>
-  <a href="../td/BanChatMember/clientId.html">clientId</a> - tdlib client id
+  TDLib client instance identifier, for which the response was received.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -152,7 +152,7 @@
 
 </dt>
 <dd>
-  <a href="../td/BanChatMember/extra.html">extra</a> - Request identifier. Must be non-zero.
+  Request identifier. Must be non-zero.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -174,7 +174,7 @@
 
 </dt>
 <dd>
-  <a href="../td/BanChatMember/member_id.html">member_id</a> Member identifier
+  Member identifier.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -185,7 +185,7 @@
 
 </dt>
 <dd>
-  <a href="../td/BanChatMember/revoke_messages.html">revoke_messages</a> Pass true to delete all messages in the chat for the user that is being removed. Always true for supergroups and channels
+  Pass true to delete all messages in the chat for the user that is being removed. Always true for supergroups and channels.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -285,7 +285,7 @@
 
 </dt>
 <dd>
-  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>
+  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>.
   <div class="features"><span class="feature">override</span></div>
 
 </dd>
@@ -305,7 +305,7 @@
 
 </dt>
 <dd>
-  <a href="../td/BanChatMember/CONSTRUCTOR-constant.html">CONSTRUCTOR</a> - type
+  @type
   
 
     <div>
@@ -345,7 +345,7 @@
 <footer>
   <span class="no-break">
     tdffi
-      1.0.0
+      1.8.19
   </span>
 
   

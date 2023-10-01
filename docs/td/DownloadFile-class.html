@@ -62,8 +62,8 @@
 
     
 <section class="desc markdown">
-  <p>Downloads a file from the cloud. Download progress and completion of the download will be notified through updateFile updates</p>
-<p>Returns <a href="../td/File-class.html">File</a></p>
+  <p>Downloads a file from the cloud. Download progress and completion of the download will be notified through updateFile updates.</p>
+<p>Returns <a href="../td/File-class.html">File</a>.</p>
 </section>
 
 
@@ -119,7 +119,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/clientId.html">clientId</a> - tdlib client id
+  TDLib client instance identifier, for which the response was received.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -130,7 +130,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/extra.html">extra</a> - Request identifier. Must be non-zero.
+  Request identifier. Must be non-zero.
   <div class="features"><span class="feature">read / write</span><span class="feature">override</span></div>
 
 </dd>
@@ -141,7 +141,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/file_id.html">file_id</a> Identifier of the file to download
+  Identifier of the file to download.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -163,7 +163,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/limit.html">limit</a> Number of bytes which need to be downloaded starting from the "offset" position before the download will automatically be canceled; use 0 to download without a limit
+  Number of bytes which need to be downloaded starting from the "offset" position before the download will automatically be canceled; use 0 to download without a limit.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -174,7 +174,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/offset.html">offset</a> The starting position from which the file needs to be downloaded
+  The starting position from which the file needs to be downloaded.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -185,7 +185,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/priority.html">priority</a> Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
+  Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -207,7 +207,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/synchronous.html">synchronous</a> Pass true to return response only after the file download has succeeded, has failed, has been canceled, or a new downloadFile request with different offset/limit parameters was sent; pass false to return file state immediately, just after the download has been started
+  Pass true to return response only after the file download has succeeded, has failed, has been canceled, or a new downloadFile request with different offset/limit parameters was sent; pass false to return file state immediately, just after the download has been started.
   <div class="features"><span class="feature">read / write</span></div>
 
 </dd>
@@ -296,7 +296,7 @@
 
 </dt>
 <dd>
-  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>
+  Construct from <a href="https://api.dart.dev/stable/3.1.0/dart-core/Map-class.html">Map</a>.
   <div class="features"><span class="feature">override</span></div>
 
 </dd>
@@ -316,7 +316,7 @@
 
 </dt>
 <dd>
-  <a href="../td/DownloadFile/CONSTRUCTOR-constant.html">CONSTRUCTOR</a> - type
+  @type
   
 
     <div>
@@ -356,7 +356,7 @@
 <footer>
   <span class="no-break">
     tdffi
-      1.0.0
+      1.8.19
   </span>
 
   
